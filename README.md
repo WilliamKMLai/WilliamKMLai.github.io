@@ -1,6 +1,9 @@
 # WilliamKMLai.github.io
 Lai Lab website at Cornell.
 
+Page accessible at:
+https://williamkmlai.github.io/
+
 From a web technology standpoint this is built using [jekyll](https://jekyllrb.com/). Even though there are other static site generators
 that can be deployed and hosted on GitHub, we chose [jekyll](https://jekyllrb.com/) as it is natively supported by GitHub, easy to learn,
 easy to integrate and configure DNS services, both GitHub and [jekyll](https://jekyllrb.com/) built using the same programming language
