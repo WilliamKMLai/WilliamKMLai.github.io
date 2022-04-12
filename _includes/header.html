@@ -1,0 +1,31 @@
+<div class="container">
+    <header class="site-header" id="site-header" role="banner">
+				<div id="title-container" class="title-container">
+					<div id="site-title" class="site-title"><a href="/">Lai Lab</a></div>
+            <a class="social-icons" href="{{ site.github }}"><i class="fab fa-github"></i></a>
+            <a class="social-icons" href="{{ site.twitter }}"><i class="fab fa-twitter"></i></a>
+        </div>
+				<button id="toggle-navigation" class="toggle-navigation" name="toggle-navigation" aria-expanded="false">
+					<span class="screen-reader-text">open menu</span>
+					<i class="fa fa-bars" title="primary menu icon" aria-hidden="true"></i>
+				</button>
+				<div id="menu-primary-container" class="menu-primary-container">
+					<div id="menu-primary" class="menu-container menu-primary" role="navigation">
+            <nav class="menu">
+              <ul id="menu-primary-items" class="menu-primary-items">
+            	<!-- iterate over each item in the _data/navigation.yml file -->
+            	{% for item in site.data.navigation %}
+                <li id="menu-item" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home">
+            		<a href="{{ item.link }}"
+            			{% if page.url == item.link %}
+            				class="current"
+            			{% endif %}>
+            			{{ item.name }}
+            		</a>
+            	{% endfor %}
+              </ul>
+            </nav>
+          </div>
+        </div>
+			</header>
+</div>

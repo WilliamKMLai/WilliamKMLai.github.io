@@ -1,1 +1,16 @@
-theme: jekyll-theme-slate
+collections:
+  authors:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+plugins:
+  - jekyll-sitemap
+
+# Custom vars
+github: https://github.com/WilliamKMLai
+twitter: https://twitter.com/WilliamKMLai
