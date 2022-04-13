@@ -5,10 +5,6 @@
             <a class="social-icons" href="{{ site.github }}"><i class="fab fa-github"></i></a>
             <a class="social-icons" href="{{ site.twitter }}"><i class="fab fa-twitter"></i></a>
         </div>
-				<button id="toggle-navigation" class="toggle-navigation" name="toggle-navigation" aria-expanded="false">
-					<span class="screen-reader-text">open menu</span>
-					<i class="fa fa-bars" title="primary menu icon" aria-hidden="true"></i>
-				</button>
 				<div id="menu-primary-container" class="menu-primary-container">
 					<div id="menu-primary" class="menu-container menu-primary" role="navigation">
             <nav class="menu">
@@ -19,6 +15,7 @@
             		<a href="{{ item.link }}"
             			{% if page.url == item.link %}
             				class="current"
+                    style="color: red;"
             			{% endif %}>
             			{{ item.name }}
             		</a>
