@@ -2,11 +2,11 @@
   link: /
 - name: Research
   link: /research.html
-- name: Publications
-  link: /publications.html
-- name: Funding
-  link: /funding.html
-- name: Teaching
-  link: /teaching.html
 - name: Software
   link: /software.html
+- name: Funding
+  link: /funding.html
+- name: Publications
+  link: /publications.html
+- name: Teaching
+  link: /teaching.html
