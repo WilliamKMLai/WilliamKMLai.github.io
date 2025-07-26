@@ -8,6 +8,9 @@ defaults:
     values:
       layout: "default"
 
+include:
+  - favicon.ico
+
 plugins:
   - jekyll-sitemap
 
