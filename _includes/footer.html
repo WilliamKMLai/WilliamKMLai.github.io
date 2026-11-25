@@ -1,0 +1,47 @@
+<footer class="site-footer">
+  <div class="site-container">
+    <div class="footer-grid">
+      <div class="footer-col footer-identity">
+        <div class="footer-brand">
+          <span class="footer-title">The Lai Lab</span>
+          <span class="footer-dept">Department of Biochemistry</span>
+        </div>
+        <p class="footer-affiliation">
+          Jacobs School of Medicine and Biomedical Sciences<br>
+          University at Buffalo, State University of New York
+        </p>
+        <address class="footer-address">
+          Room 4227, 955 Main Street, Buffalo, NY 14203<br>
+          <a href="mailto:{{ site.email }}">{{ site.email }}</a> &middot; <a href="tel:+17168292317">{{ site.phone }}</a>
+        </address>
+      </div>
+
+      <div class="footer-col">
+        <h2 class="footer-heading">Academic Profiles</h2>
+        <ul class="footer-links">
+          <li><a href="{{ site.ub_profile }}" target="_blank" rel="noopener">UB Faculty Profile</a></li>
+          <li><a href="https://scholar.google.com/citations?user={{ site.google_scholar }}&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="https://orcid.org/{{ site.orcid }}" target="_blank" rel="noopener">ORCID ({{ site.orcid }})</a></li>
+          <li><a href="{{ '/assets/cv/Lai_CV.pdf' | relative_url }}" target="_blank" rel="noopener">Curriculum Vitae (PDF)</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h2 class="footer-heading">Open-Source GitHub</h2>
+        <ul class="footer-links">
+          <li><a href="{{ site.github_org }}" target="_blank" rel="noopener">EpiGenomicsCode</a></li>
+          <li><a href="{{ site.github_cegr }}" target="_blank" rel="noopener">CEGRcode</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-copyright">&copy; 2026 William K. M. Lai &middot; University at Buffalo, Department of Biochemistry</p>
+      <ul class="footer-nav-inline">
+        {%- for item in site.data.navigation -%}
+          <li><a href="{{ item.link | relative_url }}">{{ item.name }}</a></li>
+        {%- endfor -%}
+      </ul>
+    </div>
+  </div>
+</footer>

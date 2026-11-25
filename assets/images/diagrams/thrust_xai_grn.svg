@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 320" width="560" height="320" role="img" aria-labelledby="bioinf-title bioinf-desc">
+  <title id="bioinf-title">Bioinformatic Algorithm Development</title>
+  <desc id="bioinf-desc">Four-quadrant overview of bioinformatic algorithms: (A) Chromatin Alignment, Subtypes and Motifs (ArchAlign, ArchTEx, ChExMix, GenoCLAMP), (B) Dataset Genotype Verification (GenoPipe), (C) Causal Regulatory Network Inference (SETIA), and (D) Explainable Chromatin Modeling (APSO, ChromEnhancer).</desc>
+  <defs>
+    <marker id="bio-edge" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M 1 1.5 L 8.5 5 L 1 8.5 z" fill="#005BBB"/>
+    </marker>
+  </defs>
+
+  <!-- Outer Frame -->
+  <rect x="1" y="1" width="558" height="318" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+  <rect x="18" y="12" width="5" height="15" rx="2.5" fill="#4F46E5"/>
+  <text x="30" y="24" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="10.8" font-weight="700" letter-spacing="0.3" fill="#4F46E5">THRUST 02 · BIOINFORMATIC ALGORITHM DEVELOPMENT</text>
+  <line x1="18" y1="33" x2="542" y2="33" stroke="#E2E8F0" stroke-width="1"/>
+
+  <!-- ================================================= -->
+  <!-- PANEL A (Top-Left: x=18..272, y=40..168)          -->
+  <!-- ================================================= -->
+  <rect x="18" y="40" width="254" height="128" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+  <text x="28" y="56" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#0F172A">A. Chromatin Alignment &amp; Subtypes</text>
+
+  <!-- Mini Graphic A -->
+  <rect x="28" y="64" width="234" height="34" rx="5" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+  <path d="M 40 88 Q 58 68 76 88 T 112 88 T 148 88" fill="none" stroke="#005BBB" stroke-width="1.7"/>
+  <rect x="176" y="74" width="6" height="16" rx="1" fill="#005BBB"/>
+  <rect x="186" y="69" width="6" height="21" rx="1" fill="#0D9488"/>
+  <rect x="196" y="77" width="6" height="13" rx="1" fill="#4F46E5"/>
+  <rect x="206" y="71" width="6" height="19" rx="1" fill="#005BBB"/>
+  <rect x="216" y="75" width="6" height="15" rx="1" fill="#0D9488"/>
+
+  <!-- Tool Pills A -->
+  <rect x="28" y="105" width="128" height="21" rx="4" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1"/>
+  <text x="92" y="119" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="8.4" font-weight="700" fill="#005BBB">ArchAlign · ArchTEx</text>
+
+  <rect x="162" y="105" width="100" height="21" rx="4" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1"/>
+  <text x="212" y="119" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="8.4" font-weight="700" fill="#005BBB">ChExMix</text>
+
+  <rect x="28" y="132" width="96" height="21" rx="4" fill="#EEF2FF" stroke="#C7D2FE" stroke-width="1"/>
+  <text x="76" y="146" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="8.4" font-weight="700" fill="#4338CA">GenoCLAMP</text>
+
+  <text x="195" y="146" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="8.1" font-weight="600" fill="#475569">Frames, Subtypes &amp; Motifs</text>
+
+  <!-- ================================================= -->
+  <!-- PANEL B (Top-Right: x=288..542, y=40..168)        -->
+  <!-- ================================================= -->
+  <rect x="288" y="40" width="254" height="128" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+  <text x="298" y="56" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#0F172A">B. Dataset Genotype Verification</text>
+
+  <!-- Mini Graphic B -->
+  <rect x="298" y="64" width="234" height="34" rx="5" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+  <rect x="312" y="72" width="110" height="5" rx="2" fill="#CBD5E1"/>
+  <rect x="348" y="72" width="8" height="5" fill="#005BBB"/>
+  <rect x="326" y="81" width="118" height="5" rx="2" fill="#CBD5E1"/>
+  <rect x="348" y="81" width="8" height="5" fill="#005BBB"/>
+  <rect x="396" y="81" width="8" height="5" fill="#0D9488"/>
+  <rect x="318" y="90" width="106" height="5" rx="2" fill="#CBD5E1"/>
+  <rect x="396" y="90" width="8" height="5" fill="#0D9488"/>
+  <circle cx="492" cy="81" r="10" fill="#F0FDFA" stroke="#0D9488" stroke-width="1.4"/>
+  <path d="M 487 81 L 490.5 84.5 L 497.5 77.5" fill="none" stroke="#0D9488" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Tool Pill B -->
+  <rect x="298" y="105" width="234" height="22" rx="4" fill="#F0FDFA" stroke="#99F6E4" stroke-width="1.1"/>
+  <text x="415" y="120" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9" font-weight="700" fill="#0F766E">GenoPipe</text>
+
+  <text x="415" y="142" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="8.3" font-weight="600" fill="#334155">Strain, cell-line &amp; edit verification</text>
+  <text x="415" y="156" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="8.1" fill="#64748B">directly from raw sequencing reads</text>
+
+  <!-- ================================================= -->
+  <!-- PANEL C (Bottom-Left: x=18..272, y=180..308)      -->
+  <!-- ================================================= -->
+  <rect x="18" y="180" width="254" height="128" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+  <text x="28" y="196" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#0F172A">C. Causal Regulatory Network Inference</text>
+
+  <!-- Mini Graphic C -->
+  <rect x="28" y="204" width="234" height="34" rx="5" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+  <rect x="38" y="212" width="52" height="18" rx="3" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1"/>
+  <text x="64" y="224" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="7.8" font-weight="600" fill="#005BBB">Binding</text>
+  <rect x="96" y="212" width="54" height="18" rx="3" fill="#F0FDFA" stroke="#99F6E4" stroke-width="1"/>
+  <text x="123" y="224" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="7.8" font-weight="600" fill="#0F766E">Perturb</text>
+
+  <line x1="184" y1="220" x2="222" y2="213" stroke="#005BBB" stroke-width="1.4" marker-end="url(#bio-edge)"/>
+  <line x1="184" y1="222" x2="222" y2="229" stroke="#005BBB" stroke-width="1.4" marker-end="url(#bio-edge)"/>
+  <circle cx="176" cy="221" r="8" fill="#005BBB"/>
+  <text x="176" y="224" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="7.2" font-weight="700" fill="#FFFFFF">TF</text>
+  <circle cx="232" cy="212" r="6.5" fill="#0D9488"/>
+  <circle cx="232" cy="230" r="6.5" fill="#4F46E5"/>
+
+  <!-- Tool Pill C -->
+  <rect x="28" y="245" width="234" height="22" rx="4" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1.1"/>
+  <text x="145" y="260" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9" font-weight="700" fill="#005BBB">SETIA</text>
+
+  <text x="145" y="282" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="8.3" font-weight="600" fill="#334155">Directed GRN inference grounded in</text>
+  <text x="145" y="296" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="8.1" fill="#64748B">binding, perturbation &amp; nascent RNA</text>
+
+  <!-- ================================================= -->
+  <!-- PANEL D (Bottom-Right: x=288..542, y=180..308)    -->
+  <!-- ================================================= -->
+  <rect x="288" y="180" width="254" height="128" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+  <text x="298" y="196" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#0F172A">D. Explainable Chromatin Modeling</text>
+
+  <!-- Mini Graphic D -->
+  <rect x="298" y="204" width="234" height="34" rx="5" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+  <line x1="326" y1="214" x2="358" y2="221" stroke="#A5B4FC" stroke-width="1.1"/>
+  <line x1="326" y1="228" x2="358" y2="221" stroke="#A5B4FC" stroke-width="1.1"/>
+  <line x1="358" y1="221" x2="390" y2="221" stroke="#A5B4FC" stroke-width="1.1"/>
+  <circle cx="326" cy="214" r="4" fill="#005BBB"/>
+  <circle cx="326" cy="228" r="4" fill="#005BBB"/>
+  <circle cx="358" cy="221" r="4.5" fill="#4F46E5"/>
+  <circle cx="390" cy="221" r="4.5" fill="#0D9488"/>
+  <rect x="420" y="212" width="96" height="7" rx="2" fill="#0D9488"/>
+  <rect x="420" y="223" width="64" height="7" rx="2" fill="#4F46E5"/>
+
+  <!-- Tool Pill D -->
+  <rect x="298" y="245" width="234" height="22" rx="4" fill="#EEF2FF" stroke="#C7D2FE" stroke-width="1.1"/>
+  <text x="415" y="260" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9" font-weight="700" fill="#4338CA">APSO · ChromEnhancer</text>
+
+  <text x="415" y="282" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="8.3" font-weight="600" fill="#334155">Adversarial particle swarm probing of</text>
+  <text x="415" y="296" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="8.1" fill="#64748B">sequence-free neural classifiers</text>
+</svg>

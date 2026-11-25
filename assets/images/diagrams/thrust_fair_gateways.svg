@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 320" width="560" height="320" role="img" aria-labelledby="fair-title fair-desc">
+  <title id="fair-title">Open-Science Gateways, Accessibility and HPC Education</title>
+  <desc id="fair-desc">Overview of (A) interoperable open-science genomics platforms (PEGR provenance LIMS, ScriptManager dual GUI/CLI analysis, and STENCIL interactive web portals) and (B) browser HPC and educational cloud gateways (ProteinStructure-OOD and EGC-jupyterhub).</desc>
+  <defs>
+    <clipPath id="fg1-head"><rect x="28" y="64" width="160" height="26" rx="7"/></clipPath>
+    <clipPath id="fg2-head"><rect x="200" y="64" width="160" height="26" rx="7"/></clipPath>
+    <clipPath id="fg3-head"><rect x="372" y="64" width="160" height="26" rx="7"/></clipPath>
+  </defs>
+
+  <!-- Outer Frame -->
+  <rect x="1" y="1" width="558" height="318" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+  <rect x="18" y="12" width="5" height="15" rx="2.5" fill="#005BBB"/>
+  <text x="30" y="24" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="10.8" font-weight="700" letter-spacing="0.3" fill="#005BBB">THRUST 04 · OPEN-SCIENCE GATEWAYS &amp; ACCESSIBILITY</text>
+  <line x1="18" y1="33" x2="542" y2="33" stroke="#E2E8F0" stroke-width="1"/>
+
+  <!-- ================================================= -->
+  <!-- PANEL A: Interoperable Open-Science Platforms     -->
+  <!-- ================================================= -->
+  <rect x="18" y="40" width="524" height="136" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+  <text x="28" y="55" font-family="system-ui, -apple-system, sans-serif" font-size="10.3" font-weight="700" fill="#0F172A">A. Interoperable Open-Science Genomics Platforms</text>
+
+  <!-- Platform 1: PEGR -->
+  <rect x="28" y="64" width="160" height="100" rx="7" fill="#FFFFFF" stroke="#93C5FD" stroke-width="1.3"/>
+  <g clip-path="url(#fg1-head)">
+    <rect x="28" y="64" width="160" height="26" fill="#EFF6FF"/>
+  </g>
+  <line x1="28" y1="90" x2="188" y2="90" stroke="#DBEAFE" stroke-width="1"/>
+  <text x="108" y="81" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="8.8" font-weight="700" fill="#005BBB">Provenance LIMS</text>
+  <text x="108" y="112" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11.5" font-weight="700" fill="#0F172A">PEGR</text>
+  <text x="108" y="132" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="8.4" font-weight="600" fill="#334155">Sample &amp; Antibody Tracking</text>
+  <text x="108" y="148" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="8.2" fill="#475569">Automated Seq Provenance</text>
+
+  <!-- Platform 2: ScriptManager -->
+  <rect x="200" y="64" width="160" height="100" rx="7" fill="#FFFFFF" stroke="#A5B4FC" stroke-width="1.3"/>
+  <g clip-path="url(#fg2-head)">
+    <rect x="200" y="64" width="160" height="26" fill="#EEF2FF"/>
+  </g>
+  <line x1="200" y1="90" x2="360" y2="90" stroke="#E0E7FF" stroke-width="1"/>
+  <text x="280" y="81" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="8.8" font-weight="700" fill="#4338CA">Dual GUI &amp; CLI</text>
+  <text x="280" y="112" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11" font-weight="700" fill="#0F172A">ScriptManager</text>
+  <text x="280" y="132" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="8.4" font-weight="600" fill="#334155">Point-and-Click + Batch CLI</text>
+  <text x="280" y="148" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="8.2" fill="#475569">1-bp Pileups, QC &amp; Figures</text>
+
+  <!-- Platform 3: STENCIL -->
+  <rect x="372" y="64" width="160" height="100" rx="7" fill="#FFFFFF" stroke="#5EEAD4" stroke-width="1.3"/>
+  <g clip-path="url(#fg3-head)">
+    <rect x="372" y="64" width="160" height="26" fill="#F0FDFA"/>
+  </g>
+  <line x1="372" y1="90" x2="532" y2="90" stroke="#CCFBF1" stroke-width="1"/>
+  <text x="452" y="81" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="8.8" font-weight="700" fill="#0F766E">Interactive Web Portals</text>
+  <text x="452" y="112" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11.5" font-weight="700" fill="#0F172A">STENCIL</text>
+  <text x="452" y="132" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="8.4" font-weight="600" fill="#334155">Templated Browser Portals</text>
+  <text x="452" y="148" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="8.2" fill="#475569">Interactive Atlas Sharing</text>
+
+  <!-- ================================================= -->
+  <!-- PANEL B: Browser HPC & Educational Cloud Gateways -->
+  <!-- ================================================= -->
+  <rect x="18" y="186" width="524" height="122" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+  <text x="28" y="202" font-family="system-ui, -apple-system, sans-serif" font-size="10.3" font-weight="700" fill="#0F172A">B. Browser HPC &amp; Educational Cloud Gateways</text>
+
+  <!-- Left Card: ProteinStructure-OOD -->
+  <rect x="28" y="212" width="246" height="84" rx="6" fill="#EEF2FF" stroke="#A5B4FC" stroke-width="1.2"/>
+  <text x="151" y="232" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10.2" font-weight="700" fill="#4338CA">ProteinStructure-OOD</text>
+  <text x="151" y="250" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="8.8" font-weight="700" fill="#0F172A">Open OnDemand Slurm Web App</text>
+  <text x="151" y="268" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="8.3" fill="#334155">Code-free browser submission for</text>
+  <text x="151" y="283" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="8.3" fill="#334155">AlphaFold2/3 &amp; GPU structure workflows</text>
+
+  <!-- Right Card: EGC-jupyterhub -->
+  <rect x="286" y="212" width="246" height="84" rx="6" fill="#F0FDFA" stroke="#5EEAD4" stroke-width="1.2"/>
+  <text x="409" y="232" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10.2" font-weight="700" fill="#0F766E">EGC-jupyterhub</text>
+  <text x="409" y="250" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="8.8" font-weight="700" fill="#0F172A">Cloud Classrooms &amp; K–12 Living Labs</text>
+  <text x="409" y="268" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="8.3" fill="#334155">Zero-cost federated JupyterHub + CILogon</text>
+  <text x="409" y="283" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="8.3" fill="#334155">scaling university &amp; K–12 AI/HPC education</text>
+</svg>

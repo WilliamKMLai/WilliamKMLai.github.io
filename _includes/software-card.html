@@ -1,0 +1,63 @@
+<article class="card software-card" id="tool-{{ include.tool.id }}" data-category="{{ include.tool.category }}">
+  <div class="software-card-header">
+    <div>
+      <h3 class="software-card-title">{{ include.tool.name }}</h3>
+      {% if include.tool.tagline %}
+        <p class="software-card-tagline">{{ include.tool.tagline }}</p>
+      {% endif %}
+    </div>
+    <span class="pill">{{ include.tool.category_label }}</span>
+  </div>
+
+  <p class="software-card-desc">{{ include.tool.description }}</p>
+
+  {% if include.tool.image and include.compact != true %}
+    <figure class="figure-frame software-thumb">
+      <img
+        src="{{ include.tool.image.src | relative_url }}"
+        alt="{{ include.tool.image.alt }}"
+        width="{{ include.tool.image.width }}"
+        height="{{ include.tool.image.height }}"
+        loading="lazy"
+        style="max-height: 190px; width: auto; max-width: 100%; height: auto; margin: 0 auto; display: block; object-fit: contain;"
+      />
+    </figure>
+  {% endif %}
+
+  {% if include.tool.tech_stack %}
+    <div class="software-tags" aria-label="Technology stack">
+      {% for tech in include.tool.tech_stack %}
+        <span class="tech-tag">{{ tech }}</span>
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  <div class="software-actions">
+    {% if include.tool.repo_url %}
+      <a class="btn btn-outline btn-sm" href="{{ include.tool.repo_url }}" target="_blank" rel="noopener">
+        GitHub ({{ include.tool.org }})
+      </a>
+    {% endif %}
+    {% if include.tool.alt_repo_url %}
+      <a class="btn btn-outline btn-sm" href="{{ include.tool.alt_repo_url }}" target="_blank" rel="noopener">
+        GitHub ({{ include.tool.alt_org }})
+      </a>
+    {% endif %}
+    {% if include.tool.docs_url %}
+      <a class="btn btn-outline btn-sm" href="{{ include.tool.docs_url }}" target="_blank" rel="noopener">
+        Docs
+      </a>
+    {% endif %}
+    {% if include.tool.paper_url %}
+      {% if include.tool.paper_url contains 'http' %}
+        <a class="btn btn-outline btn-sm" href="{{ include.tool.paper_url }}" target="_blank" rel="noopener" title="{{ include.tool.paper_label }}">
+          Paper
+        </a>
+      {% else %}
+        <a class="btn btn-outline btn-sm" href="{{ include.tool.paper_url | relative_url }}" title="{{ include.tool.paper_label }}">
+          Paper
+        </a>
+      {% endif %}
+    {% endif %}
+  </div>
+</article>

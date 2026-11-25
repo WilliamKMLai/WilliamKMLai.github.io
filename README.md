@@ -1,34 +1,32 @@
-# WilliamKMLai.github.io
-Lai Lab website at Cornell.
+# Lai Lab Website — University at Buffalo
 
-Page accessible at:
-https://williamkmlai.github.io/
+Official website for **The Lai Lab** (Principal Investigator: **William KM Lai, PhD**), Department of Biochemistry, Jacobs School of Medicine and Biomedical Sciences, **University at Buffalo (SUNY)**.
 
-From a web technology standpoint this is built using [jekyll](https://jekyllrb.com/). Even though there are other static site generators
-that can be deployed and hosted on GitHub, we chose [jekyll](https://jekyllrb.com/) as it is natively supported by GitHub, easy to learn,
-easy to integrate and configure DNS services, both GitHub and [jekyll](https://jekyllrb.com/) built using the same programming language
-[ruby](https://www.ruby-lang.org/en/) and also it is free to host among other things.
+Live site: [https://williamkmlai.github.io/](https://williamkmlai.github.io/)
 
-> Note: Even though it is based on ruby, we will not be writing any code in ruby.
+## Architecture & Data Files
 
-### Dependencies
+Built with [Jekyll](https://jekyllrb.com/) (`jekyll-sitemap`), modular SCSS (`_sass/`), and structured YAML data catalogs (`_data/`) for single-source maintenance:
 
-- Install jekyll [requirements](https://jekyllrb.com/docs/installation/).
-- Now install [jekyll](https://github.com/CEGRcode/cegrcode.github.io.git) itself.
+- `_config.yml` — Lab metadata, UB contact details, ORCID, Google Scholar, and GitHub organization links
+- `_data/navigation.yml` — Primary top-level navigation links
+- `_data/publications.yml` — Complete bibliography powering `publications.html`, `index.html`, `research.html`, and `software.html`
+- `_data/research_thrusts.yml` — Research thrusts, vector diagrams, and highlighted publications for `research.html`
+- `_data/software.yml` — Open-source tools, containers, and FAIR science gateways for `software.html` and `index.html`
+- `_layouts/default.html`, `_includes/`, `_sass/` — Accessible responsive layout, header/footer landmarks, and system-aware UB Blue light/dark theme
 
-> Note: This [step-by-step tutorial](https://jekyllrb.com/docs/step-by-step/01-setup/) covers all the basic concepts in building sites with jekyll. Highly recommend
-going though it on your local machine for fun. Takes about ~1hr.
+## Local Development
 
-### Local development
+1. Install Ruby and Bundler dependencies:
+   ```bash
+   bundle install
+   ```
+2. Build and preview locally:
+   ```bash
+   bundle exec jekyll serve
+   ```
+   Then open `http://localhost:4000/` in your browser.
 
-- Clone the repo from github.
-- Make your edits.
-- To view your changes type in the below command in your terminal from the root directory.
-  - `bundle exec jekyll serve`
-  - This should launch the website locally, usually at `http://localhost:4000/` you do not need MAMP, WAMP or any other platform for developement or production.
+## Deployment
 
-### Deployment
-
-- `git push` or `merging` into to the `main` branch of this repo will automatically build and deploy your changes to production. These changes should be visible
-within a few minutes depending on time taken by GitHub to process it.
-- `.gitignore` is setup to ignore all temporary files generated during local development. Feel free to add others if you need to.
+Pushes or merges to the `main` branch automatically build and publish to GitHub Pages at `https://williamkmlai.github.io/`.

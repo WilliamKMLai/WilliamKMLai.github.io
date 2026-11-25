@@ -1,0 +1,71 @@
+{% assign pub = include.pub %}
+<li class="pub-item{% if include.compact == true %} pub-item-compact{% endif %}" id="pub-{{ pub.id }}" data-year="{{ pub.year }}" data-type="{{ pub.type }}" data-role="{{ pub.lai_role }}" data-thrusts="{{ pub.thrusts | join: ',' }}" data-tools="{{ pub.tools | join: ',' }}">
+  {% if pub.url %}<a class="pub-title" href="{{ pub.url }}" target="_blank" rel="noopener">{{ pub.title }}</a>{% else %}<span class="pub-title">{{ pub.title }}</span>{% endif %}
+  <div class="pub-authors">{{ pub.authors_html }}</div>
+  <div class="pub-venue-line">
+    <span class="pub-venue-meta"><em class="pub-venue">{{ pub.venue }}</em>, <span class="pub-year">{{ pub.year }}</span>{% if pub.details %} &middot; <span class="pub-details">{{ pub.details }}</span>{% endif %}{% if pub.note %} <span class="pub-note">({{ pub.note }})</span>{% endif %}</span>
+    {% if pub.type == 'preprint' %}
+      <span class="badge badge-preprint">Preprint</span>
+    {% elsif pub.type == 'conference' %}
+      <span class="badge badge-conference">{{ pub.conference_tag | default: 'Conference' }}</span>
+    {% endif %}
+    {% if pub.award %}
+      <span class="badge badge-award">{{ pub.award }}</span>
+    {% endif %}
+    {% if pub.presentation_badge %}
+      <span class="badge badge-conference">{{ pub.presentation_badge }}</span>
+    {% endif %}
+    {% if pub.role_label %}
+      <span class="badge badge-role">{{ pub.role_label }}</span>
+    {% elsif pub.lai_role == 'first' %}
+      <span class="badge badge-role">First Author</span>
+    {% elsif pub.lai_role == 'co-first' %}
+      <span class="badge badge-role">Co-First Author</span>
+    {% elsif pub.lai_role == 'co-senior' %}
+      <span class="badge badge-role">Co-Senior Author</span>
+    {% elsif pub.lai_role == 'senior' %}
+      <span class="badge badge-role">Corresponding Author</span>
+    {% endif %}
+  </div>
+  {% assign has_badges = false %}
+  {% if pub.doi or pub.pmid or pub.pmcid or pub.arxiv or pub.code_url or pub.alt_code_url %}
+    {% assign has_badges = true %}
+  {% elsif include.compact != true and pub.bibtex %}
+    {% assign has_badges = true %}
+  {% endif %}
+  {% if has_badges %}
+  <div class="pub-badges">
+    {% if pub.doi %}
+      <a class="badge badge-link" href="https://doi.org/{{ pub.doi }}" target="_blank" rel="noopener">DOI</a>
+    {% endif %}
+    {% if pub.pmid %}
+      <a class="badge badge-link" href="https://pubmed.ncbi.nlm.nih.gov/{{ pub.pmid }}/" target="_blank" rel="noopener">PubMed</a>
+    {% endif %}
+    {% if pub.pmcid %}
+      <a class="badge badge-link" href="https://pmc.ncbi.nlm.nih.gov/articles/{{ pub.pmcid }}/" target="_blank" rel="noopener">PMC</a>
+    {% endif %}
+    {% if pub.arxiv %}
+      <a class="badge badge-link" href="https://arxiv.org/abs/{{ pub.arxiv }}" target="_blank" rel="noopener">arXiv</a>
+    {% endif %}
+    {% if pub.code_url %}
+      <a class="badge badge-link" href="{{ pub.code_url }}" target="_blank" rel="noopener">{{ pub.code_label | default: 'Code' }}</a>
+    {% endif %}
+    {% if pub.alt_code_url %}
+      <a class="badge badge-link" href="{{ pub.alt_code_url }}" target="_blank" rel="noopener">{{ pub.alt_code_label | default: 'Code (Mirror)' }}</a>
+    {% endif %}
+    {% unless include.compact == true %}
+      {% if pub.bibtex %}
+        <button type="button" class="badge badge-link bibtex-toggle" aria-expanded="false" aria-controls="bibtex-{{ pub.id }}">BibTeX</button>
+      {% endif %}
+    {% endunless %}
+  </div>
+  {% endif %}
+  {% unless include.compact == true %}
+    {% if pub.bibtex %}
+      <div class="bibtex-drawer" id="bibtex-{{ pub.id }}" hidden>
+        <pre><code>{{ pub.bibtex | strip | escape }}</code></pre>
+        <button type="button" class="btn btn-sm bibtex-copy-btn">Copy BibTeX</button>
+      </div>
+    {% endif %}
+  {% endunless %}
+</li>

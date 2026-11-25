@@ -1,0 +1,154 @@
+# Structured 4-thrust research directions for The Lai Lab (University at Buffalo)
+# Thrust IDs match _data/publications.yml single-thrust values:
+#   chromatin | bioinformatics | structural-ai | fair-gateways
+
+- id: chromatin
+  number: "01"
+  short_title: "Assays & Reference Atlases"
+  title: "High-Resolution Epigenomic Assays & Reference Atlases"
+  subtitle: "Mapping transcription factor footprints, nucleosome phasing, pre-initiation complex assembly, and single-cell stress states from nucleotide to genome-wide scale"
+  paragraphs:
+    - "Conventional chromatin immunoprecipitation obscures multi-protein regulatory architecture behind ~200-bp sonication fragments. We develop and apply single-base-pair exonuclease and endonuclease assays including ChIP-exo (v6), WhIP-exo, Benzonase-seq, PB-exo, and MNase-ChIP-seq to resolve strand-specific protein–DNA borders, map ~10-bp rotational and translational nucleosome phasing relative to human transcription factors, and dissect pre-initiation complex (PIC) assembly at natural promoters alongside multi-modal in situ single-cell stress profiling on AVITI24."
+    - "By engineering streamlined, cost-effective wet-bench protocols, we deploy high-resolution footprinting at scale to build foundational community reference atlases, including the near-complete >400-protein Saccharomyces cerevisiae promoter architecture atlas (Yeast Epigenome Project) and the NIH Common Fund ChIP-exo validation screen of 887 human transcription factor monoclonal antibodies."
+  assays_or_methods:
+    - "ChIP-exo v6"
+    - "WhIP-exo"
+    - "Benzonase-seq"
+    - "PB-exo"
+    - "PIP-seq"
+    - "MNase-ChIP-seq"
+    - "AVITI24"
+  related_tools: []
+  diagram:
+    src: "/assets/images/diagrams/thrust_chromatin.svg"
+    width: 560
+    height: 320
+    alt: "Schematic showing (A) single-base-pair ChIP-exo, WhIP-exo, and PB-exo borders versus conventional 200-bp ChIP-seq peaks, (B) Benzonase-seq rotational and translational nucleosome-TF phasing, and (C) AVITI24 multi-modal in situ single-cell profiling"
+    caption: "Experimental resolution spanning ±1-bp exonuclease borders (ChIP-exo v6, WhIP-exo, PB-exo), helical rotational and translational nucleosome–TF phasing (Benzonase-seq), and multi-modal in situ single-cell profiling of RNA, protein, and morphology (AVITI24)."
+  highlight_pub_ids:
+    - "chen-2026-pic-molcell"
+    - "lang-2026-aviti24"
+    - "chen-2026-molcell"
+    - "mittal-2022-gad"
+    - "lai-2021-pcrp"
+    - "rossi-2021-yep"
+
+- id: bioinformatics
+  number: "02"
+  short_title: "Bioinformatic Algorithms"
+  title: "Bioinformatic Algorithm Development"
+  subtitle: "Statistical, alignment, provenance, motif-consolidation, causal network, and interpretable machine learning methods for high-resolution regulatory genomics"
+  paragraphs:
+    - "Resolving biological mechanism from nucleotide-resolution footprinting and large-scale epigenomic datasets requires specialized statistical and signal-processing methods. Our algorithmic work addresses core analytical problems across regulatory genomics: coordinate-free chromatin profile alignment and locus signal extraction (ArchAlign, ArchTEx), probabilistic mixture modeling of direct versus indirect ChIP-exo binding subtypes (ChExMix), clustered consolidation of redundant sequence motifs into canonical archetypes (GenoCLAMP), and sequencing-read genotype verification to safeguard strain and cell-line provenance (GenoPipe)."
+    - "To move beyond correlative co-occupancy and black-box sequence models, we also develop causal network and post-hoc explainability frameworks. SETIA integrates physical factor binding, perturbation transcriptomics, and nascent RNA kinetics to infer directed gene regulatory networks, while Adversarial Particle Swarm Optimization (APSO) and ChromEnhancer probe sequence-free neural chromatin classifiers to identify positive and negative predictive chromatin features without holdout data."
+  assays_or_methods:
+    - "Coordinate-Free Alignment"
+    - "ChIP-exo Subtype Modeling"
+    - "Motif Consolidation"
+    - "Genotype-of-Origin QC"
+    - "Causal GRN Inference"
+    - "Sequence-Free Chromatin XAI"
+  related_tools:
+    - name: "GenoCLAMP"
+      id: "genoclamp"
+    - name: "SETIA"
+      id: "setia"
+    - name: "ChromEnhancer"
+      id: "chromenhancer"
+    - name: "APSO"
+      id: "apso"
+    - name: "GenoPipe"
+      id: "genopipe"
+    - name: "ChExMix"
+      id: "chexmix"
+    - name: "ArchAlign"
+      id: "archalign"
+    - name: "ArchTEx"
+      id: "archtex"
+  diagram:
+    src: "/assets/images/diagrams/thrust_xai_grn.svg"
+    width: 560
+    height: 320
+    alt: "Four-panel overview of bioinformatic algorithms: (A) Chromatin Alignment and Subtypes (ArchAlign, ArchTEx, ChExMix, GenoCLAMP), (B) Dataset Genotype Verification (GenoPipe), (C) Causal Regulatory Network Inference (SETIA), and (D) Explainable Chromatin Modeling (APSO, ChromEnhancer)"
+    caption: "Core algorithmic capabilities across chromatin alignment, binding-subtype deconvolution, and motif consolidation (ArchAlign, ArchTEx, ChExMix, GenoCLAMP), sequencing genotype verification (GenoPipe), causal GRN inference (SETIA), and sequence-free chromatin interpretability (APSO, ChromEnhancer)."
+  highlight_pub_ids:
+    - "cha-2026-genoclamp"
+    - "li-2026-setia"
+    - "gafur-2025-chromenhancer"
+    - "lang-2023-genopipe"
+    - "yamada-2019-chexmix"
+    - "lai-2010-archalign"
+
+- id: structural-ai
+  number: "03"
+  short_title: "Biomolecular Diffusion AI"
+  title: "Generative Diffusion Distillation & Biomolecular Modeling"
+  subtitle: "Compressing all-atom biomolecular diffusion trajectories to 8–16 steps and scaling containerized structure prediction across heterogeneous supercomputers"
+  paragraphs:
+    - "All-atom diffusion models such as AlphaFold3 and Boltz-2 achieve high accuracy on protein–nucleic acid and ligand complexes, but their ~200-step iterative denoising trajectories bottleneck proteome-scale complex screening. We formulate Multistep Stable Continuous-Time Consistency Distillation (MS-sCD) and apply it in Blitz to distill AlphaFold3 and Boltz-2 diffusion modules down to 8–16 inference steps—yielding a ~12–25× diffusion speedup while preserving atomic interface fidelity."
+    - "To execute generative complex prediction and de novo binder design across high-throughput computing (HTC) clusters, we engineer OmniFold and ProteinDesign-Containers. Rootless Apptainer/Singularity images unify AlphaFold3, Boltz-2, Chai-1, and RFdiffusion across x86_64 and ARM64 (NVIDIA Grace Hopper GH200) nodes while decoupling CPU-bound MSA and template search from asynchronous GPU diffusion inference."
+  assays_or_methods:
+    - "Consistency Distillation"
+    - "AlphaFold3 & Boltz-2 Acceleration"
+    - "Chai-1 & RFdiffusion"
+    - "Decoupled CPU/GPU HTC"
+    - "x86_64 & ARM64 GH200 Containers"
+  related_tools:
+    - name: "Blitz"
+      id: "blitz"
+    - name: "MS-sCD"
+      id: "ms-scd"
+    - name: "OmniFold"
+      id: "omnifold"
+    - name: "ProteinDesign-Containers"
+      id: "proteindesign-containers"
+  diagram:
+    src: "/assets/images/diagrams/thrust_structural_ai.svg"
+    width: 560
+    height: 320
+    alt: "Schematic showing (A) MS-sCD and Blitz continuous-time consistency distillation compressing 200-step AlphaFold3 and Boltz-2 diffusion down to 8 to 16 steps for a 12 to 25x speedup with preserved complex accuracy, and (B) OmniFold and ProteinDesign-Containers decoupled CPU/GPU infrastructure"
+    caption: "MS-sCD and Blitz compress ~200-step biomolecular diffusion trajectories to 8–16 consistency jumps (~12–25× faster with preserved complex accuracy), paired with OmniFold and ProteinDesign-Containers for decoupled CPU/GPU execution across x86_64 and ARM64 clusters."
+  highlight_pub_ids:
+    - "mathew-2026-blitz"
+    - "mathew-2026-ms-scd"
+    - "mathew-2025-omnifold"
+
+- id: fair-gateways
+  number: "04"
+  short_title: "Open-Science Gateways"
+  title: "Open-Science Gateways, Accessibility & HPC Education"
+  subtitle: "Lowering computational barriers through FAIR open-science platforms, interactive web portals, Open OnDemand apps, and living-lab cloud classrooms"
+  paragraphs:
+    - "Computational genomics and structural modeling achieve broader scientific reach when experimentalists and trainees can execute reproducible analyses without command-line or cluster-administration barriers. Anchored by FAIR open-science principles, we develop interoperable platforms spanning laboratory and sequencing metadata provenance (PEGR), dual graphical and batch command-line base-pair genomics analysis (ScriptManager), and templated interactive web portals for community dataset exploration (STENCIL)."
+    - "In parallel, we build browser-accessible high-performance computing and educational cloud gateways that democratize GPU and cluster resources. ProteinStructure-OOD provides code-free AlphaFold2/3 job submission on Slurm clusters via Open OnDemand, while EGC-jupyterhub pairs federated JupyterHub instances with CILogon single sign-on to support zero-cost computational biology instruction across university courses and K–12 living labs."
+  assays_or_methods:
+    - "FAIR Open-Science Platforms"
+    - "Dual GUI & CLI Analysis"
+    - "Provenance LIMS (PEGR)"
+    - "Interactive Web Portals"
+    - "Open OnDemand Slurm Apps"
+    - "University & K–12 Cloud Classrooms"
+  related_tools:
+    - name: "ScriptManager"
+      id: "scriptmanager"
+    - name: "PEGR"
+      id: "pegr"
+    - name: "STENCIL"
+      id: "stencil"
+    - name: "ProteinStructure-OOD"
+      id: "proteinstructure-ood"
+    - name: "EGC-jupyterhub"
+      id: "egc-jupyterhub"
+  diagram:
+    src: "/assets/images/diagrams/thrust_fair_gateways.svg"
+    width: 560
+    height: 320
+    alt: "Overview of (A) interoperable open-science genomics platforms (PEGR, ScriptManager, STENCIL) and (B) browser HPC and educational cloud gateways (ProteinStructure-OOD and EGC-jupyterhub)"
+    caption: "Interoperable open-science genomics platforms for sample provenance (PEGR), dual GUI/CLI analysis (ScriptManager), and web visualization (STENCIL), alongside browser HPC and educational cloud gateways (ProteinStructure-OOD and EGC-jupyterhub)."
+  highlight_pub_ids:
+    - "sc26-2026-bphte"
+    - "lang-2026-scriptmanager"
+    - "mathew-2025-good25"
+    - "lang-2022-scriptmanager"
+    - "shao-2022-pegr"
+    - "sun-2022-stencil"

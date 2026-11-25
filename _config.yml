@@ -1,6 +1,20 @@
-collections:
-  authors:
-    output: true
+title: "Lai Lab"
+tagline: "University at Buffalo · Department of Biochemistry"
+description: "Research laboratory of William K. M. Lai, PhD — Assistant Professor of Biochemistry, Jacobs School of Medicine and Biomedical Sciences, University at Buffalo (SUNY). Chromatin architecture, single-cell multi-omics, explainable & generative structural AI, and FAIR genomics infrastructure."
+url: "https://williamkmlai.github.io"
+baseurl: ""
+
+# Contact & Academic Profiles
+email: "wklai2@buffalo.edu"
+phone: "(716) 829-2317"
+office: "Room 4227, Jacobs School of Medicine and Biomedical Sciences, 955 Main Street, Buffalo, NY 14203"
+ub_profile: "https://medicine.buffalo.edu/faculty/profile.html?u=wklai2"
+orcid: "0000-0003-4351-7037"
+google_scholar: "C2H1VzEAAAAJ"
+
+# GitHub Namespaces
+github_org: "https://github.com/EpiGenomicsCode"
+github_cegr: "https://github.com/CEGRcode"
 
 defaults:
   - scope:
@@ -13,7 +27,3 @@ include:
 
 plugins:
   - jekyll-sitemap
-
-# Custom vars
-github: https://github.com/EpiGenomicsCode
-twitter: https://twitter.com/WilliamKMLai

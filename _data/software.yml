@@ -1,0 +1,300 @@
+# Complete catalog of open-source software, containers, and science gateways
+# Categories: epigenomics | ai-structure | gateways
+
+- id: scriptmanager
+  name: ScriptManager
+  category: epigenomics
+  category_label: "Epigenomics & GRNs"
+  tagline: "Interactive GUI & CLI platform for reproducible base-pair genomics analysis"
+  description: "Java-based graphical and command-line analysis suite providing standardized BAM/BED/FASTA manipulation, base-pair ChIP-exo and Benzonase-seq read pileups, nucleosome phasing metrics, and publication-ready heatmaps without requiring command-line expertise."
+  org: CEGRcode
+  repo_url: "https://github.com/CEGRcode/scriptmanager"
+  docs_url: "https://pughlab.mbg.cornell.edu/scriptmanager-docs"
+  paper_url: "https://doi.org/10.64898/2026.06.14.732163"
+  paper_label: "Lang et al., BMC Bioinformatics 2026 (In Press)"
+  tech_stack:
+    - Java
+    - CLI / Swing GUI
+    - ChIP-exo
+    - FAIR Workflows
+  featured: true
+
+- id: genoclamp
+  name: GenoCLAMP
+  category: epigenomics
+  category_label: "Epigenomics & GRNs"
+  tagline: "Genomic Clustered Alignment of Motif Profiles at atlas scale"
+  description: "Consolidates redundant position weight matrices and de novo sequence motifs discovered across hundreds of ChIP-exo and functional genomics datasets into non-redundant, biologically interpretable transcription factor motif families."
+  org: CEGRcode
+  repo_url: "https://github.com/CEGRcode/GenoCLAMP"
+  paper_url: "https://doi.org/10.1186/s13059-026-04283-9"
+  paper_label: "Cha et al., Genome Biology 2026"
+  tech_stack:
+    - Python
+    - Motif Consolidation
+    - ChIP-exo Atlases
+  featured: true
+
+- id: genopipe
+  name: GenoPipe
+  category: epigenomics
+  category_label: "Epigenomics & GRNs"
+  tagline: "Automated genotype-of-origin verification for (epi)genomic datasets"
+  description: "Detects sample swaps, cross-contamination, strain backgrounds, and epitope-tag/knockout genotypes directly from raw FASTQ/BAM ChIP-seq, ChIP-exo, ATAC-seq, and RNA-seq reads to safeguard experimental rigor."
+  org: EpiGenomicsCode
+  repo_url: "https://github.com/EpiGenomicsCode/GenoPipe"
+  docs_url: "https://pughlab.mbg.cornell.edu/GenoPipe-docs"
+  paper_url: "https://doi.org/10.1093/nar/gkad950"
+  paper_label: "Lang et al., NAR 2023"
+  tech_stack:
+    - Python
+    - Perl / Bash
+    - Provenance QC
+    - NGS Rigor
+  featured: true
+
+- id: setia
+  name: SETIA
+  category: epigenomics
+  category_label: "Epigenomics & GRNs"
+  tagline: "Unified causal gene regulatory network inference from orthogonal evidence"
+  description: "Integrates direct physical transcription factor occupancy, chromatin architecture, and perturbation transcriptomics to infer directed, causal gene regulatory networks grounded in orthogonal molecular measurements."
+  org: CEGRcode
+  repo_url: "https://github.com/CEGRcode/2024_Li_GRN_inference"
+  paper_url: "https://doi.org/10.64898/2026.04.28.721354"
+  paper_label: "Li et al., bioRxiv 2026"
+  tech_stack:
+    - Causal Inference
+    - Gene Regulatory Networks
+    - Multi-Omics
+  featured: false
+
+- id: chexmix
+  name: ChExMix
+  category: epigenomics
+  category_label: "Epigenomics & GRNs"
+  tagline: "Probabilistic mixture modeling of protein-DNA binding subtypes in ChIP-exo"
+  description: "Deconvolves distinct sequence-specific direct DNA binding events from indirect tether/cofactor interactions within high-resolution ChIP-exo footprints using strand-specific exonuclease tag distributions and motif discovery."
+  org: EpiGenomicsCode
+  repo_url: "https://github.com/EpiGenomicsCode/EGC-chexmix"
+  alt_org: seqcode
+  alt_repo_url: "https://github.com/seqcode/chexmix"
+  paper_url: "https://doi.org/10.1093/bioinformatics/bty703"
+  paper_label: "Yamada et al., Bioinformatics 2019"
+  tech_stack:
+    - Java
+    - Mixture Modeling
+    - ChIP-exo Subtypes
+  featured: false
+
+- id: archalign
+  name: ArchAlign
+  category: epigenomics
+  category_label: "Epigenomics & GRNs"
+  tagline: "Coordinate-free alignment of high-resolution chromatin profiles"
+  description: "Discovers shared nucleosome and chromatin remodeling architectures across unaligned genomic loci without requiring an a priori sequence landmark such as a transcription start site or motif."
+  org: WilliamKMLai
+  repo_url: "https://github.com/WilliamKMLai/ArchAlign"
+  paper_url: "https://doi.org/10.1186/gb-2010-11-12-r126"
+  paper_label: "Lai & Buck, Genome Biology 2010"
+  tech_stack:
+    - Java / C
+    - Chromatin Alignment
+    - Nucleosome Positioning
+  featured: false
+
+- id: archtex
+  name: ArchTEx
+  category: epigenomics
+  category_label: "Epigenomics & GRNs"
+  tagline: "Accurate extraction and locus-level visualization of NGS chromatin data"
+  description: "Extracts, normalizes, and visualizes cross-platform MNase-seq and ChIP-seq chromatin occupancy profiles at single-base resolution across user-defined genomic windows."
+  org: WilliamKMLai
+  repo_url: "https://github.com/WilliamKMLai/ArchTEx"
+  paper_url: "https://doi.org/10.1093/bioinformatics/bts063"
+  paper_label: "Lai et al., Bioinformatics 2012"
+  tech_stack:
+    - Java
+    - NGS Visualization
+    - Signal Extraction
+  featured: false
+
+- id: blitz
+  name: Blitz
+  category: ai-structure
+  category_label: "XAI & Structural AI"
+  tagline: "Few-step consistency distillation accelerating AlphaFold3 & Boltz-2 diffusion"
+  description: "Compresses the ~200-step generative diffusion modules of AlphaFold3 and Boltz-2 down to 8–16 inference steps via continuous-time consistency distillation, preserving atomic biomolecular complex accuracy at a fraction of GPU cost."
+  org: EpiGenomicsCode
+  repo_url: "https://github.com/EpiGenomicsCode/Blitz"
+  paper_url: "https://arxiv.org/abs/2610.23703"
+  paper_label: "Mathew et al., arXiv 2026"
+  tech_stack:
+    - PyTorch
+    - Diffusion Distillation
+    - AlphaFold3 / Boltz-2
+  featured: true
+
+- id: ms-scd
+  name: MS-sCD
+  category: ai-structure
+  category_label: "XAI & Structural AI"
+  tagline: "Multistep Stable Continuous-Time Consistency Distillation"
+  description: "Empirical analysis and multistep formulation stabilizing continuous-time consistency distillation across high-dimensional generative diffusion trajectories (awarded TMLR Reproducibility Certification; presented at NeurIPS 2026)."
+  org: EpiGenomicsCode
+  repo_url: "https://github.com/EpiGenomicsCode/edm2_sCM"
+  paper_url: "https://arxiv.org/abs/2610.34704"
+  paper_label: "Mathew et al., TMLR / NeurIPS 2026"
+  tech_stack:
+    - PyTorch
+    - Consistency Models
+    - Generative AI
+  featured: false
+
+- id: omnifold
+  name: OmniFold
+  category: ai-structure
+  category_label: "XAI & Structural AI"
+  tagline: "High-throughput biomolecular structure prediction & design orchestration"
+  description: "Decouples CPU-bound multiple sequence alignment and template search stages from GPU-bound structure inference and design to maximize throughput across heterogeneous HPC and high-throughput computing (HTC) clusters."
+  org: EpiGenomicsCode
+  repo_url: "https://github.com/EpiGenomicsCode/OmniFold"
+  paper_url: "https://doi.org/10.1101/2025.07.18.665594"
+  paper_label: "Mathew et al., bioRxiv 2025"
+  tech_stack:
+    - Python
+    - Apptainer / Singularity
+    - Slurm / HTCondor
+  featured: true
+
+- id: proteindesign-containers
+  name: ProteinDesign-Containers
+  category: ai-structure
+  category_label: "XAI & Structural AI"
+  tagline: "Portable Singularity/Apptainer definitions for AF3, Boltz-2, Chai-1 & RFdiffusion"
+  description: "Reproducible, rootless container recipes unifying AlphaFold 3, Boltz-2, Chai-1, and RFdiffusion with pinned CUDA/cuDNN dependencies for turnkey deployment across academic supercomputing centers."
+  org: EpiGenomicsCode
+  repo_url: "https://github.com/EpiGenomicsCode/ProteinDesign-Containers"
+  paper_url: "https://doi.org/10.1101/2025.07.18.665594"
+  paper_label: "Mathew et al., bioRxiv 2025"
+  tech_stack:
+    - Singularity / Apptainer
+    - AlphaFold 3
+    - Boltz-2 & Chai-1
+    - RFdiffusion
+  image:
+    src: "/assets/images/250703_ProteinStruct_Container.png"
+    alt: "Singularity container architecture unifying AlphaFold 3, Boltz-2, Chai-1, and RFdiffusion across CPU and GPU stages"
+    width: 1525
+    height: 850
+  featured: false
+
+- id: chromenhancer
+  name: ChromEnhancer
+  category: ai-structure
+  category_label: "XAI & Structural AI"
+  tagline: "Explainable sequence-free enhancer modeling from chromatin architecture"
+  description: "Deep neural framework and adversarial probing pipeline that predicts active transcriptional enhancers strictly from high-resolution chromatin organization and extracts interpretable histone/nucleosome signatures."
+  org: EpiGenomicsCode
+  repo_url: "https://github.com/EpiGenomicsCode/ChromEnhancer"
+  paper_url: "https://doi.org/10.1093/bioinformatics/btaf371"
+  paper_label: "Gafur et al., Bioinformatics 2025"
+  tech_stack:
+    - PyTorch
+    - Explainable AI
+    - Enhancer Chromatin
+  featured: false
+
+- id: apso
+  name: "APSO / Adversarial_Observation"
+  category: ai-structure
+  category_label: "XAI & Structural AI"
+  tagline: "Adversarial Particle Swarm Optimization for ML robustness & interpretability"
+  description: "Gradient-free particle swarm framework that probes machine learning decision boundaries to audit adversarial vulnerability and identify minimal feature perturbations driving biological predictions."
+  org: EpiGenomicsCode
+  repo_url: "https://github.com/EpiGenomicsCode/Adversarial_Observation"
+  paper_url: "https://doi.org/10.1145/3626203.3670522"
+  paper_label: "Gafur et al., PEARC '24"
+  tech_stack:
+    - Python
+    - Particle Swarm XAI
+    - Adversarial Robustness
+  image:
+    src: "/assets/images/APSO_cartoon.png"
+    alt: "Schematic of Adversarial Particle Swarm Optimization exploring input feature space to probe neural decision boundaries"
+    width: 1914
+    height: 829
+  featured: false
+
+- id: pegr
+  name: PEGR
+  category: gateways
+  category_label: "Gateways & HPC"
+  tagline: "Platform for Epigenomic and Genomic Research LIMS & workflow tracking"
+  description: "End-to-end laboratory information management and bioinformatics provenance platform capturing wet-bench reagent lots, antibodies, sample metadata, sequencing runs, and automated Galaxy/NGS pipeline outputs in real time."
+  org: seqcode
+  repo_url: "https://github.com/seqcode/pegr"
+  paper_url: "https://doi.org/10.1186/s13059-022-02671-5"
+  paper_label: "Shao et al., Genome Biology 2022"
+  tech_stack:
+    - Grails / Groovy
+    - Galaxy API
+    - Wet-Bench LIMS
+    - Provenance
+  featured: true
+
+- id: stencil
+  name: STENCIL
+  category: gateways
+  category_label: "Gateways & HPC"
+  tagline: "Web templating engine for interactive visualization & sharing of genomics atlases"
+  description: "Config-driven React and REST web portal engine that transforms high-dimensional Galaxy and NGS pipeline outputs into interactive, shareable browser atlases for experimental collaborators."
+  org: CEGRcode
+  repo_url: "https://github.com/CEGRcode/stencil"
+  paper_url: "https://doi.org/10.1371/journal.pcbi.1009859"
+  paper_label: "Sun et al., PLOS Comput Biol 2022"
+  tech_stack:
+    - React / Node.js
+    - MongoDB
+    - Interactive Atlases
+    - FAIR Data Sharing
+  featured: false
+
+- id: proteinstructure-ood
+  name: ProteinStructure-OOD
+  category: gateways
+  category_label: "Gateways & HPC"
+  tagline: "Open OnDemand web gateway for code-free AlphaFold2/3 & structure prediction"
+  description: "Turnkey Open OnDemand Batch Connect application enabling wet-bench biologists to launch GPU-accelerated AlphaFold2 and AlphaFold3 jobs on Slurm HPC clusters through an intuitive browser form (presented at GOOD25, Harvard)."
+  org: EpiGenomicsCode
+  repo_url: "https://github.com/EpiGenomicsCode/ProteinStructure-OOD"
+  paper_url: "/publications.html#pub-mathew-2025-good25"
+  paper_label: "GOOD25 Conference, 2025"
+  tech_stack:
+    - Open OnDemand
+    - Ruby / ERB
+    - Slurm HPC
+    - AlphaFold2/3
+  image:
+    src: "/assets/images/AlphaFold_OOD.png"
+    alt: "Open OnDemand web form interface for configuring and launching AlphaFold protein structure prediction jobs on HPC clusters"
+    width: 636
+    height: 1310
+  featured: false
+
+- id: egc-jupyterhub
+  name: EGC-jupyterhub
+  category: gateways
+  category_label: "Gateways & HPC"
+  tagline: "Federated cloud classroom gateway for university courses & K–12 living labs"
+  description: "Zero-cost educational science gateway combining The Littlest JupyterHub (TLJH), NSF ACCESS Jetstream2 cloud instances, and NCSA CILogon institutional SSO—deployed across 200+-student university computational biology courses and K–12 HPC/AI living labs (presented at the SC26 BPHTE Workshop)."
+  org: EpiGenomicsCode
+  repo_url: "https://github.com/EpiGenomicsCode/EGC-jupyterhub"
+  paper_url: "/publications.html#pub-sc26-2026-bphte"
+  paper_label: "SC26 BPHTE Workshop, 2026"
+  tech_stack:
+    - JupyterHub (TLJH)
+    - NSF Jetstream2
+    - CILogon SSO
+    - University & K–12 Living Labs
+  featured: false

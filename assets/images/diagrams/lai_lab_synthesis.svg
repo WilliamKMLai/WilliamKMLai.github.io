@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 310" width="960" height="310" role="img" aria-labelledby="synthesis-title synthesis-desc">
+  <title id="synthesis-title">The Lai Lab Four-Thrust Research Overview</title>
+  <desc id="synthesis-desc">Overview of the four research thrusts in The Lai Lab: (01) High-Resolution Epigenomic Assays, (02) Bioinformatic Algorithm Development, (03) Biomolecular Diffusion and Modeling, and (04) Open-Science Gateways and Accessibility.</desc>
+  <defs>
+    <clipPath id="t1-head"><rect x="20" y="48" width="448" height="34" rx="9"/></clipPath>
+    <clipPath id="t2-head"><rect x="492" y="48" width="448" height="34" rx="9"/></clipPath>
+    <clipPath id="t3-head"><rect x="20" y="180" width="448" height="34" rx="9"/></clipPath>
+    <clipPath id="t4-head"><rect x="492" y="180" width="448" height="34" rx="9"/></clipPath>
+  </defs>
+
+  <!-- Outer Canvas -->
+  <rect x="1" y="1" width="958" height="308" rx="12" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+
+  <!-- Header Strip -->
+  <rect x="20" y="13" width="6" height="17" rx="3" fill="#005BBB"/>
+  <text x="34" y="26" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="700" letter-spacing="0.5" fill="#005BBB">THE LAI LAB · FOUR-THRUST RESEARCH OVERVIEW</text>
+  <text x="940" y="26" text-anchor="end" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500" fill="#475569">University at Buffalo · Department of Biochemistry</text>
+  <line x1="20" y1="38" x2="940" y2="38" stroke="#E2E8F0" stroke-width="1"/>
+
+  <!-- ================================================= -->
+  <!-- THRUST 01 (Top-Left: x=20..468, y=48..162)        -->
+  <!-- ================================================= -->
+  <rect x="20" y="48" width="448" height="114" rx="9" fill="#FFFFFF" stroke="#93C5FD" stroke-width="1.5"/>
+  <g clip-path="url(#t1-head)">
+    <rect x="20" y="48" width="448" height="34" fill="#EFF6FF"/>
+    <rect x="20" y="48" width="448" height="3.5" fill="#005BBB"/>
+  </g>
+  <line x1="20" y1="82" x2="468" y2="82" stroke="#DBEAFE" stroke-width="1"/>
+  <rect x="32" y="57" width="28" height="18" rx="9" fill="#005BBB"/>
+  <text x="46" y="69" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" font-weight="700" fill="#FFFFFF">01</text>
+  <text x="68" y="70" font-family="system-ui, -apple-system, sans-serif" font-size="11.8" font-weight="700" fill="#0F172A">High-Resolution Epigenomic Assays</text>
+
+  <!-- Thrust 01 Pills Row 1 (x: 32..456, width 424) -->
+  <rect x="32" y="92" width="134" height="25" rx="5" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1"/>
+  <text x="99" y="108" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" font-weight="600" fill="#005BBB">ChIP-exo v6</text>
+
+  <rect x="174" y="92" width="122" height="25" rx="5" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1"/>
+  <text x="235" y="108" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" font-weight="600" fill="#005BBB">WhIP-exo</text>
+
+  <rect x="304" y="92" width="152" height="25" rx="5" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1"/>
+  <text x="380" y="108" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" font-weight="600" fill="#005BBB">Benzonase-seq</text>
+
+  <!-- Thrust 01 Pills Row 2 -->
+  <rect x="32" y="125" width="82" height="25" rx="5" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="73" y="141" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" font-weight="600" fill="#1E293B">PB-exo</text>
+
+  <rect x="122" y="125" width="86" height="25" rx="5" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="165" y="141" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" font-weight="600" fill="#1E293B">PIP-seq</text>
+
+  <rect x="216" y="125" width="136" height="25" rx="5" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="284" y="141" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" font-weight="600" fill="#1E293B">MNase-ChIP-seq</text>
+
+  <rect x="360" y="125" width="96" height="25" rx="5" fill="#F0FDFA" stroke="#99F6E4" stroke-width="1"/>
+  <text x="408" y="141" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" font-weight="600" fill="#0F766E">AVITI24</text>
+
+  <!-- ================================================= -->
+  <!-- THRUST 02 (Top-Right: x=492..940, y=48..162)      -->
+  <!-- ================================================= -->
+  <rect x="492" y="48" width="448" height="114" rx="9" fill="#FFFFFF" stroke="#A5B4FC" stroke-width="1.5"/>
+  <g clip-path="url(#t2-head)">
+    <rect x="492" y="48" width="448" height="34" fill="#EEF2FF"/>
+    <rect x="492" y="48" width="448" height="3.5" fill="#4F46E5"/>
+  </g>
+  <line x1="492" y1="82" x2="940" y2="82" stroke="#E0E7FF" stroke-width="1"/>
+  <rect x="504" y="57" width="28" height="18" rx="9" fill="#4F46E5"/>
+  <text x="518" y="69" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" font-weight="700" fill="#FFFFFF">02</text>
+  <text x="540" y="70" font-family="system-ui, -apple-system, sans-serif" font-size="11.8" font-weight="700" fill="#0F172A">Bioinformatic Algorithm Development</text>
+
+  <!-- Thrust 02 Pills Row 1 (x: 504..928, width 424) -->
+  <rect x="504" y="92" width="98" height="25" rx="5" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="553" y="108" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" font-weight="600" fill="#1E293B">ArchAlign</text>
+
+  <rect x="610" y="92" width="92" height="25" rx="5" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="656" y="108" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" font-weight="600" fill="#1E293B">ChExMix</text>
+
+  <rect x="710" y="92" width="98" height="25" rx="5" fill="#F0FDFA" stroke="#99F6E4" stroke-width="1"/>
+  <text x="759" y="108" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" font-weight="600" fill="#0F766E">GenoPipe</text>
+
+  <rect x="816" y="92" width="112" height="25" rx="5" fill="#EEF2FF" stroke="#C7D2FE" stroke-width="1"/>
+  <text x="872" y="108" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" font-weight="600" fill="#4338CA">GenoCLAMP</text>
+
+  <!-- Thrust 02 Pills Row 2 -->
+  <rect x="504" y="125" width="92" height="25" rx="5" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="550" y="141" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" font-weight="600" fill="#1E293B">ArchTEx</text>
+
+  <rect x="604" y="125" width="96" height="25" rx="5" fill="#EEF2FF" stroke="#C7D2FE" stroke-width="1"/>
+  <text x="652" y="141" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" font-weight="600" fill="#4338CA">SETIA</text>
+
+  <rect x="708" y="125" width="220" height="25" rx="5" fill="#EEF2FF" stroke="#C7D2FE" stroke-width="1"/>
+  <text x="818" y="141" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" font-weight="600" fill="#4338CA">APSO / ChromEnhancer</text>
+
+  <!-- ================================================= -->
+  <!-- THRUST 03 (Bottom-Left: x=20..468, y=180..294)    -->
+  <!-- ================================================= -->
+  <rect x="20" y="180" width="448" height="114" rx="9" fill="#FFFFFF" stroke="#5EEAD4" stroke-width="1.5"/>
+  <g clip-path="url(#t3-head)">
+    <rect x="20" y="180" width="448" height="34" fill="#F0FDFA"/>
+    <rect x="20" y="180" width="448" height="3.5" fill="#0D9488"/>
+  </g>
+  <line x1="20" y1="214" x2="468" y2="214" stroke="#CCFBF1" stroke-width="1"/>
+  <rect x="32" y="189" width="28" height="18" rx="9" fill="#0D9488"/>
+  <text x="46" y="201" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" font-weight="700" fill="#FFFFFF">03</text>
+  <text x="68" y="202" font-family="system-ui, -apple-system, sans-serif" font-size="11.8" font-weight="700" fill="#0F172A">Biomolecular Diffusion &amp; Modeling</text>
+
+  <!-- Thrust 03 Pills Row 1 -->
+  <rect x="32" y="224" width="184" height="25" rx="5" fill="#F0FDFA" stroke="#99F6E4" stroke-width="1"/>
+  <text x="124" y="240" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" font-weight="600" fill="#0F766E">MS-sCD</text>
+
+  <rect x="224" y="224" width="232" height="25" rx="5" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1"/>
+  <text x="340" y="240" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" font-weight="600" fill="#005BBB">Blitz (AF3 &amp; Boltz-2)</text>
+
+  <!-- Thrust 03 Pills Row 2 -->
+  <rect x="32" y="257" width="152" height="25" rx="5" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="108" y="273" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" font-weight="600" fill="#1E293B">OmniFold</text>
+
+  <rect x="192" y="257" width="264" height="25" rx="5" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="324" y="273" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" font-weight="600" fill="#1E293B">ProteinDesign-Containers</text>
+
+  <!-- ================================================= -->
+  <!-- THRUST 04 (Bottom-Right: x=492..940, y=180..294)  -->
+  <!-- ================================================= -->
+  <rect x="492" y="180" width="448" height="114" rx="9" fill="#FFFFFF" stroke="#93C5FD" stroke-width="1.5"/>
+  <g clip-path="url(#t4-head)">
+    <rect x="492" y="180" width="448" height="34" fill="#EFF6FF"/>
+    <rect x="492" y="180" width="448" height="3.5" fill="#005BBB"/>
+  </g>
+  <line x1="492" y1="214" x2="940" y2="214" stroke="#DBEAFE" stroke-width="1"/>
+  <rect x="504" y="189" width="28" height="18" rx="9" fill="#005BBB"/>
+  <text x="518" y="201" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" font-weight="700" fill="#FFFFFF">04</text>
+  <text x="540" y="202" font-family="system-ui, -apple-system, sans-serif" font-size="11.8" font-weight="700" fill="#0F172A">Open-Science Gateways &amp; Accessibility</text>
+
+  <!-- Thrust 04 Pills Row 1 -->
+  <rect x="504" y="224" width="154" height="25" rx="5" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1"/>
+  <text x="581" y="240" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" font-weight="600" fill="#005BBB">ScriptManager</text>
+
+  <rect x="666" y="224" width="122" height="25" rx="5" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="727" y="240" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" font-weight="600" fill="#1E293B">PEGR</text>
+
+  <rect x="796" y="224" width="132" height="25" rx="5" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="862" y="240" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" font-weight="600" fill="#1E293B">STENCIL</text>
+
+  <!-- Thrust 04 Pills Row 2 -->
+  <rect x="504" y="257" width="212" height="25" rx="5" fill="#EEF2FF" stroke="#C7D2FE" stroke-width="1"/>
+  <text x="610" y="273" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" font-weight="600" fill="#4338CA">ProteinStructure-OOD</text>
+
+  <rect x="724" y="257" width="204" height="25" rx="5" fill="#F0FDFA" stroke="#99F6E4" stroke-width="1"/>
+  <text x="826" y="273" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" font-weight="600" fill="#0F766E">EGC-jupyterhub</text>
+</svg>

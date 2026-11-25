@@ -1,0 +1,134 @@
+// ============================================================================
+// Design Tokens & UB Blue Light / Dark Theme Variables
+// ============================================================================
+
+:root {
+  // Typography
+  --font-sans: 'Source Sans 3', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-serif: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  // Radii & Layout
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --container-max: 1120px;
+  --header-height: 68px;
+}
+
+:root,
+[data-theme="light"] {
+  color-scheme: light;
+
+  // Brand (University at Buffalo Blue — >= 6.2:1 contrast on light surfaces)
+  --accent: #005BBB;
+  --accent-hover: #004691;
+  --accent-soft: #EBF3FC;
+  --accent-border: #B8D4F5;
+
+  // Primary Solid Action Surface (>= 6.5:1 contrast)
+  --btn-primary-bg: #005BBB;
+  --btn-primary-hover: #004691;
+  --btn-primary-text: #FFFFFF;
+
+  // Surfaces
+  --bg-page: #F8FAFC;
+  --bg-surface: #FFFFFF;
+  --bg-subtle: #F1F5F9;
+  --bg-header: rgba(255, 255, 255, 0.94);
+  --bg-code: #0F172A;
+  --text-code: #F8FAFC;
+
+  // Scientific Figure & Partner Logo Plate
+  --plate-bg: #FFFFFF;
+  --plate-border: #E2E8F0;
+
+  // Typography Colors (WCAG AA+ >= 7.2:1)
+  --text-primary: #0F172A;
+  --text-secondary: #334155;
+  --text-muted: #475569;
+
+  // Borders, Focus & Elevation
+  --border-color: #E2E8F0;
+  --border-strong: #CBD5E1;
+  --focus-ring: #005BBB;
+  --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.06), 0 1px 2px rgba(15, 23, 42, 0.04);
+  --shadow-md: 0 6px 18px rgba(15, 23, 42, 0.08), 0 2px 6px rgba(15, 23, 42, 0.04);
+
+  // Semantic Publication & Metadata Badges (WCAG AA+ >= 6.6:1)
+  --badge-preprint-bg: #FEF3C7;
+  --badge-preprint-text: #92400E;
+  --badge-preprint-border: #F59E0B;
+
+  --badge-conf-bg: #E0E7FF;
+  --badge-conf-text: #3730A3;
+  --badge-conf-border: #A5B4FC;
+
+  --badge-award-bg: #D1FAE5;
+  --badge-award-text: #065F46;
+  --badge-award-border: #6EE7B7;
+
+  --badge-role-bg: #EBF3FC;
+  --badge-role-text: #004691;
+  --badge-role-border: #B8D4F5;
+}
+
+@mixin dark-theme-tokens {
+  color-scheme: dark;
+
+  --accent: #63A4FF;
+  --accent-hover: #93C5FD;
+  --accent-soft: rgba(99, 164, 255, 0.14);
+  --accent-border: rgba(99, 164, 255, 0.38);
+
+  --btn-primary-bg: #63A4FF;
+  --btn-primary-hover: #93C5FD;
+  --btn-primary-text: #0B192C;
+
+  --bg-page: #0F172A;
+  --bg-surface: #1E293B;
+  --bg-subtle: #162033;
+  --bg-header: rgba(15, 23, 42, 0.94);
+  --bg-code: #090E1A;
+  --text-code: #F1F5F9;
+
+  // Clean soft-light plate so white-background scientific PNGs/JPEGs/SVGs & logos stay crisp in dark mode
+  --plate-bg: #F8FAFC;
+  --plate-border: #475569;
+
+  --text-primary: #F8FAFC;
+  --text-secondary: #E2E8F0;
+  --text-muted: #CBD5E1;
+
+  --border-color: #334155;
+  --border-strong: #475569;
+  --focus-ring: #63A4FF;
+  --shadow-sm: 0 1px 3px rgba(2, 6, 23, 0.45);
+  --shadow-md: 0 8px 24px rgba(2, 6, 23, 0.55);
+
+  --badge-preprint-bg: #451A03;
+  --badge-preprint-text: #FDE68A;
+  --badge-preprint-border: #D97706;
+
+  --badge-conf-bg: #1E1B4B;
+  --badge-conf-text: #C7D2FE;
+  --badge-conf-border: #6366F1;
+
+  --badge-award-bg: #064E3B;
+  --badge-award-text: #A7F3D0;
+  --badge-award-border: #10B981;
+
+  --badge-role-bg: #172554;
+  --badge-role-text: #BFDBFE;
+  --badge-role-border: #3B82F6;
+}
+
+[data-theme="dark"] {
+  @include dark-theme-tokens;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    @include dark-theme-tokens;
+  }
+}

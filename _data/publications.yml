@@ -1,0 +1,1247 @@
+# Complete verified publication record for William K. M. Lai, PhD (2005 - 2026)
+# 45 works: 35 peer-reviewed journal/TMLR articles + 5 conference/workshop papers + 5 active preprints
+# Authorship symbols in authors_html: # = equal first contribution, † = co-senior author, * = corresponding author
+
+- id: chen-2026-pic-molcell
+  title: "Fine architecture and mechanism of PIC assembly at natural genomic promoters"
+  authors_html: "Chen H, Lang OW, <strong>Lai WKM</strong>†, Pugh BF†*"
+  venue: "Molecular Cell"
+  details: "In Press"
+  year: 2026
+  type: journal
+  lai_role: co-senior
+  role_label: "Co-Senior Author"
+  featured: true
+  thrusts:
+    - chromatin
+  tools: []
+  bibtex: |
+    @article{chen2026picmolcell,
+      author  = {Chen, H. and Lang, Olivia W. and Lai, William K. M. and Pugh, B. Franklin},
+      title   = {Fine architecture and mechanism of PIC assembly at natural genomic promoters},
+      journal = {Molecular Cell},
+      year    = {2026},
+      note    = {In Press}
+    }
+
+- id: sc26-2026-bphte
+  title: "Empowering K-12 Education through HPC-enabled AI and Computational Thinking: A Living Lab Case Study"
+  authors_html: "Kellogg G, Hill K, Remington J, Pavloski C, <strong>Lai WKM</strong>*"
+  venue: "SC26 Workshop on Best Practices for HPC Training and Education (BPHTE26)"
+  year: 2026
+  type: conference
+  conference_tag: "SC26"
+  lai_role: senior
+  role_label: "Corresponding Author"
+  featured: false
+  thrusts:
+    - fair-gateways
+  tools:
+    - egc-jupyterhub
+  code_url: "https://github.com/EpiGenomicsCode/EGC-jupyterhub"
+  bibtex: |
+    @inproceedings{kellogg2026sc26bphte,
+      author    = {Kellogg, Gretta and Hill, K. and Remington, J. and Pavloski, C. and Lai, William K. M.},
+      title     = {Empowering K-12 Education through HPC-enabled AI and Computational Thinking: A Living Lab Case Study},
+      booktitle = {Proceedings of the SC26 Workshop on Best Practices for HPC Training and Education (BPHTE26)},
+      year      = {2026}
+    }
+
+- id: wang-2026-jpr
+  title: "Refining Liquid Chromatography Conditions across Platforms To Democratize Single-Cell Proteomics"
+  authors_html: "Wang Y#, Zhao Q#, Tang Y, <strong>Lai WKM</strong>, Yu H*"
+  venue: "Journal of Proteome Research"
+  details: "Epub Nov 12, 2026"
+  year: 2026
+  type: journal
+  lai_role: coauthor
+  featured: false
+  thrusts: []
+  tools: []
+  url: "https://doi.org/10.1021/acs.jproteome.6c00664"
+  doi: "10.1021/acs.jproteome.6c00664"
+  note: "Supersedes bioRxiv 2025"
+  bibtex: |
+    @article{wang2026jpr,
+      author  = {Wang, Y. and Zhao, Q. and Tang, Y. and Lai, William K. M. and Yu, H.},
+      title   = {Refining Liquid Chromatography Conditions across Platforms To Democratize Single-Cell Proteomics},
+      journal = {Journal of Proteome Research},
+      year    = {2026},
+      doi     = {10.1021/acs.jproteome.6c00664}
+    }
+
+- id: lang-2026-aviti24
+  title: "Multi-modal in situ profiling of human cells using the AVITI24 platform characterizes single-cell responses to acute stress"
+  authors_html: "Lang OW, Gardner AM, Smugereski CM, Lyndaker AM, Pugh BF, <strong>Lai WKM</strong>*"
+  venue: "bioRxiv"
+  details: "Posted Nov 2, 2026"
+  year: 2026
+  type: preprint
+  lai_role: senior
+  featured: true
+  thrusts:
+    - chromatin
+  tools: []
+  url: "https://doi.org/10.64898/2026.10.28.762240"
+  doi: "10.64898/2026.10.28.762240"
+  code_url: "https://github.com/EpiGenomicsCode/2026_AVITI24"
+  bibtex: |
+    @article{lang2026aviti24,
+      author  = {Lang, Olivia W. and Gardner, A. M. and Smugereski, C. M. and Lyndaker, A. M. and Pugh, B. Franklin and Lai, William K. M.},
+      title   = {Multi-modal in situ profiling of human cells using the AVITI24 platform characterizes single-cell responses to acute stress},
+      journal = {bioRxiv},
+      year    = {2026},
+      doi     = {10.64898/2026.10.28.762240}
+    }
+
+- id: mathew-2026-blitz
+  title: "Blitz: Accelerating the Diffusion Modules of AlphaFold3 and Boltz-2"
+  authors_html: "Mathew VS, Kumara S, Kellogg G, <strong>Lai WKM</strong>*"
+  venue: "arXiv"
+  details: "arXiv:2610.23703"
+  year: 2026
+  type: preprint
+  lai_role: senior
+  featured: true
+  thrusts:
+    - structural-ai
+  tools:
+    - blitz
+  url: "https://arxiv.org/abs/2610.23703"
+  doi: "10.48550/arXiv.2610.23703"
+  arxiv: "2610.23703"
+  code_url: "https://github.com/EpiGenomicsCode/Blitz"
+  bibtex: |
+    @misc{mathew2026blitz,
+      author        = {Mathew, Vinay Saji and Kumara, Soundar and Kellogg, Gretta and Lai, William K. M.},
+      title         = {Blitz: Accelerating the Diffusion Modules of AlphaFold3 and Boltz-2},
+      year          = {2026},
+      eprint        = {2610.23703},
+      archivePrefix = {arXiv},
+      doi           = {10.48550/arXiv.2610.23703}
+    }
+
+- id: cha-2026-genoclamp
+  title: "GenoCLAMP: consolidation of sequence motifs from genomic-scale data"
+  authors_html: "Cha JS, Pugh BF*, <strong>Lai WKM</strong>*"
+  venue: "Genome Biology"
+  details: "Vol. 27"
+  year: 2026
+  type: journal
+  lai_role: senior
+  role_label: "Co-Corresponding Author"
+  featured: true
+  thrusts:
+    - bioinformatics
+  tools:
+    - genoclamp
+  url: "https://doi.org/10.1186/s13059-026-04283-9"
+  doi: "10.1186/s13059-026-04283-9"
+  code_url: "https://github.com/CEGRcode/GenoCLAMP"
+  bibtex: |
+    @article{cha2026genoclamp,
+      author  = {Cha, Justin S. and Pugh, B. Franklin and Lai, William K. M.},
+      title   = {GenoCLAMP: consolidation of sequence motifs from genomic-scale data},
+      journal = {Genome Biology},
+      volume  = {27},
+      year    = {2026},
+      doi     = {10.1186/s13059-026-04283-9}
+    }
+
+- id: mathew-2026-ms-scd
+  title: "Stable Continuous-Time Consistency Distillation: An Empirical Study with a Multistep Extension"
+  authors_html: "Mathew VS, Kumara SR, Kellogg GD, <strong>Lai WKM</strong>*"
+  venue: "Transactions on Machine Learning Research (TMLR)"
+  details: "Oct 2026"
+  year: 2026
+  type: journal
+  lai_role: senior
+  featured: true
+  thrusts:
+    - structural-ai
+  tools:
+    - ms-scd
+  url: "https://doi.org/10.48550/arXiv.2610.34704"
+  doi: "10.48550/arXiv.2610.34704"
+  arxiv: "2610.34704"
+  code_url: "https://github.com/EpiGenomicsCode/edm2_sCM"
+  award: "Reproducibility Certification"
+  presentation_badge: "NeurIPS 2026"
+  note: "Presented at NeurIPS 2026"
+  bibtex: |
+    @article{mathew2026msscd,
+      author  = {Mathew, Vinay Saji and Kumara, Soundar R. and Kellogg, Gretta D. and Lai, William K. M.},
+      title   = {Stable Continuous-Time Consistency Distillation: An Empirical Study with a Multistep Extension},
+      journal = {Transactions on Machine Learning Research},
+      year    = {2026},
+      note    = {Reproducibility Certification; Presented at NeurIPS 2026},
+      doi     = {10.48550/arXiv.2610.34704}
+    }
+
+- id: chen-2026-molcell
+  title: "Genome-wide rotational and translational phasing of nucleosomes with human transcription factors"
+  authors_html: "Chen H, Krebs JE, Lang OW, Hu J, Mellini DC, Hyle J, Li C, <strong>Lai WKM</strong>†, Pugh BF†*"
+  venue: "Molecular Cell"
+  details: "86(14):2722–2738.e28"
+  year: 2026
+  type: journal
+  lai_role: co-senior
+  role_label: "Co-Senior Author"
+  featured: true
+  thrusts:
+    - chromatin
+  tools: []
+  url: "https://doi.org/10.1016/j.molcel.2026.06.019"
+  doi: "10.1016/j.molcel.2026.06.019"
+  pmid: "42392072"
+  code_url: "https://github.com/CEGRcode/2026-Chen_NucleosomePhasing"
+  bibtex: |
+    @article{chen2026molcell,
+      author  = {Chen, H. and Krebs, J. E. and Lang, Olivia W. and Hu, J. and Mellini, D. C. and Hyle, J. and Li, C. and Lai, William K. M. and Pugh, B. Franklin},
+      title   = {Genome-wide rotational and translational phasing of nucleosomes with human transcription factors},
+      journal = {Molecular Cell},
+      volume  = {86},
+      number  = {14},
+      pages   = {2722--2738.e28},
+      year    = {2026},
+      doi     = {10.1016/j.molcel.2026.06.019}
+    }
+
+- id: lang-2026-scriptmanager
+  title: "ScriptManager: a platform for scalable and reproducible high-resolution analysis of genomics datasets"
+  authors_html: "Lang OW, Beer B, Zhang D, LeSon CE, Deen A, Pugh BF*, <strong>Lai WKM</strong>*"
+  venue: "BMC Bioinformatics"
+  details: "In Press"
+  year: 2026
+  type: journal
+  lai_role: senior
+  role_label: "Co-Corresponding Author"
+  featured: true
+  thrusts:
+    - fair-gateways
+  tools:
+    - scriptmanager
+  url: "https://doi.org/10.64898/2026.06.14.732163"
+  doi: "10.64898/2026.06.14.732163"
+  code_url: "https://github.com/CEGRcode/scriptmanager"
+  bibtex: |
+    @article{lang2026scriptmanager,
+      author  = {Lang, Olivia W. and Beer, B. and Zhang, D. and LeSon, C. E. and Deen, A. and Pugh, B. Franklin and Lai, William K. M.},
+      title   = {ScriptManager: a platform for scalable and reproducible high-resolution analysis of genomics datasets},
+      journal = {BMC Bioinformatics},
+      year    = {2026},
+      note    = {In Press},
+      doi     = {10.64898/2026.06.14.732163}
+    }
+
+- id: li-2026-setia
+  title: "A unified framework for causal gene regulatory network inference grounded in orthogonal molecular evidence"
+  authors_html: "Li R, <strong>Lai WKM</strong>, Pugh BF*"
+  venue: "bioRxiv"
+  details: "Posted May 1, 2026"
+  year: 2026
+  type: preprint
+  lai_role: coauthor
+  featured: false
+  thrusts:
+    - bioinformatics
+  tools:
+    - setia
+  url: "https://doi.org/10.64898/2026.04.28.721354"
+  doi: "10.64898/2026.04.28.721354"
+  pmcid: "PMC13142316"
+  code_url: "https://github.com/CEGRcode/2024_Li_GRN_inference"
+  bibtex: |
+    @article{li2026setia,
+      author  = {Li, R. and Lai, William K. M. and Pugh, B. Franklin},
+      title   = {A unified framework for causal gene regulatory network inference grounded in orthogonal molecular evidence},
+      journal = {bioRxiv},
+      year    = {2026},
+      doi     = {10.64898/2026.04.28.721354}
+    }
+
+- id: mathew-2025-omnifold
+  title: "Protein structure prediction and design for high-throughput computing"
+  authors_html: "Mathew VS, Kellogg GD, <strong>Lai WKM</strong>*"
+  venue: "bioRxiv"
+  details: "Posted Jul 18, 2025"
+  year: 2025
+  type: preprint
+  lai_role: senior
+  featured: false
+  thrusts:
+    - structural-ai
+  tools:
+    - omnifold
+    - proteindesign-containers
+  url: "https://doi.org/10.1101/2025.07.18.665594"
+  doi: "10.1101/2025.07.18.665594"
+  pmid: "40777508"
+  pmcid: "PMC12330748"
+  code_url: "https://github.com/EpiGenomicsCode/OmniFold"
+  bibtex: |
+    @article{mathew2025omnifold,
+      author  = {Mathew, Vinay Saji and Kellogg, Gretta D. and Lai, William K. M.},
+      title   = {Protein structure prediction and design for high-throughput computing},
+      journal = {bioRxiv},
+      year    = {2025},
+      doi     = {10.1101/2025.07.18.665594}
+    }
+
+- id: mathew-2025-good25
+  title: "AlphaFold accessibility: an optimized open-source OOD app for Protein Structure Prediction"
+  authors_html: "Mathew VS, Hansen M, <strong>Lai WKM</strong>*"
+  venue: "GOOD25 Conference (Harvard University)"
+  year: 2025
+  type: conference
+  conference_tag: "GOOD25"
+  lai_role: senior
+  role_label: "Corresponding Author"
+  featured: false
+  thrusts:
+    - fair-gateways
+  tools:
+    - proteinstructure-ood
+  url: "https://github.com/EpiGenomicsCode/ProteinStructure-OOD"
+  code_url: "https://github.com/EpiGenomicsCode/ProteinStructure-OOD"
+  bibtex: |
+    @inproceedings{mathew2025good25,
+      author    = {Mathew, Vinay Saji and Hansen, M. and Lai, William K. M.},
+      title     = {AlphaFold accessibility: an optimized open-source OOD app for Protein Structure Prediction},
+      booktitle = {GOOD25 Conference},
+      address   = {Harvard University},
+      year      = {2025},
+      url       = {https://github.com/EpiGenomicsCode/ProteinStructure-OOD}
+    }
+
+- id: gafur-2025-chromenhancer
+  title: "Adversarial attack of sequence-free enhancer prediction identifies chromatin architecture"
+  authors_html: "Gafur J, Lang OW, <strong>Lai WKM</strong>*"
+  venue: "Bioinformatics"
+  details: "41(7):btaf371"
+  year: 2025
+  type: journal
+  lai_role: senior
+  featured: true
+  thrusts:
+    - bioinformatics
+  tools:
+    - chromenhancer
+    - apso
+  url: "https://doi.org/10.1093/bioinformatics/btaf371"
+  doi: "10.1093/bioinformatics/btaf371"
+  pmid: "40581823"
+  pmcid: "PMC12240468"
+  code_url: "https://github.com/EpiGenomicsCode/ChromEnhancer"
+  bibtex: |
+    @article{gafur2025chromenhancer,
+      author  = {Gafur, Jabeen and Lang, Olivia W. and Lai, William K. M.},
+      title   = {Adversarial attack of sequence-free enhancer prediction identifies chromatin architecture},
+      journal = {Bioinformatics},
+      volume  = {41},
+      number  = {7},
+      pages   = {btaf371},
+      year    = {2025},
+      doi     = {10.1093/bioinformatics/btaf371}
+    }
+
+- id: gafur-2024-apso
+  title: "Adversarial Robustness and Explainability of Machine Learning Models"
+  authors_html: "Gafur J, Goddard S, <strong>Lai WKM</strong>*"
+  venue: "Practice and Experience in Advanced Research Computing (PEARC '24)"
+  details: "Article 55, 1–8"
+  year: 2024
+  type: conference
+  conference_tag: "PEARC '24"
+  lai_role: senior
+  featured: false
+  thrusts:
+    - bioinformatics
+  tools:
+    - apso
+  url: "https://doi.org/10.1145/3626203.3670522"
+  doi: "10.1145/3626203.3670522"
+  code_url: "https://github.com/EpiGenomicsCode/Adversarial_Observation"
+  bibtex: |
+    @inproceedings{gafur2024apso,
+      author    = {Gafur, Jabeen and Goddard, Stephen and Lai, William K. M.},
+      title     = {Adversarial Robustness and Explainability of Machine Learning Models},
+      booktitle = {Practice and Experience in Advanced Research Computing (PEARC '24)},
+      publisher = {ACM},
+      year      = {2024},
+      doi       = {10.1145/3626203.3670522}
+    }
+
+- id: nwosu-2024-jci
+  title: "Multi-dimensional analyses identify genes of high priority for pancreatic cancer research"
+  authors_html: "Nwosu ZC, Giza H, Nassif M, Charlestin V, Menjivar RE, Kim D, Kemp SB, <strong>Lai WKM</strong>, Loveless I, Steele NG, Hu J, Hu B, Wang S, Pasca di Magliano M, Lyssiotis CA*"
+  venue: "JCI Insight"
+  details: "10(4):e174264"
+  year: 2024
+  type: journal
+  lai_role: coauthor
+  featured: false
+  thrusts: []
+  tools: []
+  url: "https://doi.org/10.1172/jci.insight.174264"
+  doi: "10.1172/jci.insight.174264"
+  pmid: "39774001"
+  pmcid: "PMC11949049"
+  bibtex: |
+    @article{nwosu2024jci,
+      author  = {Nwosu, Z. C. and Giza, H. and Nassif, M. and Charlestin, V. and Menjivar, R. E. and Kim, D. and Kemp, S. B. and Lai, William K. M. and Loveless, I. and Steele, N. G. and Hu, J. and Hu, B. and Wang, S. and Pasca di Magliano, M. and Lyssiotis, C. A.},
+      title   = {Multi-dimensional analyses identify genes of high priority for pancreatic cancer research},
+      journal = {JCI Insight},
+      volume  = {10},
+      number  = {4},
+      pages   = {e174264},
+      year    = {2024},
+      doi     = {10.1172/jci.insight.174264}
+    }
+
+- id: lang-2023-genopipe
+  title: "GenoPipe: identifying the genotype of origin within (epi)genomic datasets"
+  authors_html: "Lang OW, Srivastava D, Pugh BF, <strong>Lai WKM</strong>*"
+  venue: "Nucleic Acids Research"
+  details: "51(22):12054–12068"
+  year: 2023
+  type: journal
+  lai_role: senior
+  featured: false
+  thrusts:
+    - bioinformatics
+  tools:
+    - genopipe
+  url: "https://doi.org/10.1093/nar/gkad950"
+  doi: "10.1093/nar/gkad950"
+  pmid: "37933851"
+  pmcid: "PMC10711449"
+  code_url: "https://github.com/EpiGenomicsCode/GenoPipe"
+  bibtex: |
+    @article{lang2023genopipe,
+      author  = {Lang, Olivia W. and Srivastava, Divyanshi and Pugh, B. Franklin and Lai, William K. M.},
+      title   = {GenoPipe: identifying the genotype of origin within (epi)genomic datasets},
+      journal = {Nucleic Acids Research},
+      volume  = {51},
+      number  = {22},
+      pages   = {12054--12068},
+      year    = {2023},
+      doi     = {10.1093/nar/gkad950}
+    }
+
+- id: arora-2023-fox
+  title: "Joint sequence & chromatin neural networks characterize the differential abilities of Forkhead transcription factors to engage inaccessible chromatin"
+  authors_html: "Arora S, Yang J, Akiyama T, James DQ, Morrissey A, Blanda TR, Badjatia N, <strong>Lai WKM</strong>, Ko MSH, Pugh BF, Mahony S*"
+  venue: "bioRxiv"
+  details: "Posted Oct 2023"
+  year: 2023
+  type: preprint
+  lai_role: coauthor
+  featured: false
+  thrusts:
+    - bioinformatics
+  tools: []
+  url: "https://doi.org/10.1101/2023.10.06.561228"
+  doi: "10.1101/2023.10.06.561228"
+  pmid: "37873361"
+  pmcid: "PMC10592618"
+  bibtex: |
+    @article{arora2023fox,
+      author  = {Arora, S. and Yang, J. and Akiyama, T. and James, D. Q. and Morrissey, A. and Blanda, T. R. and Badjatia, N. and Lai, William K. M. and Ko, M. S. H. and Pugh, B. Franklin and Mahony, Shaun},
+      title   = {Joint sequence \& chromatin neural networks characterize the differential abilities of Forkhead transcription factors to engage inaccessible chromatin},
+      journal = {bioRxiv},
+      year    = {2023},
+      doi     = {10.1101/2023.10.06.561228}
+    }
+
+- id: lang-2022-scriptmanager
+  title: "ScriptManager: an interactive platform for reducing barriers to genomics analysis"
+  authors_html: "Lang O, Pugh BF, <strong>Lai WKM</strong>*"
+  venue: "Practice and Experience in Advanced Research Computing (PEARC '22)"
+  details: "Article 51, 1–4"
+  year: 2022
+  type: conference
+  conference_tag: "PEARC '22"
+  lai_role: senior
+  featured: false
+  thrusts:
+    - fair-gateways
+  tools:
+    - scriptmanager
+  url: "https://doi.org/10.1145/3491418.3535161"
+  doi: "10.1145/3491418.3535161"
+  code_url: "https://github.com/CEGRcode/scriptmanager"
+  award: "Best Short Paper Award"
+  bibtex: |
+    @inproceedings{lang2022scriptmanager,
+      author    = {Lang, Olivia and Pugh, B. Franklin and Lai, William K. M.},
+      title     = {ScriptManager: an interactive platform for reducing barriers to genomics analysis},
+      booktitle = {Practice and Experience in Advanced Research Computing (PEARC '22)},
+      publisher = {ACM},
+      year      = {2022},
+      note      = {Best Short Paper Award},
+      doi       = {10.1145/3491418.3535161}
+    }
+
+- id: mittal-2022-gad
+  title: "An integrated SAGA and TFIID PIC assembly pathway selective for poised and induced promoters"
+  authors_html: "Mittal C, Lang O, <strong>Lai WKM</strong>, Pugh BF*"
+  venue: "Genes & Development"
+  details: "36(17–18):985–1001"
+  year: 2022
+  type: journal
+  lai_role: coauthor
+  featured: false
+  thrusts:
+    - chromatin
+  tools: []
+  url: "https://doi.org/10.1101/gad.350026.122"
+  doi: "10.1101/gad.350026.122"
+  pmid: "36302553"
+  pmcid: "PMC9732905"
+  bibtex: |
+    @article{mittal2022gad,
+      author  = {Mittal, Chitvan and Lang, Olivia and Lai, William K. M. and Pugh, B. Franklin},
+      title   = {An integrated SAGA and TFIID PIC assembly pathway selective for poised and induced promoters},
+      journal = {Genes \& Development},
+      volume  = {36},
+      number  = {17-18},
+      pages   = {985--1001},
+      year    = {2022},
+      doi     = {10.1101/gad.350026.122}
+    }
+
+- id: john-2022-ecoli
+  title: "Genome-wide promoter assembly in E. coli measured at single-base resolution"
+  authors_html: "John J, Jabbar J, Badjatia N, Rossi MJ, <strong>Lai WKM</strong>, Pugh BF*"
+  venue: "Genome Research"
+  details: "32(5):878–892"
+  year: 2022
+  type: journal
+  lai_role: coauthor
+  featured: false
+  thrusts:
+    - chromatin
+  tools: []
+  url: "https://doi.org/10.1101/gr.276544.121"
+  doi: "10.1101/gr.276544.121"
+  pmid: "35483960"
+  pmcid: "PMC9104697"
+  bibtex: |
+    @article{john2022ecoli,
+      author  = {John, J. and Jabbar, J. and Badjatia, N. and Rossi, Matthew J. and Lai, William K. M. and Pugh, B. Franklin},
+      title   = {Genome-wide promoter assembly in E. coli measured at single-base resolution},
+      journal = {Genome Research},
+      volume  = {32},
+      number  = {5},
+      pages   = {878--892},
+      year    = {2022},
+      doi     = {10.1101/gr.276544.121}
+    }
+
+- id: shao-2022-pegr
+  title: "PEGR: a flexible management platform for reproducible epigenomic and genomic research"
+  authors_html: "Shao D, Kellogg GD, Nematbakhsh A, Kuntala PK, Mahony S, Pugh BF, <strong>Lai WKM</strong>*"
+  venue: "Genome Biology"
+  details: "23(1):99"
+  year: 2022
+  type: journal
+  lai_role: senior
+  featured: false
+  thrusts:
+    - fair-gateways
+  tools:
+    - pegr
+  url: "https://doi.org/10.1186/s13059-022-02671-5"
+  doi: "10.1186/s13059-022-02671-5"
+  pmid: "35440038"
+  pmcid: "PMC9016988"
+  code_url: "https://github.com/seqcode/pegr"
+  bibtex: |
+    @article{shao2022pegr,
+      author  = {Shao, Danying and Kellogg, Gretta D. and Nematbakhsh, A. and Kuntala, P. K. and Mahony, Shaun and Pugh, B. Franklin and Lai, William K. M.},
+      title   = {PEGR: a flexible management platform for reproducible epigenomic and genomic research},
+      journal = {Genome Biology},
+      volume  = {23},
+      number  = {1},
+      pages   = {99},
+      year    = {2022},
+      doi     = {10.1186/s13059-022-02671-5}
+    }
+
+- id: sun-2022-stencil
+  title: "STENCIL: A web templating engine for visualizing and sharing life science datasets"
+  authors_html: "Sun Q, Nematbakhsh A, Kuntala PK, Kellogg GD, Pugh BF, <strong>Lai WKM</strong>*"
+  venue: "PLOS Computational Biology"
+  details: "18(2):e1009859"
+  year: 2022
+  type: journal
+  lai_role: senior
+  featured: false
+  thrusts:
+    - fair-gateways
+  tools:
+    - stencil
+  url: "https://doi.org/10.1371/journal.pcbi.1009859"
+  doi: "10.1371/journal.pcbi.1009859"
+  pmid: "35139076"
+  pmcid: "PMC8863220"
+  code_url: "https://github.com/CEGRcode/stencil"
+  bibtex: |
+    @article{sun2022stencil,
+      author  = {Sun, Qiaoshan and Nematbakhsh, A. and Kuntala, P. K. and Kellogg, Gretta D. and Pugh, B. Franklin and Lai, William K. M.},
+      title   = {STENCIL: A web templating engine for visualizing and sharing life science datasets},
+      journal = {PLOS Computational Biology},
+      volume  = {18},
+      number  = {2},
+      pages   = {e1009859},
+      year    = {2022},
+      doi     = {10.1371/journal.pcbi.1009859}
+    }
+
+- id: zhao-2021-elife
+  title: "Ssl2/TFIIH function in transcription start site scanning by RNA polymerase II in Saccharomyces cerevisiae"
+  authors_html: "Zhao T, Vvedenskaya IO, <strong>Lai WKM</strong>, Basu S, Pugh BF, Nickels BE, Kaplan CD*"
+  venue: "eLife"
+  details: "10:e71013"
+  year: 2021
+  type: journal
+  lai_role: coauthor
+  featured: false
+  thrusts:
+    - chromatin
+  tools: []
+  url: "https://doi.org/10.7554/eLife.71013"
+  doi: "10.7554/eLife.71013"
+  pmid: "34652274"
+  pmcid: "PMC8589449"
+  bibtex: |
+    @article{zhao2021elife,
+      author  = {Zhao, T. and Vvedenskaya, I. O. and Lai, William K. M. and Basu, S. and Pugh, B. Franklin and Nickels, Bryce E. and Kaplan, Craig D.},
+      title   = {Ssl2/TFIIH function in transcription start site scanning by RNA polymerase II in Saccharomyces cerevisiae},
+      journal = {eLife},
+      volume  = {10},
+      pages   = {e71013},
+      year    = {2021},
+      doi     = {10.7554/eLife.71013}
+    }
+
+- id: lai-2021-pcrp
+  title: "A ChIP-exo screen of 887 Protein Capture Reagents Program transcription factor antibodies in human cells"
+  authors_html: "<strong>Lai WKM</strong>, Mariani L, Rothschild G, Smith ER, Venters BJ, Blanda TR, Kuntala PK, Bocklund K, Mairose J, Dweikat SN, Mistretta K, Rossi MJ, James D, Anderson JT, Phanor SK, Zhang W, Zhao Z, Shah AP, Novitzky K, McAnarney E, Keogh MC, Shilatifard A, Basu U, Bulyk ML, Pugh BF*"
+  venue: "Genome Research"
+  details: "31(9):1663–1679"
+  year: 2021
+  type: journal
+  lai_role: first
+  featured: true
+  thrusts:
+    - chromatin
+  tools: []
+  url: "https://doi.org/10.1101/gr.275472.121"
+  doi: "10.1101/gr.275472.121"
+  pmid: "34426512"
+  pmcid: "PMC8415381"
+  code_url: "https://github.com/CEGRcode/2021-Lai_PCRP"
+  bibtex: |
+    @article{lai2021pcrp,
+      author  = {Lai, William K. M. and Mariani, L. and Rothschild, G. and Smith, E. R. and Venters, B. J. and Blanda, T. R. and Kuntala, P. K. and Bocklund, K. and Mairose, J. and Dweikat, S. N. and Mistretta, K. and Rossi, Matthew J. and James, D. and Anderson, J. T. and Phanor, S. K. and Zhang, W. and Zhao, Z. and Shah, A. P. and Novitzky, K. and McAnarney, E. and Keogh, M. C. and Shilatifard, Ali and Basu, U. and Bulyk, Martha L. and Pugh, B. Franklin},
+      title   = {A ChIP-exo screen of 887 Protein Capture Reagents Program transcription factor antibodies in human cells},
+      journal = {Genome Research},
+      volume  = {31},
+      number  = {9},
+      pages   = {1663--1679},
+      year    = {2021},
+      doi     = {10.1101/gr.275472.121}
+    }
+
+- id: rossi-2021-yep
+  title: "A high-resolution protein architecture of the budding yeast genome"
+  authors_html: "Rossi MJ, Kuntala PK, <strong>Lai WKM</strong>, Yamada N, Badjatia N, Mittal C, Kuzu G, Bocklund K, Farrell NP, Blanda TR, Mairose JD, Basting AV, Mistretta KS, Rocco DJ, Perkinson ES, Kellogg GD, Mahony S, Pugh BF*"
+  venue: "Nature"
+  details: "592(7853):309–314"
+  year: 2021
+  type: journal
+  lai_role: coauthor
+  featured: true
+  thrusts:
+    - chromatin
+  tools: []
+  url: "https://doi.org/10.1038/s41586-021-03314-8"
+  doi: "10.1038/s41586-021-03314-8"
+  pmid: "33692541"
+  pmcid: "PMC8035251"
+  bibtex: |
+    @article{rossi2021yep,
+      author  = {Rossi, Matthew J. and Kuntala, P. K. and Lai, William K. M. and Yamada, N. and Badjatia, N. and Mittal, Chitvan and Kuzu, G. and Bocklund, K. and Farrell, N. P. and Blanda, T. R. and Mairose, J. D. and Basting, A. V. and Mistretta, K. S. and Rocco, D. J. and Perkinson, E. S. and Kellogg, Gretta D. and Mahony, Shaun and Pugh, B. Franklin},
+      title   = {A high-resolution protein architecture of the budding yeast genome},
+      journal = {Nature},
+      volume  = {592},
+      number  = {7853},
+      pages   = {309--314},
+      year    = {2021},
+      doi     = {10.1038/s41586-021-03314-8}
+    }
+
+- id: badjatia-2021-celrep
+  title: "Acute stress drives global repression through two independent RNA polymerase II stalling events in Saccharomyces"
+  authors_html: "Badjatia N, Rossi MJ, Bataille AR, Mittal C, <strong>Lai WKM</strong>, Pugh BF*"
+  venue: "Cell Reports"
+  details: "34(3):108640"
+  year: 2021
+  type: journal
+  lai_role: coauthor
+  featured: false
+  thrusts:
+    - chromatin
+  tools: []
+  url: "https://doi.org/10.1016/j.celrep.2020.108640"
+  doi: "10.1016/j.celrep.2020.108640"
+  pmid: "33472084"
+  pmcid: "PMC7879390"
+  bibtex: |
+    @article{badjatia2021celrep,
+      author  = {Badjatia, N. and Rossi, Matthew J. and Bataille, A. R. and Mittal, Chitvan and Lai, William K. M. and Pugh, B. Franklin},
+      title   = {Acute stress drives global repression through two independent RNA polymerase II stalling events in Saccharomyces},
+      journal = {Cell Reports},
+      volume  = {34},
+      number  = {3},
+      pages   = {108640},
+      year    = {2021},
+      doi     = {10.1016/j.celrep.2020.108640}
+    }
+
+- id: shao-2020-pearc
+  title: "PEGR: a management platform for ChIP-based next generation sequencing pipelines"
+  authors_html: "Shao D, Kellogg G, Mahony S, <strong>Lai WKM</strong>, Pugh BF*"
+  venue: "Practice and Experience in Advanced Research Computing (PEARC '20)"
+  details: "285–292"
+  year: 2020
+  type: conference
+  conference_tag: "PEARC '20"
+  lai_role: coauthor
+  featured: false
+  thrusts:
+    - fair-gateways
+  tools:
+    - pegr
+  url: "https://doi.org/10.1145/3311790.3396621"
+  doi: "10.1145/3311790.3396621"
+  pmcid: "PMC9161112"
+  code_url: "https://github.com/seqcode/pegr"
+  bibtex: |
+    @inproceedings{shao2020pearc,
+      author    = {Shao, Danying and Kellogg, Gretta and Mahony, Shaun and Lai, William K. M. and Pugh, B. Franklin},
+      title     = {PEGR: a management platform for ChIP-based next generation sequencing pipelines},
+      booktitle = {Practice and Experience in Advanced Research Computing (PEARC '20)},
+      pages     = {285--292},
+      publisher = {ACM},
+      year      = {2020},
+      doi       = {10.1145/3311790.3396621}
+    }
+
+- id: qiu-2020-gb
+  title: "Universal promoter scanning by Pol II during transcription initiation in Saccharomyces cerevisiae"
+  authors_html: "Qiu C, Jin H, Vvedenskaya I, Llenas JA, Zhao T, Malik I, Visbisky AM, Schwartz SL, Cui P, Čabart P, Han KH, <strong>Lai WKM</strong>, Metz RP, Johnson CD, Sze SH, Pugh BF, Nickels BE, Kaplan CD*"
+  venue: "Genome Biology"
+  details: "21(1):132"
+  year: 2020
+  type: journal
+  lai_role: coauthor
+  featured: false
+  thrusts:
+    - chromatin
+  tools: []
+  url: "https://doi.org/10.1186/s13059-020-02040-0"
+  doi: "10.1186/s13059-020-02040-0"
+  pmid: "32487207"
+  pmcid: "PMC7265651"
+  bibtex: |
+    @article{qiu2020gb,
+      author  = {Qiu, C. and Jin, H. and Vvedenskaya, I. and Llenas, J. A. and Zhao, T. and Malik, I. and Visbisky, A. M. and Schwartz, S. L. and Cui, P. and {\v{C}}abart, P. and Han, K. H. and Lai, William K. M. and Metz, R. P. and Johnson, C. D. and Sze, S. H. and Pugh, B. Franklin and Nickels, Bryce E. and Kaplan, Craig D.},
+      title   = {Universal promoter scanning by Pol II during transcription initiation in Saccharomyces cerevisiae},
+      journal = {Genome Biology},
+      volume  = {21},
+      number  = {1},
+      pages   = {132},
+      year    = {2020},
+      doi     = {10.1186/s13059-020-02040-0}
+    }
+
+- id: yamada-2019-chexmix
+  title: "Characterizing protein-DNA binding event subtypes in ChIP-exo data"
+  authors_html: "Yamada N, <strong>Lai WKM</strong>, Farrell N, Pugh BF, Mahony S*"
+  venue: "Bioinformatics"
+  details: "35(6):903–913"
+  year: 2019
+  type: journal
+  lai_role: coauthor
+  featured: false
+  thrusts:
+    - bioinformatics
+  tools:
+    - chexmix
+  url: "https://doi.org/10.1093/bioinformatics/bty703"
+  doi: "10.1093/bioinformatics/bty703"
+  pmid: "30165373"
+  pmcid: "PMC6419906"
+  code_url: "https://github.com/EpiGenomicsCode/EGC-chexmix"
+  code_label: "Code (EpiGenomicsCode)"
+  alt_code_url: "https://github.com/seqcode/chexmix"
+  alt_code_label: "Code (seqcode)"
+  bibtex: |
+    @article{yamada2019chexmix,
+      author  = {Yamada, Naomi and Lai, William K. M. and Farrell, N. and Pugh, B. Franklin and Mahony, Shaun},
+      title   = {Characterizing protein-DNA binding event subtypes in ChIP-exo data},
+      journal = {Bioinformatics},
+      volume  = {35},
+      number  = {6},
+      pages   = {903--913},
+      year    = {2019},
+      doi     = {10.1093/bioinformatics/bty703}
+    }
+
+- id: rossi-2018-natcomm
+  title: "Simplified ChIP-exo assays"
+  authors_html: "Rossi MJ, <strong>Lai WKM</strong>, Pugh BF*"
+  venue: "Nature Communications"
+  details: "9(1):2842"
+  year: 2018
+  type: journal
+  lai_role: coauthor
+  featured: false
+  thrusts:
+    - chromatin
+  tools: []
+  url: "https://doi.org/10.1038/s41467-018-05265-7"
+  doi: "10.1038/s41467-018-05265-7"
+  pmid: "30030442"
+  pmcid: "PMC6054642"
+  bibtex: |
+    @article{rossi2018natcomm,
+      author  = {Rossi, Matthew J. and Lai, William K. M. and Pugh, B. Franklin},
+      title   = {Simplified ChIP-exo assays},
+      journal = {Nature Communications},
+      volume  = {9},
+      number  = {1},
+      pages   = {2842},
+      year    = {2018},
+      doi     = {10.1038/s41467-018-05265-7}
+    }
+
+- id: rossi-2018-gr
+  title: "Genome-wide determinants of sequence-specific DNA binding of general regulatory factors"
+  authors_html: "Rossi MJ, <strong>Lai WKM</strong>, Pugh BF*"
+  venue: "Genome Research"
+  details: "28(4):497–508"
+  year: 2018
+  type: journal
+  lai_role: coauthor
+  featured: false
+  thrusts:
+    - chromatin
+  tools: []
+  url: "https://doi.org/10.1101/gr.229518.117"
+  doi: "10.1101/gr.229518.117"
+  pmid: "29563167"
+  pmcid: "PMC5880240"
+  bibtex: |
+    @article{rossi2018gr,
+      author  = {Rossi, Matthew J. and Lai, William K. M. and Pugh, B. Franklin},
+      title   = {Genome-wide determinants of sequence-specific DNA binding of general regulatory factors},
+      journal = {Genome Research},
+      volume  = {28},
+      number  = {4},
+      pages   = {497--508},
+      year    = {2018},
+      doi     = {10.1101/gr.229518.117}
+    }
+
+- id: lai-2017-nrmcb
+  title: "Understanding nucleosome dynamics and their links to gene expression and DNA replication"
+  authors_html: "<strong>Lai WKM</strong>, Pugh BF*"
+  venue: "Nature Reviews Molecular Cell Biology"
+  details: "18(9):548–562"
+  year: 2017
+  type: journal
+  lai_role: first
+  featured: false
+  thrusts:
+    - chromatin
+  tools: []
+  url: "https://doi.org/10.1038/nrm.2017.47"
+  doi: "10.1038/nrm.2017.47"
+  pmid: "28537572"
+  pmcid: "PMC5831138"
+  bibtex: |
+    @article{lai2017nrmcb,
+      author  = {Lai, William K. M. and Pugh, B. Franklin},
+      title   = {Understanding nucleosome dynamics and their links to gene expression and DNA replication},
+      journal = {Nature Reviews Molecular Cell Biology},
+      volume  = {18},
+      number  = {9},
+      pages   = {548--562},
+      year    = {2017},
+      doi     = {10.1038/nrm.2017.47}
+    }
+
+- id: rossi-2017-natcomm
+  title: "Correspondence: DNA shape is insufficient to explain binding"
+  authors_html: "Rossi MJ, <strong>Lai WKM</strong>, Pugh BF*"
+  venue: "Nature Communications"
+  details: "8:15643"
+  year: 2017
+  type: journal
+  lai_role: coauthor
+  featured: false
+  thrusts:
+    - chromatin
+  tools: []
+  url: "https://doi.org/10.1038/ncomms15643"
+  doi: "10.1038/ncomms15643"
+  pmid: "28580956"
+  pmcid: "PMC5465349"
+  bibtex: |
+    @article{rossi2017natcomm,
+      author  = {Rossi, Matthew J. and Lai, William K. M. and Pugh, B. Franklin},
+      title   = {Correspondence: DNA shape is insufficient to explain binding},
+      journal = {Nature Communications},
+      volume  = {8},
+      pages   = {15643},
+      year    = {2017},
+      doi     = {10.1038/ncomms15643}
+    }
+
+- id: lai-2017-gr
+  title: "Genome-wide uniformity of human 'open' pre-initiation complexes"
+  authors_html: "<strong>Lai WKM</strong>, Pugh BF*"
+  venue: "Genome Research"
+  details: "27(1):15–26"
+  year: 2017
+  type: journal
+  lai_role: first
+  featured: false
+  thrusts:
+    - chromatin
+  tools: []
+  url: "https://doi.org/10.1101/gr.210955.116"
+  doi: "10.1101/gr.210955.116"
+  pmid: "27927716"
+  pmcid: "PMC5204339"
+  bibtex: |
+    @article{lai2017gr,
+      author  = {Lai, William K. M. and Pugh, B. Franklin},
+      title   = {Genome-wide uniformity of human `open' pre-initiation complexes},
+      journal = {Genome Research},
+      volume  = {27},
+      number  = {1},
+      pages   = {15--26},
+      year    = {2017},
+      doi     = {10.1101/gr.210955.116}
+    }
+
+- id: paul-2015-g3
+  title: "Chromatin mediation of a transcriptional memory effect in yeast"
+  authors_html: "Paul E, Tirosh I, <strong>Lai W</strong>, Buck MJ, Palumbo MJ, Morse RH*"
+  venue: "G3: Genes|Genomes|Genetics"
+  details: "5(5):829–838"
+  year: 2015
+  type: journal
+  lai_role: coauthor
+  featured: false
+  thrusts:
+    - chromatin
+  tools: []
+  url: "https://doi.org/10.1534/g3.115.017418"
+  doi: "10.1534/g3.115.017418"
+  pmid: "25748434"
+  pmcid: "PMC4426369"
+  bibtex: |
+    @article{paul2015g3,
+      author  = {Paul, E. and Tirosh, Itay and Lai, William and Buck, Michael J. and Palumbo, M. J. and Morse, Randall H.},
+      title   = {Chromatin mediation of a transcriptional memory effect in yeast},
+      journal = {G3: Genes|Genomes|Genetics},
+      volume  = {5},
+      number  = {5},
+      pages   = {829--838},
+      year    = {2015},
+      doi     = {10.1534/g3.115.017418}
+    }
+
+- id: puri-2014-mmi
+  title: "Iron-responsive chromatin remodelling and MAPK signalling enhance adhesion in Candida albicans"
+  authors_html: "Puri S#, <strong>Lai WKM</strong>#, Rizzo JM#, Buck MJ, Edgerton M*"
+  venue: "Molecular Microbiology"
+  details: "93(2):291–305"
+  year: 2014
+  type: journal
+  lai_role: co-first
+  featured: false
+  thrusts:
+    - chromatin
+  tools: []
+  url: "https://doi.org/10.1111/mmi.12659"
+  doi: "10.1111/mmi.12659"
+  pmid: "24889932"
+  pmcid: "PMC4107033"
+  bibtex: |
+    @article{puri2014mmi,
+      author  = {Puri, S. and Lai, William K. M. and Rizzo, J. M. and Buck, Michael J. and Edgerton, Mira},
+      title   = {Iron-responsive chromatin remodelling and MAPK signalling enhance adhesion in Candida albicans},
+      journal = {Molecular Microbiology},
+      volume  = {93},
+      number  = {2},
+      pages   = {291--305},
+      year    = {2014},
+      doi     = {10.1111/mmi.12659}
+    }
+
+- id: lai-2013-bioinf
+  title: "An integrative approach to understanding the combinatorial histone code at functional elements"
+  authors_html: "<strong>Lai WKM</strong>, Buck MJ*"
+  venue: "Bioinformatics"
+  details: "29(18):2231–2237"
+  year: 2013
+  type: journal
+  lai_role: first
+  featured: false
+  thrusts:
+    - bioinformatics
+  tools: []
+  url: "https://doi.org/10.1093/bioinformatics/btt382"
+  doi: "10.1093/bioinformatics/btt382"
+  pmid: "23821650"
+  pmcid: "PMC3765103"
+  bibtex: |
+    @article{lai2013bioinf,
+      author  = {Lai, William K. M. and Buck, Michael J.},
+      title   = {An integrative approach to understanding the combinatorial histone code at functional elements},
+      journal = {Bioinformatics},
+      volume  = {29},
+      number  = {18},
+      pages   = {2231--2237},
+      year    = {2013},
+      doi     = {10.1093/bioinformatics/btt382}
+    }
+
+- id: givens-2012-nar
+  title: "Chromatin architectures at fission yeast transcriptional promoters and replication origins"
+  authors_html: "Givens RM, <strong>Lai WKM</strong>, Rizzo JM, Bard JE, Mieczkowski PA, Leatherwood J, Huberman JA, Buck MJ*"
+  venue: "Nucleic Acids Research"
+  details: "40(15):7176–7189"
+  year: 2012
+  type: journal
+  lai_role: coauthor
+  featured: false
+  thrusts:
+    - chromatin
+  tools: []
+  url: "https://doi.org/10.1093/nar/gks351"
+  doi: "10.1093/nar/gks351"
+  pmid: "22573177"
+  pmcid: "PMC3424540"
+  bibtex: |
+    @article{givens2012nar,
+      author  = {Givens, R. M. and Lai, William K. M. and Rizzo, J. M. and Bard, J. E. and Mieczkowski, P. A. and Leatherwood, J. and Huberman, J. A. and Buck, Michael J.},
+      title   = {Chromatin architectures at fission yeast transcriptional promoters and replication origins},
+      journal = {Nucleic Acids Research},
+      volume  = {40},
+      number  = {15},
+      pages   = {7176--7189},
+      year    = {2012},
+      doi     = {10.1093/nar/gks351}
+    }
+
+- id: lai-2012-archtex
+  title: "ArchTEx: accurate extraction and visualization of next-generation sequence data"
+  authors_html: "<strong>Lai WKM</strong>, Bard JE, Buck MJ*"
+  venue: "Bioinformatics"
+  details: "28(7):1021–1023"
+  year: 2012
+  type: journal
+  lai_role: first
+  featured: false
+  thrusts:
+    - bioinformatics
+  tools:
+    - archtex
+  url: "https://doi.org/10.1093/bioinformatics/bts063"
+  doi: "10.1093/bioinformatics/bts063"
+  pmid: "22302569"
+  pmcid: "PMC3315719"
+  code_url: "https://github.com/WilliamKMLai/ArchTEx"
+  bibtex: |
+    @article{lai2012archtex,
+      author  = {Lai, William K. M. and Bard, J. E. and Buck, Michael J.},
+      title   = {ArchTEx: accurate extraction and visualization of next-generation sequence data},
+      journal = {Bioinformatics},
+      volume  = {28},
+      number  = {7},
+      pages   = {1021--1023},
+      year    = {2012},
+      doi     = {10.1093/bioinformatics/bts063}
+    }
+
+- id: lai-2010-archalign
+  title: "ArchAlign: coordinate-free chromatin alignment reveals novel architectures"
+  authors_html: "<strong>Lai WKM</strong>, Buck MJ*"
+  venue: "Genome Biology"
+  details: "11(12):R126"
+  year: 2010
+  type: journal
+  lai_role: first
+  featured: false
+  thrusts:
+    - bioinformatics
+  tools:
+    - archalign
+  url: "https://doi.org/10.1186/gb-2010-11-12-r126"
+  doi: "10.1186/gb-2010-11-12-r126"
+  pmid: "21182771"
+  pmcid: "PMC3046486"
+  code_url: "https://github.com/WilliamKMLai/ArchAlign"
+  bibtex: |
+    @article{lai2010archalign,
+      author  = {Lai, William K. M. and Buck, Michael J.},
+      title   = {ArchAlign: coordinate-free chromatin alignment reveals novel architectures},
+      journal = {Genome Biology},
+      volume  = {11},
+      number  = {12},
+      pages   = {R126},
+      year    = {2010},
+      doi     = {10.1186/gb-2010-11-12-r126}
+    }
+
+- id: escamilla-2010-bmc
+  title: "Genome-wide search identifies Ccnd2 as a direct transcriptional target of Elf5 in mouse mammary gland"
+  authors_html: "Escamilla-Hernandez R, Chakrabarti R, Romano RA, Smalley K, Zhu QQ, <strong>Lai W</strong>, Halfon MS, Buck MJ, Sinha S*"
+  venue: "BMC Molecular Biology"
+  details: "11:68"
+  year: 2010
+  type: journal
+  lai_role: coauthor
+  featured: false
+  thrusts:
+    - chromatin
+  tools: []
+  url: "https://doi.org/10.1186/1471-2199-11-68"
+  doi: "10.1186/1471-2199-11-68"
+  pmid: "20831799"
+  pmcid: "PMC2949602"
+  bibtex: |
+    @article{escamilla2010bmc,
+      author  = {Escamilla-Hernandez, R. and Chakrabarti, R. and Romano, R. A. and Smalley, K. and Zhu, Q. Q. and Lai, William and Halfon, M. S. and Buck, Michael J. and Sinha, Satrajit},
+      title   = {Genome-wide search identifies Ccnd2 as a direct transcriptional target of Elf5 in mouse mammary gland},
+      journal = {BMC Molecular Biology},
+      volume  = {11},
+      pages   = {68},
+      year    = {2010},
+      doi     = {10.1186/1471-2199-11-68}
+    }
+
+- id: almon-2009-joe
+  title: "Gene expression analysis of hepatic roles in cause and development of diabetes in Goto-Kakizaki rats"
+  authors_html: "Almon RR*, DuBois DC, <strong>Lai W</strong>, Xue B, Nie J, Jusko WJ"
+  venue: "Journal of Endocrinology"
+  details: "200(3):331–346"
+  year: 2009
+  type: journal
+  lai_role: coauthor
+  featured: false
+  thrusts: []
+  tools: []
+  url: "https://doi.org/10.1677/JOE-08-0404"
+  doi: "10.1677/JOE-08-0404"
+  pmid: "19074471"
+  bibtex: |
+    @article{almon2009joe,
+      author  = {Almon, Richard R. and DuBois, Debra C. and Lai, William and Xue, B. and Nie, J. and Jusko, William J.},
+      title   = {Gene expression analysis of hepatic roles in cause and development of diabetes in Goto-Kakizaki rats},
+      journal = {Journal of Endocrinology},
+      volume  = {200},
+      number  = {3},
+      pages   = {331--346},
+      year    = {2009},
+      doi     = {10.1677/JOE-08-0404}
+    }
+
+- id: almon-2008-ajp
+  title: "Relationships between circadian rhythms and modulation of gene expression by glucocorticoids in skeletal muscle"
+  authors_html: "Almon RR*, Yang E, <strong>Lai W</strong>, Androulakis IP, Ghimbovschi S, Hoffman EP, Jusko WJ, DuBois DC"
+  venue: "American Journal of Physiology - Regulatory, Integrative and Comparative Physiology"
+  details: "295(4):R1031–R1047"
+  year: 2008
+  type: journal
+  lai_role: coauthor
+  featured: false
+  thrusts: []
+  tools: []
+  url: "https://doi.org/10.1152/ajpregu.90399.2008"
+  doi: "10.1152/ajpregu.90399.2008"
+  pmid: "18667713"
+  pmcid: "PMC2576101"
+  bibtex: |
+    @article{almon2008ajp,
+      author  = {Almon, Richard R. and Yang, E. and Lai, William and Androulakis, Ioannis P. and Ghimbovschi, S. and Hoffman, E. P. and Jusko, William J. and DuBois, Debra C.},
+      title   = {Relationships between circadian rhythms and modulation of gene expression by glucocorticoids in skeletal muscle},
+      journal = {American Journal of Physiology - Regulatory, Integrative and Comparative Physiology},
+      volume  = {295},
+      number  = {4},
+      pages   = {R1031--R1047},
+      year    = {2008},
+      doi     = {10.1152/ajpregu.90399.2008}
+    }
+
+- id: almon-2008-jpet
+  title: "Circadian variations in rat liver gene expression: relationships to drug actions"
+  authors_html: "Almon RR*, Yang E, <strong>Lai W</strong>, Androulakis IP, DuBois DC, Jusko WJ"
+  venue: "Journal of Pharmacology and Experimental Therapeutics"
+  details: "326(3):700–716"
+  year: 2008
+  type: journal
+  lai_role: coauthor
+  featured: false
+  thrusts: []
+  tools: []
+  url: "https://doi.org/10.1124/jpet.108.140186"
+  doi: "10.1124/jpet.108.140186"
+  pmid: "18562560"
+  pmcid: "PMC2561907"
+  bibtex: |
+    @article{almon2008jpet,
+      author  = {Almon, Richard R. and Yang, E. and Lai, William and Androulakis, Ioannis P. and DuBois, Debra C. and Jusko, William J.},
+      title   = {Circadian variations in rat liver gene expression: relationships to drug actions},
+      journal = {Journal of Pharmacology and Experimental Therapeutics},
+      volume  = {326},
+      number  = {3},
+      pages   = {700--716},
+      year    = {2008},
+      doi     = {10.1124/jpet.108.140186}
+    }
+
+- id: almon-2005-ajp
+  title: "Corticosteroid-regulated genes in rat kidney: mining time series data"
+  authors_html: "Almon RR*, <strong>Lai W</strong>, DuBois DC, Jusko WJ"
+  venue: "American Journal of Physiology - Endocrinology and Metabolism"
+  details: "289(5):E870–E882"
+  year: 2005
+  type: journal
+  lai_role: coauthor
+  featured: false
+  thrusts: []
+  tools: []
+  url: "https://doi.org/10.1152/ajpendo.00196.2005"
+  doi: "10.1152/ajpendo.00196.2005"
+  pmid: "15985454"
+  pmcid: "PMC3752664"
+  bibtex: |
+    @article{almon2005ajp,
+      author  = {Almon, Richard R. and Lai, William and DuBois, Debra C. and Jusko, William J.},
+      title   = {Corticosteroid-regulated genes in rat kidney: mining time series data},
+      journal = {American Journal of Physiology - Endocrinology and Metabolism},
+      volume  = {289},
+      number  = {5},
+      pages   = {E870--E882},
+      year    = {2005},
+      doi     = {10.1152/ajpendo.00196.2005}
+    }

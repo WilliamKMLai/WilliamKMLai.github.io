@@ -1,96 +1,121 @@
 ---
+layout: default
 title: Teaching
+description: "Graduate and biomedical computational training in the Department of Biochemistry at the University at Buffalo (SUNY), cloud classroom gateways on NSF Jetstream2, and prior courses taught."
 ---
 
-<style>
-.logo-container {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  align-items: center;
-}
-</style>
+<header class="page-header">
+  <h1 class="page-title">Teaching &amp; Educational Gateways</h1>
+  <p class="page-lead">
+    In the Department of Biochemistry at the Jacobs School of Medicine and Biomedical Sciences, University at Buffalo (SUNY), our educational mission integrates quantitative genomics, machine learning interpretability, and reproducible high-performance computing into biomedical sciences and medical training. We emphasize lowering technical barriers so experimental life scientists can interrogate high-dimensional omics and structural datasets with rigor.
+  </p>
+</header>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teaching</title>
-    <style>
-        .logos {
-            text-align: center; /* Center the content inside the logos container */
-        }
-        .access_logo {
-            display: inline-block; /* Ensures the logo div doesn't take full width */
-        }
-    </style>
-</head>
-<body>
+<section class="section-block" aria-labelledby="classroom-gateway-heading">
+  <div class="section-header">
+    <h2 id="classroom-gateway-heading" class="section-title">Federated Cloud Classroom Infrastructure</h2>
+    <a class="btn btn-outline btn-sm" href="https://github.com/EpiGenomicsCode/EGC-jupyterhub" target="_blank" rel="noopener">
+      GitHub: EGC-jupyterhub &rarr;
+    </a>
+  </div>
 
-<div class="Teaching">
-    <header class="entry-header ast-no-thumbnail ast-no-meta">
-        <div class="entry-content clear" itemprop="text">
-            <h3 id="research-nn">CB 2010/6010: Introduction to Computational Biology</h3>
-            <div class="entry-content clear" itemprop="text">
-                <br></br>
-                <h4 id="research-nn">Course description</h4>
+  <article class="card">
+    <h3>Zero-Cost Scalable Bioinformatics Classrooms (<code>EGC-jupyterhub</code>)</h3>
+    <p>
+      To support hands-on computational biology and AI instruction without placing hardware or administrative burdens on host institutions, we architected an open-source cloud classroom deployment (<a href="https://github.com/EpiGenomicsCode/EGC-jupyterhub" target="_blank" rel="noopener"><code>EpiGenomicsCode/EGC-jupyterhub</code></a>) deployed across both 200+-student university courses and K&ndash;12 computational thinking living labs at zero cost to host schools.
+    </p>
+    <p>
+      <strong>JupyterHub</strong> (via The Littlest JupyterHub) serves as a uniform browser-based scientific gateway reflecting current <strong>best-practices</strong> in reproducible bioinformatics. Cloud compute instances are provisioned through the NSF-funded <strong>ACCESS</strong> initiative on <strong>Jetstream2</strong>, while the NCSA-supported <strong>CILogon</strong> <strong>initiative</strong> provides federated institutional <strong>credentialing</strong>—allowing students to authenticate directly with their university credentials and eliminating manual account management for instructors.
+    </p>
 
-                <div class="wp-block-media-text alignwide is-stacked-on-mobile is-vertically-aligned-top" style="grid-template-columns:20% auto">
-                    <div class="wp-block-media-text__content">
-                        <p class="has-normal-font-size">This class is designed to inspire students in the life sciences to see the power of Computational
-                            Biology in advancing fundamental research. The course will initially be team-taught by experts
-                            in diverse applications of Computational Biology, with each sharing the excitement of making
-                            clear to students how the introduction of computational approaches has been transformative in
-                            their field. The course will also teach many fundamental skills in manipulating large data sets,
-                            including genome sequences, functional genomic data, images, protein structures, etc. The
-                            course will consist of two lectures each week and one practical exercise session each week. In
-                            the practicals, students will learn the use of many of the latest software tools, and will develop
-                            some basic programming skills. Students will learn essential problem solving skills in several
-                            aspects of genome analysis, and modeling in neurobiology, ecology, physiology and evolution.
-                            This will prepare them for future courses in these more focused biological areas covering
-                            specific applications of computer programming as well as use of specialized software tools.
-                            Students will be able to explore their own specific interests in greater depth on a term project.
-                        </p>
+    <ul>
+      <li>
+        <strong>SC26 Workshop Case Study (2026):</strong>
+        <a href="{{ '/publications.html#pub-sc26-2026-bphte' | relative_url }}">&ldquo;Empowering K-12 Education through HPC-enabled AI and Computational Thinking: A Living Lab Case Study&rdquo;</a>
+        (<em>Thirteenth SC Workshop on Best Practices for HPC Training and Education [BPHTE26]</em>, 2026)
+      </li>
+      <li>
+        <strong>Classroom Deployment Recipes:</strong>
+        <a href="https://github.com/EpiGenomicsCode/EGC-jupyterhub" target="_blank" rel="noopener">https://github.com/EpiGenomicsCode/EGC-jupyterhub</a>
+      </li>
+      <li>
+        <strong>Science Gateway Platform:</strong>
+        <a href="https://tljh.jupyter.org/en/latest/" target="_blank" rel="noopener">The Littlest JupyterHub (TLJH)</a>
+      </li>
+      <li>
+        <strong>Cloud HPC Infrastructure:</strong>
+        <a href="https://access-ci.org/" target="_blank" rel="noopener">NSF ACCESS &amp; Jetstream2</a>
+      </li>
+      <li>
+        <strong>Federated Institutional Authentication:</strong>
+        <a href="https://www.cilogon.org/" target="_blank" rel="noopener">NCSA CILogon</a>
+      </li>
+    </ul>
 
-                        <h4>Computational Infrastructure</h4>
-                        <ul>
-                          <p class="has-normal-font-size"> The computational infrastructure for this class was designed to seamlessly scale from 50 to 200 students at no cost to the university. JupyerHub was selected as a the
-                            scientific gateway in order to provide a uniform graphical interface that reflects current best-pracitices in the field of bioinformatics. HPC server support was provided free of charge through the
-                            NSF-funded ACCESS initiative. The NCSA-supported CILogon iniative provided federated credentially for students to login to the server using their existing NetID eliminating the need for instructors to perform
-                            user-management.
-                          </p>
+    <div class="logo-row">
+      <img
+        class="partner-logo"
+        src="{{ '/assets/images/access_logo.jpeg' | relative_url }}"
+        alt="NSF ACCESS cyberinfrastructure program logo"
+        width="576"
+        height="87"
+        loading="lazy"
+      />
+      <img
+        class="partner-logo"
+        src="{{ '/assets/images/JS2_logo.png' | relative_url }}"
+        alt="Jetstream2 NSF cloud computing system logo"
+        width="1275"
+        height="376"
+        loading="lazy"
+      />
+    </div>
+  </article>
+</section>
 
-                          <li>Science Gateway provided through JupyterHub support: <a href="https://tljh.jupyter.org/en/latest/" target="_blank">https://tljh.jupyter.org/en/latest/</a></li>
-                          <li>HPC compute provided through JetStream2 - ACCESS: <a href="https://access-ci.org/" target="_blank">https://access-ci.org/</a></li>
-                          <li>Federated ID provided through CILogon: <a href="https://www.cilogon.org/home" target="_blank">https://www.cilogon.org/home</a></li>
-                        </ul>
+<section class="section-block" aria-labelledby="prior-courses-heading">
+  <div class="section-header">
+    <h2 id="prior-courses-heading" class="section-title">Prior Courses Taught</h2>
+  </div>
 
-                    </div>
-                </div>
+  <div class="grid-3">
+    <article class="card">
+      <div class="grant-meta">
+        <span class="pill">2023 &ndash; 2025</span>
+        <span>Cornell University &middot; Course Instructor</span>
+      </div>
+      <h3>CB 2010 / CB 6010: Introduction to Computational Biology</h3>
+      <p>
+        Team-taught undergraduate and graduate survey course introducing students across the life sciences to how computational and quantitative methods transform biological discovery. Delivered through two weekly lectures and one weekly hands-on computational practical session, the curriculum trained students to manipulate genome sequences, functional genomics datasets, biological images, and protein structures.
+      </p>
+      <p>
+        Practical modules built foundational programming fluency and quantitative problem-solving across genome analysis, neurobiology, ecology, physiology, and evolutionary modeling, culminating in an independent computational term project executed on our Jetstream2 JupyterHub gateway.
+      </p>
+    </article>
 
-                <br></br>
-                <div class="logo-container">
-                    <div class="logos">
-                        <div class="access_logo">
-                            <div class="images">
-                                <img src="./assets/images/access_logo.jpeg" width="288" height="48" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="logos">
-                        <div class="access_logo">
-                            <div class="images">
-                                <img src="./assets/images/JS2_logo.png" width="288" height="48" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <article class="card">
+      <div class="grant-meta">
+        <span class="pill">2022 &ndash; 2026</span>
+        <span>Cornell University &middot; Course Instructor</span>
+      </div>
+      <h3>BIOG 2290: Introduction to Research in Computational Biology</h3>
+      <p>
+        Faculty-mentored independent computational biology research course training undergraduates in hypothesis formulation, reproducible command-line and Python workflows, version-controlled software engineering, and large-scale epigenomic data quality control.
+      </p>
+      <p>
+        Alongside classroom instruction, Dr. Lai served as Co-Chair of the Computational Biology Undergraduate Honors Thesis Program (2022&ndash;2026) and freshman faculty advisor at Cornell University, as well as a member of the NSF ACCESS External Advisory Board (2023&ndash;Present).
+      </p>
+    </article>
 
-            </div>
-        </div>
-    </header>
-</div>
-
-</body>
-</html>
+    <article class="card">
+      <div class="grant-meta">
+        <span class="pill">2014</span>
+        <span>Penn State University &middot; Course Instructor</span>
+      </div>
+      <h3>Molecular and Cellular Biology II</h3>
+      <p>
+        Co-taught with B. Franklin Pugh, PhD in the Department of Biochemistry and Molecular Biology at Pennsylvania State University. Covered core graduate and upper-level molecular and cellular biology mechanisms, including eukaryotic chromatin organization, nucleosome dynamics, transcription pre-initiation complex assembly, and quantitative experimental analysis of gene regulation.
+      </p>
+    </article>
+  </div>
+</section>

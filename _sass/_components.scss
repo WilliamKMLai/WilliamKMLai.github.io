@@ -1,0 +1,1037 @@
+// ============================================================================
+// Shared UI Components & Page-Specific Modules
+// ============================================================================
+
+// ----------------------------------------------------------------------------
+// Cards, Buttons & Pills
+// ----------------------------------------------------------------------------
+
+.card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1.35rem 1.45rem;
+  box-shadow: var(--shadow-sm);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.52rem 1rem;
+  font-family: var(--font-sans);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  line-height: 1.25;
+  text-decoration: none;
+  border-radius: var(--radius-sm);
+  border: 1px solid transparent;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btn-primary {
+  background-color: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+  border-color: var(--btn-primary-bg);
+
+  &:hover {
+    background-color: var(--btn-primary-hover);
+    border-color: var(--btn-primary-hover);
+    color: var(--btn-primary-text);
+  }
+}
+
+.btn-outline {
+  background-color: var(--bg-surface);
+  color: var(--text-primary);
+  border-color: var(--border-strong);
+
+  &:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+    background-color: var(--accent-soft);
+  }
+}
+
+.btn-sm {
+  padding: 0.36rem 0.72rem;
+  font-size: 0.84375rem;
+}
+
+.pill-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.85rem;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.22rem 0.62rem;
+  font-family: var(--font-sans);
+  font-size: 0.78125rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--badge-role-text);
+  background-color: var(--badge-role-bg);
+  border: 1px solid var(--badge-role-border);
+  border-radius: 999px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+a.pill:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+// ----------------------------------------------------------------------------
+// Homepage: Hero Profile, Career Timeline & Research Pillars
+// ----------------------------------------------------------------------------
+
+.hero-profile {
+  display: grid;
+  grid-template-columns: 296px minmax(0, 1fr);
+  gap: 2.5rem;
+  align-items: start;
+}
+
+@media (max-width: 859px) {
+  .hero-profile {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.75rem;
+  }
+}
+
+.hero-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+@media (max-width: 859px) {
+  .hero-sidebar {
+    max-width: 480px;
+  }
+}
+
+.portrait-frame {
+  width: 100%;
+  max-width: 300px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-surface);
+  box-shadow: var(--shadow-md);
+
+  picture,
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: unquote("2 / 3");
+    object-fit: cover;
+  }
+}
+
+.contact-meta {
+  padding: 1rem 1.1rem;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius-md);
+  font-size: 0.925rem;
+  line-height: 1.5;
+  color: var(--text-secondary);
+  box-shadow: var(--shadow-sm);
+
+  p {
+    margin-bottom: 0.65rem;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  a {
+    text-decoration: none;
+    font-weight: 500;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.profile-icon-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.hero-bio {
+  .page-title {
+    margin-bottom: 0.35rem;
+  }
+
+  .page-lead {
+    font-weight: 600;
+    color: var(--accent);
+    font-size: 1.0625rem;
+    margin-bottom: 1.15rem;
+  }
+
+  p {
+    max-width: none;
+  }
+}
+
+.career-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border-left: 2px solid var(--border-strong);
+  margin-left: 0.4rem;
+  padding-left: 1.35rem;
+}
+
+.timeline-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 165px minmax(0, 1fr);
+  gap: 0.35rem 1.25rem;
+  padding: 0.7rem 0;
+  border-bottom: 1px solid var(--border-color);
+
+  &:last-child {
+    border-bottom: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -1.75rem;
+    top: 1.1rem;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--bg-surface);
+    border: 2.5px solid var(--accent);
+  }
+
+  &:first-child::before {
+    background-color: var(--accent);
+  }
+}
+
+.timeline-year,
+.timeline-date {
+  font-family: var(--font-mono);
+  font-size: 0.84375rem;
+  font-weight: 500;
+  color: var(--accent);
+  padding-top: 0.12rem;
+}
+
+.timeline-content {
+  color: var(--text-secondary);
+  font-size: 0.985rem;
+  line-height: 1.55;
+}
+
+@media (max-width: 767px) {
+  .timeline-item {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.2rem;
+  }
+}
+
+.pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+@media (max-width: 767px) {
+  .pillars-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.pillar-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.65rem;
+  border-top: 3px solid var(--accent);
+
+  &:hover {
+    border-color: var(--accent);
+    box-shadow: var(--shadow-md);
+  }
+
+  h3 {
+    margin: 0;
+    font-size: 1.15rem;
+
+    a {
+      color: var(--text-primary);
+      text-decoration: none;
+
+      &:hover {
+        color: var(--accent);
+      }
+    }
+  }
+
+  p {
+    margin: 0;
+    font-size: 0.96875rem;
+    color: var(--text-secondary);
+    flex: 1 1 auto;
+  }
+
+  .btn {
+    margin-top: 0.35rem;
+  }
+}
+
+// ----------------------------------------------------------------------------
+// Research Page: Synthesis Banner, Jump Bar, Thrust Sections & Scientific Plates
+// ----------------------------------------------------------------------------
+
+.synthesis-banner {
+  margin-bottom: 1.75rem;
+  padding: 1.5rem;
+  border-top: 3px solid var(--accent);
+
+  h2,
+  h3 {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.thrust-jump-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.55rem;
+  margin-top: 1.1rem;
+  padding: 0.85rem 1rem;
+  background-color: var(--bg-subtle);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.38rem 0.8rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-strong);
+    border-radius: 999px;
+    text-decoration: none;
+
+    &:hover {
+      color: var(--accent);
+      border-color: var(--accent);
+      background-color: var(--accent-soft);
+    }
+  }
+}
+
+.thrust-section {
+  display: block;
+  scroll-margin-top: 5.5rem;
+}
+
+.thrust-layout,
+.thrust-grid,
+.thrust-body,
+.thrust-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1.12fr) minmax(320px, 0.95fr);
+  gap: 2rem;
+  align-items: start;
+}
+
+@media (max-width: 959px) {
+  .thrust-layout,
+  .thrust-grid,
+  .thrust-body,
+  .thrust-row {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.35rem;
+  }
+}
+
+.thrust-visuals {
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+}
+
+.thrust-highlights {
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border-color);
+
+  .section-header {
+    margin-bottom: 0.95rem;
+  }
+
+  h3 {
+    font-size: 1.05rem;
+    margin-bottom: 0;
+  }
+
+  .pub-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.85rem;
+  }
+
+  .pub-item {
+    margin: 0;
+    height: 100%;
+  }
+}
+
+@media (max-width: 859px) {
+  .thrust-highlights .pub-list {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+// Scientific Figure Frame: preserves clean light plate for white-bg PNGs/JPGs/SVGs in dark mode
+.figure-frame {
+  margin: 0;
+  padding: 0.85rem;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+
+  img,
+  svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    background-color: var(--plate-bg);
+    border-radius: var(--radius-sm);
+  }
+}
+
+[data-theme="dark"] .figure-frame {
+  img,
+  svg {
+    padding: 0.45rem;
+    border: 1px solid rgba(148, 163, 184, 0.3);
+  }
+}
+
+.figure-caption,
+.figure-frame figcaption {
+  margin-top: 0.65rem;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--text-muted);
+}
+
+// ----------------------------------------------------------------------------
+// Software Hub: Filter Bar, Cards, Tech Tags & Actions
+// ----------------------------------------------------------------------------
+
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  padding: 0.55rem;
+  background-color: var(--bg-subtle);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+}
+
+.filter-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.45rem 0.9rem;
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+
+  &:hover {
+    color: var(--text-primary);
+    background-color: var(--bg-surface);
+  }
+
+  &.is-active,
+  &[aria-pressed="true"] {
+    background-color: var(--btn-primary-bg);
+    color: var(--btn-primary-text);
+    border-color: var(--btn-primary-bg);
+    box-shadow: var(--shadow-sm);
+  }
+}
+
+.software-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.25rem;
+}
+
+@media (max-width: 767px) {
+  .software-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.software-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  height: 100%;
+  scroll-margin-top: 5.5rem;
+
+  &:target {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 2px var(--accent), var(--shadow-md);
+  }
+
+  &:hover {
+    border-color: var(--border-strong);
+    box-shadow: var(--shadow-md);
+  }
+}
+
+.software-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.software-card-title {
+  margin: 0;
+  font-size: 1.15rem;
+  color: var(--text-primary);
+}
+
+.software-card-tagline {
+  margin: 0.2rem 0 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.software-card-desc {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.58;
+  color: var(--text-secondary);
+}
+
+.software-thumb {
+  padding: 0.55rem;
+}
+
+.software-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.38rem;
+}
+
+.tech-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.16rem 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  background-color: var(--bg-subtle);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+}
+
+.software-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: auto;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--border-color);
+}
+
+// ----------------------------------------------------------------------------
+// Publications Engine: Metrics, Instant Controls, Badges & BibTeX Drawer
+// ----------------------------------------------------------------------------
+
+.pub-metrics-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 1.15rem;
+}
+
+.pub-metric {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.4rem;
+  padding: 0.55rem 0.95rem;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-sm);
+  font-size: 0.925rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  text-decoration: none;
+
+  strong {
+    font-family: var(--font-serif);
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--text-primary);
+  }
+}
+
+a.pub-metric {
+  color: var(--accent);
+  font-weight: 600;
+
+  &:hover {
+    color: var(--accent-hover);
+    border-color: var(--accent);
+    background-color: var(--accent-soft);
+  }
+}
+
+.pub-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.75rem;
+  padding: 1rem 1.15rem;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.pub-search {
+  flex: 1 1 240px;
+  min-width: 200px;
+  padding: 0.5rem 0.8rem;
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  background-color: var(--bg-page);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+
+  &::placeholder {
+    color: var(--text-muted);
+  }
+}
+
+.pub-select {
+  padding: 0.5rem 0.75rem;
+  font-family: var(--font-sans);
+  font-size: 0.925rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  background-color: var(--bg-page);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+}
+
+.pub-toggle-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.45rem 0.75rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  background-color: var(--bg-subtle);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  user-select: none;
+
+  input[type="checkbox"] {
+    width: 1rem;
+    height: 1rem;
+    accent-color: var(--accent);
+    cursor: pointer;
+    margin: 0;
+  }
+}
+
+.pub-count {
+  margin-left: auto;
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+@media (max-width: 767px) {
+  .pub-search,
+  .pub-select {
+    flex: 1 1 100%;
+  }
+
+  .pub-count {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+.pub-year-group {
+  margin-bottom: 2.25rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.pub-year-heading {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: var(--font-serif);
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.95rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid var(--border-color);
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 1.15em;
+    border-radius: 3px;
+    background-color: var(--accent);
+  }
+}
+
+.pub-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.pub-item {
+  margin: 0;
+  padding: 1rem 1.2rem;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-left: 3px solid transparent;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  scroll-margin-top: 5.5rem;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+
+  &:hover {
+    border-left-color: var(--accent);
+    box-shadow: var(--shadow-md);
+  }
+
+  &:target {
+    border-color: var(--accent);
+    border-left-width: 4px;
+  }
+}
+
+.pub-title {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 1.04rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--text-primary);
+  text-decoration: none;
+  margin-bottom: 0.3rem;
+}
+
+a.pub-title {
+  color: var(--text-primary);
+
+  &:hover {
+    color: var(--accent);
+    text-decoration: underline;
+  }
+}
+
+.pub-title a {
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    color: var(--accent);
+    text-decoration: underline;
+  }
+}
+
+.pub-authors {
+  margin: 0 0 0.3rem;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  color: var(--text-secondary);
+
+  strong {
+    color: var(--text-primary);
+    font-weight: 700;
+  }
+}
+
+.pub-item-compact {
+  padding: 0.85rem 1.05rem;
+}
+
+.pub-venue-line {
+  margin: 0 0 0.5rem;
+  font-size: 0.915rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+
+  em,
+  i {
+    color: var(--text-primary);
+    font-weight: 600;
+  }
+
+  .badge {
+    margin-left: 0.3rem;
+    vertical-align: middle;
+  }
+}
+
+.pub-badges {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.45rem;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.18rem 0.58rem;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1.3;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+// High-contrast warm amber pill badge for Preprints (bioRxiv / arXiv)
+.badge-preprint {
+  background-color: var(--badge-preprint-bg);
+  color: var(--badge-preprint-text);
+  border-color: var(--badge-preprint-border);
+  letter-spacing: 0.02em;
+}
+
+.badge-conference {
+  background-color: var(--badge-conf-bg);
+  color: var(--badge-conf-text);
+  border-color: var(--badge-conf-border);
+}
+
+.badge-award {
+  background-color: var(--badge-award-bg);
+  color: var(--badge-award-text);
+  border-color: var(--badge-award-border);
+}
+
+.badge-role {
+  background-color: var(--badge-role-bg);
+  color: var(--badge-role-text);
+  border-color: var(--badge-role-border);
+  font-weight: 600;
+}
+
+.badge-link {
+  padding: 0.18rem 0.58rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  background-color: var(--bg-subtle);
+  border: 1px solid var(--border-strong);
+  border-radius: 6px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+
+  &:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+    background-color: var(--accent-soft);
+  }
+}
+
+.bibtex-toggle {
+  font-family: var(--font-mono);
+
+  &[aria-expanded="true"] {
+    background-color: var(--accent-soft);
+    color: var(--accent);
+    border-color: var(--accent);
+  }
+}
+
+.bibtex-drawer {
+  margin-top: 0.75rem;
+  padding: 0.75rem;
+  background-color: var(--bg-subtle);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+
+  pre {
+    margin-bottom: 0.6rem;
+  }
+}
+
+.bibtex-copy-btn {
+  background-color: var(--bg-surface);
+  color: var(--text-primary);
+  border: 1px solid var(--border-strong);
+
+  &:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+    background-color: var(--accent-soft);
+  }
+}
+
+// ----------------------------------------------------------------------------
+// Funding & Teaching: Grant Cards & Partner Logos
+// ----------------------------------------------------------------------------
+
+.grant-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+@media (max-width: 767px) {
+  .grant-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.grant-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  border-top: 3px solid var(--accent);
+
+  h3 {
+    margin: 0;
+    font-size: 1.1rem;
+  }
+}
+
+.grant-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 0.65rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.grant-amount {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.logo-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+
+.partner-logo {
+  display: block;
+  height: 44px;
+  width: auto;
+  max-width: 240px;
+  object-fit: contain;
+  padding: 6px 12px;
+  background-color: var(--plate-bg);
+  border: 1px solid var(--plate-border);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-sm);
+}
+
+// Print Stylesheet
+@media print {
+  .site-header,
+  .site-footer,
+  .skip-link,
+  .filter-bar,
+  .pub-controls,
+  .bibtex-toggle,
+  .bibtex-drawer {
+    display: none !important;
+  }
+
+  body {
+    background: #FFFFFF;
+    color: #000000;
+    font-size: 11pt;
+  }
+
+  .card,
+  .pub-item {
+    box-shadow: none;
+    border-color: #CBD5E1;
+    break-inside: avoid;
+  }
+}

@@ -1,152 +1,103 @@
 ---
+layout: default
 title: Software
+description: "FAIR open-source software, high-throughput structural biology containers, explainable AI frameworks, and science gateways developed by the Lai Lab at the University at Buffalo."
 ---
 
-<style>
-.row1{text-align:center;}
-.row2{text-align:center;}
-.row3{text-align:center;}
-.row4{text-align:center;}
-.box1{ display:inline-block;
-        width:40%;
-        vertical-align: middle;
-text-align: center;
-margin:0 20px 0 20px
-}
-.box2{  display:inline-block;
-        width:40%;
-        vertical-align: middle;
-        text-align: center;
-        vertical-align: top;
-margin:0 20px 0 20px
-}
-.box3{  display:inline-block;
-        width:40%;
-        vertical-align: middle;
-        text-align: center;
-margin:0 20px 0 20px
-}
-.box4{  display:inline-block;
-        width:40%;
-        vertical-align: middle;
-        text-align: center;
-vertical-align: top;
-margin:0 20px 0 20px
-}
+<header class="page-header">
+  <h1 class="page-title">Software &amp; Science Gateways</h1>
+  <p class="page-lead">
+    The Lai Lab develops open-source algorithms, high-throughput computing containers, and turnkey web gateways built around
+    <strong>FAIR (Findable, Accessible, Interoperable, and Reusable)</strong> principles. From base-pair chromatin footprinting and provenance verification to consistency-distilled biomolecular diffusion models, our tools are engineered to make large-scale computation accessible across both command-line HPC pipelines and graphical interfaces.
+  </p>
+  <div class="pill-bar" role="region" aria-label="GitHub organizations and accounts">
+    <a class="btn btn-primary btn-sm" href="https://github.com/EpiGenomicsCode" target="_blank" rel="noopener">
+      GitHub: EpiGenomicsCode
+    </a>
+    <a class="btn btn-outline btn-sm" href="https://github.com/CEGRcode" target="_blank" rel="noopener">
+      GitHub: CEGRcode
+    </a>
+  </div>
+</header>
 
-</style>
-<div class="Software">
-
-  <h2 id="research-nn">Mission statement</h2>
-    <div class="wp-block-media-text alignwide is-stacked-on-mobile is-vertically-aligned-top" style="grid-template-columns:20% auto">
-      <div class="wp-block-media-text__content">
-          <p class="has-normal-font-size">
-          We develop and support open-source, "big data"–enabled AI analysis tools designed to be accessible to biology researchers without extensive computational expertise. Our group is fully committed to FAIR (Findable, Accessible, Interoperable, Reusable) principles in all aspects of our software development. We engage with the national community to develop, support, and disseminate novel technologies of benefit to all.
-          <br></br>
-          All code is available here: <a href="https://github.com/EpiGenomicsCode">https://github.com/EpiGenomicsCode</a>
-          </p>
-  		</div>
+<section class="section-block" aria-labelledby="software-catalog-heading">
+  <div class="section-header">
+    <h2 id="software-catalog-heading" class="section-title">Open-Source Tool &amp; Gateway Catalog</h2>
   </div>
 
-  <hr />
-    <h4 id="research-nn">Infrastructure development</h4>
-      <div class="wp-block-media-text alignwide is-stacked-on-mobile is-vertically-aligned-top" style="grid-template-columns:20% auto">
-        <div class="wp-block-media-text__content">
-        <p class="has-normal-font-size">We build scalable, reproducible, and FAIR-aligned platforms to support domain specific computation and analysis. We recently developed a high-throughput containerized solution for large-scale protein structure modeling and design. These containers are architected to make efficient use of available GPU and CPU resources. Our focus on interoperability and accessibility is echoed in our ScriptManager platform which provides an interactive genomics analysis environment which abstracts away underlying compute complexity and fosters reproducible FAIR workflows for users of varied computational literacy. Attempting to address the reproducibility crisis in genomics, we developed GenoPipe to peform genotype of origin detection from (epi)genomic datasets. Focusing on methodological robustness, we also developed the Adversarial Robustness and Explainability framework to provide explainable, adversarial resistant validation checks into machine learning pipelines. This helps to promoting trustworthy, reproducible model evaluation that aligns with FAIR principles by documenting provenance and interpretability features.</p>
+  <div class="filter-bar" role="toolbar" aria-label="Filter software by category">
+    <button type="button" class="filter-btn is-active" data-filter="all" aria-pressed="true">
+      All ({{ site.data.software | size }})
+    </button>
+    <button type="button" class="filter-btn" data-filter="epigenomics" aria-pressed="false">
+      Epigenomics &amp; GRNs ({{ site.data.software | where: "category", "epigenomics" | size }})
+    </button>
+    <button type="button" class="filter-btn" data-filter="ai-structure" aria-pressed="false">
+      XAI &amp; Structural AI ({{ site.data.software | where: "category", "ai-structure" | size }})
+    </button>
+    <button type="button" class="filter-btn" data-filter="gateways" aria-pressed="false">
+      Gateways &amp; HPC ({{ site.data.software | where: "category", "gateways" | size }})
+    </button>
+  </div>
 
-        <div style="display: flex; align-items: flex-start; gap: 20px;">
-        <!-- Left: Text content -->
-        <div style="flex: 1;">
-          <h4>Highlights</h4>
-          <ul style="padding-left: 20px;">
-            <li>
-              <p><b><span style="color: black">Protein structure prediction and design for high-throughput computing.</span></b><br />
-              <span style="color:"><u>Mathew VS,</u> <u>Kellogg GD,</u> <strong><u>Lai WKM.</u></strong> </span><br />
-              <span style="color:black"><b>bioArxiv</b></span> 2025, <a href="https://doi.org/10.1101/2025.07.18.665594">https://doi.org/10.1101/2025.07.18.665594</a> </p>
-            </li>
+  <div class="software-grid" id="software-grid">
+    {% for tool in site.data.software %}
+      {% include software-card.html tool=tool %}
+    {% endfor %}
+  </div>
+</section>
 
-            <li>
-              <p><b><span style="color: black">Adversarial Robustness and Explainability of Machine Learning Models.</span></b><br />
-              <span style="color:"><u>Gafur J,</u> <u>Goddard S,</u> <strong><u>Lai WKM.</u></strong> </span><br />
-              <span style="color:black"><b>Practice and Experience in Advanced Research Computing</b></span> 2024, <a href="https://doi.org/10.1145/3626203.3670522">https://doi.org/10.1145/3626203.3670522</a> </p>
-            </li>
+<section class="section-block" aria-labelledby="software-pubs-heading">
+  <div class="section-header">
+    <h2 id="software-pubs-heading" class="section-title">Key Software &amp; Infrastructure Publications</h2>
+    <a class="btn btn-outline btn-sm" href="{{ '/publications.html' | relative_url }}">View all {{ site.data.publications.size }} publications &rarr;</a>
+  </div>
 
-            <li>
-              <p><b><span style="color: black">GenoPipe: identifying the genotype of origin within (epi)genomic datasets.</span></b><br />
-              <span style="color:"><u>Lang O,</u> <u>Srivastava D,</u> <u>Pugh BF,</u> <strong><u>Lai WKM.</u></strong> </span><br />
-              <span style="color:black"><b>Nucleic Acids Research</b></span> 2023, 51 (22), 12054-12068. PMID: 37933851; PMCID: PMC10711449.</p>
-            </li>
+  <ol class="pub-list">
+    {% for pub in site.data.publications %}
+      {% if pub.tools and pub.tools.size > 0 %}
+        {% include publication-item.html pub=pub compact=true %}
+      {% endif %}
+    {% endfor %}
+  </ol>
+</section>
 
-            <li>
-              <p><b><span style="color: black">ScriptManager: an interactive platform for reducing barriers to genomics analysis.</span></b><br />
-              <span style="color:"><u>Lang O,</u> <u>Pugh BF,</u> <u>Lai WKM</u> <strong><u>Lai WKM.</u></strong></span><br />
-              <span style="color:black"><b>Practice and Experience in Advanced Research Computing</b></span> 2022, <a href="https://dl.acm.org/doi/fullHtml/10.1145/3491418.3535161">https://doi.org/10.1145/3491418.3535161</a> </p>
-            </li>
+<script>
+(function () {
+  var buttons = document.querySelectorAll('.filter-bar .filter-btn');
+  var cards = document.querySelectorAll('#software-grid .software-card');
+  if (!buttons.length || !cards.length) return;
 
-            <li>
-              <p><b><span style="color: black">ArchTEx: accurate extraction and visualization of next-generation sequence data.</span></b><br />
-              <span style="color:"><strong><u>Lai WKM,</u></strong> <u>Bard JE,</u> <u>Buck MJ.</u> </span><br />
-              <span style="color:black"><b>Bioinformatics</b></span> 2012, 1;28(7):1021-3. doi: 10.1093/bioinformatics/bts063. PMID: 22302569.</p>
-            </li>
-          </ul>
-          <p><a href="/publications" data-type="page" data-id="5">See all publications</a></p>
+  function applyFilter(category) {
+    buttons.forEach(function (btn) {
+      var active = btn.getAttribute('data-filter') === category;
+      btn.classList.toggle('is-active', active);
+      btn.setAttribute('aria-pressed', active ? 'true' : 'false');
+    });
+    cards.forEach(function (card) {
+      var match = category === 'all' || card.getAttribute('data-category') === category;
+      card.hidden = !match;
+      card.style.display = match ? '' : 'none';
+    });
+  }
 
-        </div>
+  buttons.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      applyFilter(btn.getAttribute('data-filter'));
+    });
+  });
 
-        <!-- Right: Two stacked images with captions -->
-        <div style="flex-shrink: 0; max-width: 400px; text-align: center;">
-          <div style="margin-bottom: 60px;">
-            <img src="/assets/images/250703_ProteinStruct_Container.png" alt="Caption 1" style="max-width: 100%; border-radius: 8px;" />
-            <div style="font-size: 0.9em; color: #555;">Singularity container architecture for three state-of-the-art structure-prediction models: AlphaFold 3 (AF3), Boltz-2, and Chai-1 and one protein-design model: RFdiffusion. https://doi.org/10.1101/2025.07.18.665594</div>
-          </div>
-          <div>
-            <img src="/assets/images/APSO_cartoon.png" alt="Caption 2" style="max-width: 100%; border-radius: 8px;" />
-            <div style="font-size: 0.9em; color: #555;">Adversarial Particle Swarm Optimization simulates a swarm of particles, where each particle represents a vector of input data. The particles explore numerical space, guided by their own best-known positions and the swarm's overall best position to minimize the loss function. https://doi.org/10.1093/bioinformatics/btaf371</div>
-          </div>
-        </div>
-      </div>
+  function revealHashTarget() {
+    if (!window.location.hash) return;
+    var id = window.location.hash.slice(1);
+    var target = document.getElementById(id);
+    if (target && target.classList.contains('software-card') && target.hidden) {
+      applyFilter('all');
+      target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  }
 
-      <h4 id="research-nn">Gateway development</h4>
-        <div class="wp-block-media-text alignwide is-stacked-on-mobile is-vertically-aligned-top" style="grid-template-columns:20% auto">
-          <div class="wp-block-media-text__content">
-            <p class="has-normal-font-size">Current genomic projects generate hundreds of terabytes of sequencing data and associated metadata, which require sophisticated management for effective tracking, analysis, and visualization. To meet these challenges, we developed the STENCIL platform. It visualizes results of integrated Galaxy workflows while providing interactive analysis tools for further exploration. STENCIL has proven essential for interpreting complex datasets, enabling biochemists with minimal genomics training to readily understand experimental results. In alignment with the NIH’s emphasis on experimental rigor and reproducibility, we also use and develop the PEGR platform to track detailed metadata on experimental procedures as they occur. PEGR captures comprehensive information for each experiment—including enzyme catalog numbers and sample identifiers—in real time, embedding this metadata in a searchable interface directly linked to the resulting sequencing data, the Galaxy platform, and STENCIL. This workflow supports fully reproducible bioinformatics that can be traced back to the original experimental design.</p>
-
-          <div style="display: flex; align-items: flex-start; gap: 20px;">
-            <!-- Left: Text content -->
-            <div style="flex: 1;">
-              <h4>Highlights</h4>
-              <ul style="padding-left: 20px;">
-                <li>
-                  <p><b><span style="color: black">AlphaFold accessibility: an optimized open-source OOD app for Protein Structure Prediction.</span></b><br />
-                  <span style="color:"><u>Mathew VS,</u> <u>Hansen M,</u> <strong><u>Lai WKM</u></strong></span><br />
-                  <span style="color:black"><b>GOOD25 Conference - Harvard</b></span></p>
-                </li>
-
-                <li>
-                  <p><b><span style="color: black">PEGR: a flexible management platform for reproducible epigenomic and genomic research.</span></b><br />
-                  <span style="color:"><u>Shao D,</u> <u>Kellogg G,</u> <u>Nematbakhsh A,</u> <u>Kuntala PK,</u> <u>Mahony S,</u> <u>Pugh BF,</u> <strong><u>Lai WKM.</u></strong></span><br />
-                  <span style="color:black"><b>Genome Biology</b></span> 2022, 19;23(1):99. PMID: 35440038 PMCID: PMC9016988</p>
-                </li>
-
-                <li>
-                  <p><b><span style="color: black">STENCIL: A web templating engine for visualizing and sharing life science datasets.</span></b><br />
-                  <span style="color:"><u>Sun Q,</u> <u>Nematbakhsh A,</u> <u>Kuntala PK,</u> <u>Kellogg G,</u> <u>Pugh BF,</u> <strong><u>Lai WKM.</u></strong></span><br />
-                  <span style="color:black"><b>PLoS Computational Biology</b></span> 2022, 9;18(2):e1009859. doi: 10.1371/journal.pcbi.1009859. PMID: 35139076; PMCID: PMC8863220.</p>
-                </li>
-              </ul>
-              <p><a href="/publications" data-type="page" data-id="5">See all publications</a></p>
-
-            </div>
-
-            <!-- Right: Two stacked images with captions -->
-            <div style="flex-shrink: 0; max-width: 300px; text-align: center;">
-              <div style="margin-bottom: 60px;">
-                <img src="/assets/images/AlphaFold_OOD.png" alt="Caption 1" style="max-width: 100%; border-radius: 8px;" />
-                <div style="font-size: 0.9em; color: #555;">Open-On Demand interface for running Alphafold2/3 without any prior coding experience.</div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-</div>
+  window.addEventListener('hashchange', revealHashTarget);
+  revealHashTarget();
+})();
+</script>

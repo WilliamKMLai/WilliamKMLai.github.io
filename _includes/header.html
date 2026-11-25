@@ -1,27 +1,76 @@
-<div class="container">
-    <header class="site-header" id="site-header" role="banner">
-				<div id="title-container" class="title-container">
-					<div id="site-title" class="site-title"><a href="/">Lai Lab</a></div>
-            <a class="social-icons" href="{{ site.github }}"><i class="fab fa-github"></i></a>
-        </div>
-				<div id="menu-primary-container" class="menu-primary-container">
-					<div id="menu-primary" class="menu-container menu-primary" role="navigation">
-            <nav class="menu">
-              <ul id="menu-primary-items" class="menu-primary-items">
-            	<!-- iterate over each item in the _data/navigation.yml file -->
-            	{% for item in site.data.navigation %}
-                <li id="menu-item" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home">
-            		<a href="{{ item.link }}"
-            			{% if page.url == item.link %}
-            				class="current"
-                    style="color: red;"
-            			{% endif %}>
-            			{{ item.name }}
-            		</a>
-            	{% endfor %}
-              </ul>
-            </nav>
-          </div>
-        </div>
-			</header>
-</div>
+<header class="site-header" id="site-header">
+  <div class="site-container header-inner">
+    <a class="site-brand" href="{{ '/' | relative_url }}">
+      <span class="brand-name">{{ site.title | default: "Lai Lab" }}</span>
+      <span class="brand-badge">UB Biochemistry</span>
+    </a>
+
+    <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
+      <ul class="nav-list">
+        {%- for item in site.data.navigation -%}
+          {%- assign is_active = false -%}
+          {%- if item.link == '/' and page.url == '/' -%}
+            {%- assign is_active = true -%}
+          {%- elsif item.link == '/' and page.url == '/index.html' -%}
+            {%- assign is_active = true -%}
+          {%- elsif page.url == item.link -%}
+            {%- assign is_active = true -%}
+          {%- endif -%}
+          <li class="nav-item">
+            <a class="nav-link{% if is_active %} is-active{% endif %}" href="{{ item.link | relative_url }}"{% if is_active %} aria-current="page"{% endif %}>{{ item.name }}</a>
+          </li>
+        {%- endfor -%}
+      </ul>
+
+      <div class="header-icons" aria-label="Academic profiles and contact">
+        <a class="icon-link" href="https://scholar.google.com/citations?user={{ site.google_scholar }}&amp;hl=en" target="_blank" rel="noopener" aria-label="Google Scholar profile" title="Google Scholar">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+            <path d="M12 3 1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3Zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9ZM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72Z"/>
+          </svg>
+        </a>
+        <a class="icon-link" href="https://orcid.org/{{ site.orcid }}" target="_blank" rel="noopener" aria-label="ORCID profile ({{ site.orcid }})" title="ORCID">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+            <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2ZM8.6 16.8H7V9.5h1.6Zm-.8-8.3a1 1 0 1 1 1-1 1 1 0 0 1-1 1Zm9.2 4.6c0 2.3-1.6 3.7-4.1 3.7h-2.5V9.5h2.7c2.4 0 3.9 1.3 3.9 3.6Zm-1.7 0c0-1.4-.9-2.2-2.4-2.2H12v4.5h1c1.5 0 2.3-.8 2.3-2.3Z"/>
+          </svg>
+        </a>
+        <a class="icon-link" href="{{ site.github_org }}" target="_blank" rel="noopener" aria-label="Lai Lab GitHub (EpiGenomicsCode)" title="GitHub (EpiGenomicsCode)">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+            <path d="M12 2C6.48 2 2 6.58 2 12.23c0 4.52 2.87 8.35 6.84 9.7.5.1.68-.22.68-.49 0-.24-.01-.88-.01-1.72-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.9 1.57 2.35 1.12 2.92.85.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05a9.36 9.36 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.8-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.48-.01 2.81 0 .27.18.6.69.49A10.25 10.25 0 0 0 22 12.23C22 6.58 17.52 2 12 2Z"/>
+          </svg>
+        </a>
+        <a class="icon-link" href="{{ site.ub_profile }}" target="_blank" rel="noopener" aria-label="University at Buffalo Faculty Profile" title="UB Faculty Profile">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <path d="M3 21h18"></path>
+            <path d="M5 21V7l7-4 7 4v14"></path>
+            <path d="M9 21v-5h6v5"></path>
+            <path d="M9 10h.01"></path>
+            <path d="M15 10h.01"></path>
+            <path d="M9 13h.01"></path>
+            <path d="M15 13h.01"></path>
+          </svg>
+        </a>
+        <a class="icon-link" href="mailto:{{ site.email }}" aria-label="Email Dr. William K. M. Lai ({{ site.email }})" title="{{ site.email }}">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+          </svg>
+        </a>
+      </div>
+    </nav>
+
+    <div class="header-controls">
+      {% include theme-toggle.html %}
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">
+        <svg class="nav-icon icon-menu" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+          <line x1="4" y1="6" x2="20" y2="6"></line>
+          <line x1="4" y1="12" x2="20" y2="12"></line>
+          <line x1="4" y1="18" x2="20" y2="18"></line>
+        </svg>
+        <svg class="nav-icon icon-close" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>

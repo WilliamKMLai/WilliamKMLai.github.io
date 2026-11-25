@@ -1,120 +1,202 @@
 ---
+layout: default
 title: About
+description: "William KM Lai, PhD — Assistant Professor of Biochemistry, Jacobs School of Medicine and Biomedical Sciences, University at Buffalo (SUNY). Chromatin architecture, multi-modal single-cell profiling, explainable & generative structural AI, and FAIR genomics gateways."
 ---
 
-<style>
-/**/
-.introduction{display:inline-block; /*padding-right:10px;*/ padding-bottom:50px;}
-.profile_photo_text{float:left; width: 35%;}
-.introduction_text{padding-left:25px;float:right;width:65%}
-.download_link{padding-left:25px;float:right;width:65%}
-.photo_text{float:left; width:90%; font-size: 12px; }
-.link_text{float:left; width:90%; font-size: 14px; font-weight:bold;}
-.introduction_text p {font-size: 14px;width:100%;}
-/**/
-/**/
-.box{display: flex;vertical-align:top;}
-.title_year{width:10%;font-weight: bold; /*padding-left:30px;*/ color: black;}
-.Publications_text{font-size: 14px; padding-left:30px; width:90%;float:right;}
-/**/
-.footer{text-align: center;
-		margin: 60px;
-		}
-</style>
+<section class="hero-profile" aria-labelledby="pi-name">
+  <aside class="hero-sidebar">
+    <div class="portrait-frame">
+      <picture>
+        <source srcset="{{ '/assets/images/lai_headshot.webp' | relative_url }}" type="image/webp" />
+        <img
+          src="{{ '/assets/images/lai_headshot.jpeg' | relative_url }}"
+          alt="Portrait of Dr. William KM Lai"
+          width="300"
+          height="450"
+          fetchpriority="high"
+        />
+      </picture>
+    </div>
 
-<div class="introduction">
-	<div class="profile_photo_text">
-		<div class="images">
-		<img src="./assets/images/lai_headshot.jpeg" width="314" height="392" />
-		</div>
-		<div class="photo_text">
-			<p>Director of the Cornell Center for Vertebrate Genomics.
-				</br>
-				Director of the Cornell EpiGenomics Core Facility.
-				</br>
-				Assistant Research Professor in Molecular Biology and Genetics.
-				</br>
-				Assistant Research Professor in Computational Biology.
-				</br>
-				458 Biotechnology Building, Cornell, Ithaca, NY, USA 14850</p>
-		</div>
-	</div>
-	<div class="introduction_text">
-			<h1>William KM Lai</h1>
-			<P>The primary focus of my research program is to understand how protein-complexes target the genome, how protein binding changes across cell states, and how mis-regulation of these interactions can result in disease-phenotypes. My group combines novel genomic assays with custom bioinformatic software development. We pursue ‘big-data’ projects that generate thousands of unique (epi)genomic datasets across human, mouse, and yeast model systems.
-                                                     </br>                                       </br>
-     As the Director of the Cornell EpiGenomics Core facility, my group works hand-in-hand with physician scientists at Cornell Weill medical campus to apply our epigenomic technology and algorithmic approaches to biomedical specimens to investigate the fundamental nature of human diseases. Combining wet-bench biochemical genomic technology with analytical bioinformatic algorithmic approaches allows us to understand the fundamental rules of protein-DNA interactions and how these rules are broken in diseased patient samples.
-																									 	 </br>                                       </br>
-     The volume and dimensionality of our data typically requires application of machine learning approaches as well as eXplainable AI algorithms. To support our analysis, we heavily leverage NSF-provided ACCESS resources. Our students are trained to perform advanced informatic analysis across a wide spectrum of heterogeneous and high-performance compute systems.
-	 																									 </br>                                       </br>
-		 The growing complexity of STEM research now frequently demands expertise in more domains of science than what any single research group is able to encompass. As the Director of the Cornell Center for Vertebrate Genomics, my mandate is to identify, develop, and support cross-discipline collaborations and foster an engaged community across the University. In a world that increasingly requires collaboration to leverage the latest and most powerful technologies, it is my privilege to support the researchers in the Center.
-	 		</P>
-			<p>The greatest biological discoveries are achieved when we can pair multiple distinct approaches (e.g., biochemistry, molecular biology, bioinformatics, etc.) to build something greater than the sum of its parts.</p>
-	</div>
-	<div class="download_link">
-		<a href="./assets/cv/Lai_CV.pdf" download>Download CV</a>
-	</div>
-</div>
+    <div class="contact-meta">
+      <p>
+        <strong>Assistant Professor</strong><br />
+        Department of Biochemistry<br />
+        Jacobs School of Medicine and Biomedical Sciences<br />
+        University at Buffalo (SUNY)
+      </p>
+      <p>
+        Room 4227, 955 Main Street<br />
+        Buffalo, NY 14203
+      </p>
+      <p>
+        <a href="mailto:wklai2@buffalo.edu">wklai2@buffalo.edu</a><br />
+        <a href="tel:+17168292317">(716) 829-2317</a>
+      </p>
+    </div>
 
-<div class="Publications">
-	<h2>Publications</h2>
-	<a href="/publications">View More</a>
+    <div class="profile-icon-bar" aria-label="Academic profiles and curriculum vitae">
+      <a class="btn btn-primary btn-sm" href="{{ '/assets/cv/Lai_CV.pdf' | relative_url }}" target="_blank" rel="noopener">
+        Curriculum Vitae (PDF)
+      </a>
+      <a class="btn btn-outline btn-sm" href="https://medicine.buffalo.edu/faculty/profile.html?u=wklai2" target="_blank" rel="noopener">
+        UB Profile
+      </a>
+      <a class="btn btn-outline btn-sm" href="https://scholar.google.com/citations?user=C2H1VzEAAAAJ&amp;hl=en" target="_blank" rel="noopener">
+        Google Scholar
+      </a>
+      <a class="btn btn-outline btn-sm" href="https://orcid.org/0000-0003-4351-7037" target="_blank" rel="noopener">
+        ORCID
+      </a>
+      <a class="btn btn-outline btn-sm" href="https://github.com/EpiGenomicsCode" target="_blank" rel="noopener">
+        EpiGenomicsCode
+      </a>
+    </div>
+  </aside>
 
-	<div class="box">
-	<div class="title_year">
-		<p>2025</p>
-	</div>
-			<div class="Publications_text">
-				<ul>
-					<li><p><b><span style="color: black">Protein structure prediction and design for high-throughput computing.</span></b><br />
-					<span style="color:"><u>Mathew VS,</u> <u>Kellogg GD,</u> <strong><u>Lai WKM.</u></strong> </span><br />
-					<span style="color:black"><b>bioArxiv</b></span> 2025, <a href="https://doi.org/10.1101/2025.07.18.665594">https://doi.org/10.1101/2025.07.18.665594</a> </p>
+  <div class="hero-bio">
+    <h1 id="pi-name" class="page-title">William KM Lai, PhD</h1>
+    <p class="page-lead">
+      Assistant Professor of Biochemistry &middot; Jacobs School of Medicine and Biomedical Sciences &middot; University at Buffalo (SUNY)
+    </p>
 
-					<li><p><b><span style="color: black">Adversarial attack of sequence-free enhancer prediction identifies chromatin architecture.</span></b><br />
-					<span style="color:"><u>Gafur J,</u> <u>Lang OW,</u> <strong><u>Lai WKM.</u></strong> </span><br />
-					<span style="color:black"><b>Bioinformatics</b></span> 2025, 41(7). PMID: 40581823; PMCID: PMC12240468. <a href="https://doi.org/10.1093/bioinformatics/btaf371">https://doi.org/10.1093/bioinformatics/btaf371</a></p>
-				</ul>
-			</div>
-	</div>
+    <p>
+      The Lai Lab investigates both the molecular grammar through which transcription factors, chromatin remodelers, and transcriptional machinery organize the eukaryotic genome and how perturbations to this regulatory architecture drive cellular stress responses and human disease. Our group pairs high-resolution wet-bench biochemical assays with scalable machine learning, generative structural modeling, and open-source software engineering.
+    </p>
 
-	<div class="box">
-	<div class="title_year">
-		<p>2024</p>
-	</div>
-			<div class="Publications_text">
-				<ul>
-					<li><p><b><span style="color: black">Adversarial Robustness and Explainability of Machine Learning Models.</span></b><br />
-					<span style="color:"><u>Gafur J,</u> <u>Goddard S,</u> <strong><u>Lai WKM.</u></strong> </span><br />
-					<span style="color:black"><b>Practice and Experience in Advanced Research Computing</b></span> 2024, <a href="https://doi.org/10.1145/3626203.3670522">https://doi.org/10.1145/3626203.3670522</a> </p>
+    <p>
+      At the experimental bench, we apply single-base-pair footprinting and nucleosome-phasing technologies including <strong>ChIP-exo</strong>, <strong>WhIP-exo</strong>, <strong>Benzonase-seq</strong>, and <strong>PB-exo</strong> alongside multi-modal <em>in situ</em> single-cell profiling on the <strong>AVITI24</strong> platform across yeast, mammalian, and clinical specimen models. To decode the massive dimensionality of these atlases, we build sequence motif consolidation algorithms (<strong>GenoCLAMP</strong>), causal gene regulatory network frameworks grounded in orthogonal molecular evidence (<strong>SETIA</strong>), and adversarial explainable AI methods (<strong>APSO / ChromEnhancer</strong>) that reveal chromatin rules without sequence bias.
+    </p>
 
-					<li><p><b><span style="color: black">Multi-dimensional analyses identify genes of high priority for pancreatic cancer research.</span></b><br />
-					<span style="color:"><u>Nwosu ZC,</u> <u>Giza H,</u> <u>Nassif M,</u> <u>Charlestin V,</u> <u>Menjivar RE,</u> <u>Kim D,</u> <u>Kemp SB,</u> <strong><u>Lai WKM,</u></strong> <u>Loveless I,</u> <u>Steele NG,</u> <u>Hu J,</u> <u>Hu B,</u> <u>Wang S,</u> <u>Magliano MP,</u> <u>Lyssiotis CA.</u></span><br />
-					<span style="color:black"><b>JCI Insight</b></span> 2024, 10(4):e174264. PMID: 39774001; PMCID: PMC11949049.<a href="https://doi.org/10.1172/jci.insight.174264">https://doi.org/10.1172/jci.insight.174264</a> </p>
-				</ul>
-			</div>
-	</div>
+    <p>
+      Complementing our epigenomics program, we develop continuous-time consistency distillation methods (<strong>Blitz</strong> and <strong>MS-sCD</strong>) that accelerate diffusion-based biomolecular structure prediction models such as AlphaFold3 and Boltz-2 from hundreds of denoising steps down to 8–16 steps, paired with containerized high-throughput computing workflows (<strong>OmniFold</strong>). Across every project, we are committed to <strong>FAIR</strong> science gateways, developing <strong>PEGR</strong>, <strong>ScriptManager</strong>, <strong>GenoPipe</strong>, and <strong>STENCIL</strong> so experimentalists and computational biologists alike can execute rigorous, reproducible analyses at scale. Our research and cyberinfrastructure are supported by an <strong>NIH NIGMS R35 (MIRA)</strong> and national <strong>NSF ACCESS</strong> supercomputing allocations.
+    </p>
+  </div>
+</section>
 
-	<div class="box">
-	<div class="title_year">
-		<p>2023</p>
-	</div>
-			<div class="Publications_text">
-				<ul>
-					<li><p><b><span style="color: black">GenoPipe: identifying the genotype of origin within (epi)genomic datasets.</span></b><br />
-					<span style="color:"><u>Lang O,</u> <u>Srivastava D,</u> <u>Pugh BF,</u> <strong><u>Lai WKM.</u></strong> </span><br />
-					<span style="color:black"><b>Nucleic Acids Research</b></span> 2023, 51 (22), 12054-12068. PMID: 37933851; PMCID: PMC10711449.</p>
+<section class="section-block" aria-labelledby="appointments-heading">
+  <div class="section-header">
+    <h2 id="appointments-heading" class="section-title">Academic Appointments &amp; Education</h2>
+  </div>
 
-					<li><p><b><span style="color: black">Joint sequence & chromatin neural networks characterize the differential abilities of Forkhead transcription factors to engage inaccessible chromatin.</span></b><br />
-					<span style="color:"><u>Arora S,</u> <u>Yang J,</u> <u>Akiyama T,</u> <u>James DQ,</u> <u>Morrissey A,</u> <u>Blanda TR,</u> <u>Badjatia N,</u> <strong><u>Lai WKM,</u></strong> <u>Ko MSH,</u> <u>Pugh BF,</u> <u>Mahony S.</u></span><br />
-					<span style="color:black"><b>bioArxiv</b></span> 2023, <a href="https://doi.org/10.1101/2023.10.06.561228">https://doi.org/10.1101/2023.10.06.561228</a> </p>
-				</ul>
-			</div>
-	</div>
+  <div class="career-timeline">
+    <div class="timeline-item">
+      <div class="timeline-year">Sept 2026 &ndash; Present</div>
+      <div class="timeline-content">
+        <strong>Assistant Professor</strong>, Department of Biochemistry, Jacobs School of Medicine and Biomedical Sciences, University at Buffalo (SUNY)
+      </div>
+    </div>
 
-</div>
+    <div class="timeline-item">
+      <div class="timeline-year">2020 &ndash; August 2026</div>
+      <div class="timeline-content">
+        <strong>Associate Research Professor</strong> (2026), Molecular Biology &amp; Genetics and Computational Biology<br />
+        <strong>Assistant Research Professor</strong> (2020&ndash;2026), Molecular Biology &amp; Genetics and Computational Biology<br />
+        <strong>Director of the Center for Vertebrate Genomics</strong> (2024&ndash;2026)<br />
+        <strong>Director of the EpiGenomics Core Facility</strong> (2022&ndash;2026), Cornell University
+      </div>
+    </div>
 
-<footer id="footer" class="footer" role="contentinfo">
-		<span>Copyright © 2025 William KM Lai</span>
-</footer>
-</div>
-</div><!-- .overflow-container -->
+    <div class="timeline-item">
+      <div class="timeline-year">2018 &ndash; 2020</div>
+      <div class="timeline-content">
+        <strong>Assistant Research Professor</strong>, Department of Biochemistry and Molecular Biology, Pennsylvania State University
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-year">2013 &ndash; 2018</div>
+      <div class="timeline-content">
+        <strong>Postdoctoral Scholar</strong> (Advisor: B. Franklin Pugh, PhD), Department of Biochemistry and Molecular Biology, Pennsylvania State University
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-year">2008 &ndash; 2013</div>
+      <div class="timeline-content">
+        <strong>PhD in Biochemistry</strong> (Advisor: Michael J. Buck, PhD), Jacobs School of Medicine and Biomedical Sciences, University at Buffalo (SUNY)
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-year">2005 &ndash; 2008</div>
+      <div class="timeline-content">
+        <strong>BS in Neuroscience</strong> (<em>Cum Laude</em>, Minor in Chemistry), University of Pittsburgh
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-block" aria-labelledby="pillars-heading">
+  <div class="section-header">
+    <h2 id="pillars-heading" class="section-title">Research Pillars</h2>
+    <a class="btn btn-outline btn-sm" href="{{ '/research.html' | relative_url }}">Full research overview &rarr;</a>
+  </div>
+
+  <div class="pillars-grid">
+    <article class="card pillar-card">
+      <span class="pill">Thrust 01</span>
+      <h3><a href="{{ '/research.html#chromatin' | relative_url }}">High-Resolution Epigenomic Assays &amp; Reference Atlases</a></h3>
+      <p>
+        Mapping TF footprints, nucleosome phasing, PIC assembly, and single-cell stress states via ChIP-exo, WhIP-exo, Benzonase-seq, PB-exo, and AVITI24, including the &gt;400-protein Yeast Epigenome and 887-TF Human PCRP atlases.
+      </p>
+      <a class="btn btn-outline btn-sm" href="{{ '/research.html#chromatin' | relative_url }}">Explore thrust &rarr;</a>
+    </article>
+
+    <article class="card pillar-card">
+      <span class="pill">Thrust 02</span>
+      <h3><a href="{{ '/research.html#bioinformatics' | relative_url }}">Bioinformatic Algorithm Development</a></h3>
+      <p>
+        Statistical, alignment, motif-consolidation, causal GRN, and interpretable ML algorithms for high-resolution regulatory genomics (ArchAlign, ChExMix, GenoPipe, GenoCLAMP, SETIA, APSO/ChromEnhancer).
+      </p>
+      <a class="btn btn-outline btn-sm" href="{{ '/research.html#bioinformatics' | relative_url }}">Explore thrust &rarr;</a>
+    </article>
+
+    <article class="card pillar-card">
+      <span class="pill">Thrust 03</span>
+      <h3><a href="{{ '/research.html#structural-ai' | relative_url }}">Generative Diffusion Distillation &amp; Biomolecular Modeling</a></h3>
+      <p>
+        Accelerating AlphaFold3 and Boltz-2 diffusion down to 8&ndash;16 steps via MS-sCD and Blitz alongside decoupled CPU/GPU structure prediction and design containers (OmniFold).
+      </p>
+      <a class="btn btn-outline btn-sm" href="{{ '/research.html#structural-ai' | relative_url }}">Explore thrust &rarr;</a>
+    </article>
+
+    <article class="card pillar-card">
+      <span class="pill">Thrust 04</span>
+      <h3><a href="{{ '/research.html#fair-gateways' | relative_url }}">Open-Science Gateways, Accessibility &amp; HPC Education</a></h3>
+      <p>
+        Lowering computational barriers through FAIR graphical workflows, browser portals, Open OnDemand apps, and federated cloud classrooms (ScriptManager, PEGR, STENCIL, ProteinStructure-OOD, EGC-jupyterhub).
+      </p>
+      <a class="btn btn-outline btn-sm" href="{{ '/research.html#fair-gateways' | relative_url }}">Explore thrust &rarr;</a>
+    </article>
+  </div>
+</section>
+
+<section class="section-block" aria-labelledby="featured-software-heading">
+  <div class="section-header">
+    <h2 id="featured-software-heading" class="section-title">Featured Open-Source Software</h2>
+    <a class="btn btn-outline btn-sm" href="{{ '/software.html' | relative_url }}">View all {{ site.data.software.size }} tools &amp; gateways &rarr;</a>
+  </div>
+
+  {% assign featured_tools = site.data.software | where: "featured", true %}
+  <div class="software-grid">
+    {% for tool in featured_tools %}
+      {% include software-card.html tool=tool compact=true %}
+    {% endfor %}
+  </div>
+</section>
+
+<section class="section-block" aria-labelledby="featured-pubs-heading">
+  <div class="section-header">
+    <h2 id="featured-pubs-heading" class="section-title">Selected &amp; Recent Publications</h2>
+    <a class="btn btn-outline btn-sm" href="{{ '/publications.html' | relative_url }}">View all {{ site.data.publications.size }} publications &rarr;</a>
+  </div>
+
+  {% assign featured_pubs = site.data.publications | where: "featured", true %}
+  <ol class="pub-list">
+    {% for pub in featured_pubs %}
+      {% include publication-item.html pub=pub compact=true %}
+    {% endfor %}
+  </ol>
+</section>

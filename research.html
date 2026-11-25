@@ -1,151 +1,116 @@
 ---
+layout: default
 title: Research
+description: "Research directions of The Lai Lab in the Department of Biochemistry at the University at Buffalo (SUNY): high-resolution epigenomic assays & reference atlases, bioinformatic algorithm development, biomolecular diffusion AI, and open-science HPC gateways."
 ---
 
-<div class="Research">
-  <header class="entry-header ast-no-thumbnail ast-no-meta">
-    <div class="entry-content clear" itemprop="text">
-      <h3 id="research-nn">Bioinformatic algorithm development</h3>
-        <div class="wp-block-media-text alignwide is-stacked-on-mobile is-vertically-aligned-top" style="grid-template-columns:20% auto">
-          <div class="wp-block-media-text__content">
-          <p class="has-normal-font-size">The development of tools capable of taking advantage of high-resolution data is critical to maximizing the utility of the genomic assays.  Our work focuses on integrating diverse datasets across multiple biochemical platforms to derive biologically meaningful insights. Problems we’re interested in include genomic frames of reference (i.e., ArchAlign), high resolution peak-calling (i.e., ChExMix), and deep-learning approaches to understanding the combinatorial nature of cellular regulation (i.e., APSO).</p>
+<header class="page-header">
+  <h1 class="page-title">Research Directions</h1>
+  <p class="page-lead">
+    At the <strong>University at Buffalo (SUNY)</strong> in the Department of Biochemistry, Jacobs School of Medicine and Biomedical Sciences, <strong>The Lai Lab</strong> investigates how protein complexes read, remodel, and regulate the eukaryotic genome across dynamic cellular states and human disease. Supported by an NIH NIGMS R35 and national NSF ACCESS cyberinfrastructure, our research spans four complementary thrusts across experimental epigenomics, bioinformatic algorithms, generative biomolecular modeling, and open-science gateways.
+  </p>
+</header>
 
-          <div style="display: flex; align-items: flex-start; gap: 20px;">
-            <!-- Left: Text content -->
-            <div style="flex: 1;">
-              <h4>Highlights</h4>
-              <ul style="padding-left: 20px;">
-                <li>
-                  <p><b><span style="color: black">Adversarial attack of sequence-free enhancer prediction identifies chromatin architecture.</span></b><br />
-                  <span><u>Gafur J,</u> <u>Lang OW,</u> <strong><u>Lai WKM.</u></strong></span><br />
-                  <span style="color:black"><b>Bioinformatics</b></span> 2025, 41(7). PMID: 40581823; PMCID: PMC12240468.
-                  <a href="https://doi.org/10.1093/bioinformatics/btaf371">https://doi.org/10.1093/bioinformatics/btaf371</a></p>
-                </li>
+<section class="synthesis-banner card" aria-labelledby="synthesis-heading">
+  <div class="section-header">
+    <h2 id="synthesis-heading" class="section-title">Four-Thrust Research Overview</h2>
+    <a class="btn btn-outline btn-sm" href="{{ '/software.html' | relative_url }}">Explore lab software &rarr;</a>
+  </div>
+  <figure class="figure-frame">
+    <img
+      src="{{ '/assets/images/diagrams/lai_lab_synthesis.svg' | relative_url }}"
+      alt="Four-thrust overview of The Lai Lab: (01) High-Resolution Epigenomic Assays, (02) Bioinformatic Algorithm Development, (03) Biomolecular Diffusion and Modeling, and (04) Open-Science Gateways and Accessibility"
+      width="960"
+      height="310"
+      decoding="async"
+    />
+    <figcaption class="figure-caption">
+      Core assays, computational methods, container frameworks, and open-science platforms across the four research thrusts of The Lai Lab.
+    </figcaption>
+  </figure>
 
-                <li>
-                  <p><b><span style="color: black">Characterizing protein-DNA binding event subtypes in ChIP-exo data.</span></b><br />
-                  <span><u>Yamada N,</u> <strong><u>Lai WKM,</u></strong> <u>Farrell N,</u> <u>Pugh BF,</u> <u>Mahony S.</u></span><br />
-                  <span style="color:black"><b>Bioinformatics</b></span> 2019, 15;35(6):903-913. doi: 10.1093/bioinformatics/bty703. PMID: 30165373; PMCID: PMC6419906.</p>
-                </li>
+  <nav class="thrust-jump-bar" aria-label="Jump to research thrust">
+    {% for thrust in site.data.research_thrusts %}
+      <a href="#{{ thrust.id }}">
+        <span>{{ thrust.number }} &middot; {{ thrust.short_title }}</span>
+      </a>
+    {% endfor %}
+  </nav>
+</section>
 
-                <li>
-                  <p><b><span style="color: black">An integrative approach to understanding the combinatorial histone code at functional elements.</span></b><br />
-                  <span><strong><u>Lai WKM,</u></strong> <u>Buck MJ.</u></span><br />
-                  <span style="color:black"><b>Bioinformatics</b></span> 2013, 29(18):2231-7. doi: 10.1093/bioinformatics/btt382. PMID: 23821650; PMCID: PMC4107033.</p>
-                </li>
+{% for thrust in site.data.research_thrusts %}
+{% assign thrust_count = 0 %}
+{% for p in site.data.publications %}
+  {% if p.thrusts and p.thrusts contains thrust.id %}
+    {% assign thrust_count = thrust_count | plus: 1 %}
+  {% endif %}
+{% endfor %}
+<section class="section-block thrust-section" id="{{ thrust.id }}" aria-labelledby="heading-{{ thrust.id }}">
+  <div class="section-header">
+    <div>
+      <span class="pill">Thrust {{ thrust.number }}</span>
+      <h2 id="heading-{{ thrust.id }}" class="section-title">{{ thrust.title }}</h2>
+      <p class="page-lead">{{ thrust.subtitle }}</p>
+    </div>
+  </div>
 
-                <li>
-                  <p><b><span style="color: black">ArchAlign: coordinate-free chromatin alignment reveals novel architectures.</span></b><br />
-                  <span><strong><u>Lai WKM,</u></strong> <u>Buck MJ.</u></span><br />
-                  <span style="color:black"><b>Genome Biology</b></span> 2010, 11(12):R126. doi: 10.1186/gb-2010-11-12-r126. PMID: 21182771; PMCID: PMC3046486.</p>
-                </li>
-              </ul>
-            </div>
+  <div class="thrust-layout">
+    <div class="thrust-content">
+      {% for paragraph in thrust.paragraphs %}
+        <p>{{ paragraph }}</p>
+      {% endfor %}
 
-            <!-- Right: Two stacked images with captions -->
-            <div style="flex-shrink: 0; max-width: 400px; text-align: center;">
-              <div style="margin-bottom: 60px;">
-                <img src="/assets/images/APSO_NetworkActivation.png" alt="Caption 1" style="max-width: 100%; border-radius: 8px;" />
-                <div style="font-size: 0.9em; color: #555;">APSO identifies features of trained classifiers that are predictive of a given classification with no holdout data required. Inverting the cost function identified features of a classifier that provide negative predictive value for a given classification. https://doi.org/10.1093/bioinformatics/btaf371</div>
-              </div>
-            </div>
-          </div>
-
-          <p><a href="/publications" data-type="page" data-id="5">See all publications</a></p>
-          </div>
+      {% if thrust.assays_or_methods and thrust.assays_or_methods.size > 0 %}
+        <div class="pill-bar" role="list" aria-label="Key assays and methodologies for {{ thrust.short_title }}">
+          {% for method in thrust.assays_or_methods %}
+            <span class="tech-tag" role="listitem">{{ method }}</span>
+          {% endfor %}
         </div>
+      {% endif %}
 
-      <h3 id="research-nn">Mechanisms of gene regulation</h3>
-        <div class="wp-block-media-text alignwide is-stacked-on-mobile is-vertically-aligned-top" style="grid-template-columns:20% auto">
-          <div class="wp-block-media-text__content">
-          <p class="has-normal-font-size">We apply high-resolution genomic technology to answer basic biological questions. The resolution of our assays provides unprecedented insights into the mechanisms of gene regulation. We use ChIP-exo, PIP-seq, PB-exo, and MNase-ChIP-seq to map the landscape of protein-DNA regulatory mechanisms at base-pair resolution.</p>
-
-          <div style="display: flex; align-items: flex-start; gap: 20px;">
-            <!-- Left: Text content -->
-            <div style="flex: 1;">
-              <h4>Highlights</h4>
-              <ul style="padding-left: 20px;">
-                <li>
-                  <p><b><span style="color: black">An integrated SAGA and TFIID PIC assembly pathway selective for poised and induced promoters.</span></b><br />
-          				<span style="color:"><u>Mittal C,</u> <u>Lang O,</u> <strong><u>Lai WKM,</u></strong> <u>Pugh BF</u> </span><br />
-          				<span style="color:black"><b>Genome Research</b></span> 2022, 36(17-18):985-1001. PMID: 36302553 PMCID: PMC9732905</p>
-                </li>
-
-                <li>
-                  <p><b><span style="color: black">Acute stress drives global repression through two independent RNA polymerase II stalling events in Saccharomyces.</span></b><br />
-                  <span style="color:"><u>Badjatia N,</u> <u>Rossi MJ,</u> <u>Bataille AR,</u> <u>Mittal C,</u> <strong><u>Lai WKM,</u></strong> <u>Pugh BF.</u></span><br />
-                  <span style="color:black"><b>Cell Reports</b></span> 2021, 34(3):108640. doi: 10.1016/j.celrep.2020.108640. PMID: 33472084; PMCID: PMC7879390.</p>
-                </li>
-
-                <li>
-                  <p><b><span style="color: black">Genome-wide determinants of sequence-specific DNA binding of general regulatory factors.</span></b><br/>
-                  <span style="color:"><u>Rossi MJ,</u> <strong><u>Lai WKM,</u></strong> <u>Pugh BF.</u> </span><br />
-                  <span style="color:black"><b>Genome Research</b></span> 2018, 28(4):497-508. doi: 10.1101/gr.229518.117. PMID: 29563167; PMCID: PMC5880240.</p>
-                </li>
-
-                <li>
-                  <p><b><span style="color: black">Genome-wide uniformity of human ‘open’ pre-initiation complexes.</span></b><br />
-                  <span style="color:"><strong><u>Lai WKM,</u></strong> <u>Pugh BF.</u> </span><br />
-                  <span style="color:black"><b>Genome Research</b></span> 2017, 27(1):15-26. doi: 10.1101/gr.210955.116. EPMID: 27927716; PMCID: PMC5204339.</p>
-                </li>
-              </ul>
-            </div>
-
-            <!-- Right: Two stacked images with captions -->
-            <div style="flex-shrink: 0; max-width: 250px; text-align: center;">
-              <div style="margin-bottom: 60px;">
-                <img src="/assets/images/PBexo_cartoon.jpg" alt="Caption 1" style="max-width: 100%; border-radius: 4px;" />
-                <div style="font-size: 0.9em; color: #555;">Intrinsic DNA structure imparts specificity to sequence-specific transcription factor binding on top of co-factor protein interactions. https://doi.org/10.1101/gr.229518.117</div>
-              </div>
-            </div>
-          </div>
-
-          <p><a href="/publications" data-type="page" data-id="5">See all publications</a></p>
-
-          </div>
+      {% if thrust.related_tools and thrust.related_tools.size > 0 %}
+        <div class="pill-bar" aria-label="Related software and gateways for {{ thrust.short_title }}">
+          {% for tool in thrust.related_tools %}
+            <a class="pill" href="{{ '/software.html' | relative_url }}#tool-{{ tool.id }}">
+              {{ tool.name }} &rarr;
+            </a>
+          {% endfor %}
         </div>
+      {% endif %}
+    </div>
 
-        <h3 id="research-nn">Genomic data generation at scale</h3>
-          <div class="wp-block-media-text alignwide is-stacked-on-mobile is-vertically-aligned-top" style="grid-template-columns:20% auto">
-            <div class="wp-block-media-text__content">
-            <p class="has-normal-font-size">Cost and scalability are a huge component of many genomic assays. In collaboration with Pugh lab, we are constantly working to develop significantly cheaper, faster, and higher yield versions of ChIP-exo/seq. We have demonstrated the value of these optimizations, by generating thousands of unique datasets in yeast and human model systems. Our work in the S. cerevisiae system produced the first near-complete (>400 proteins) high-resolution atlas of protein binding. We classified the promoter architecture of every gene in yeast and were able to apply the ChIP-exo assay to identify distinct modes of binding related to gene regulation (i.e., Mediator binding at SAGA genes). We also applied our optimized ChIP-exo assay in collaboration with several other groups according to the NIH’s direct request for us to biochemically validate >1,000 monoclonal antibodies generated through the NIH Common Fund. Of the antibodies tested, 5% produced high-quality data and another 34% produced datasets distinct from background that warrant further investigation. These preliminary epigenomic maps will serve as guides for future hypothesis driven research.</p>
+    <aside class="thrust-visuals" aria-label="Conceptual schematic for {{ thrust.short_title }}">
+      {% if thrust.diagram %}
+        <figure class="figure-frame">
+          <img
+            src="{{ thrust.diagram.src | relative_url }}"
+            alt="{{ thrust.diagram.alt }}"
+            width="{{ thrust.diagram.width }}"
+            height="{{ thrust.diagram.height }}"
+            loading="lazy"
+          />
+          <figcaption class="figure-caption">{{ thrust.diagram.caption }}</figcaption>
+        </figure>
+      {% endif %}
+    </aside>
+  </div>
 
-            <div style="display: flex; align-items: flex-start; gap: 20px;">
-              <!-- Left: Text content -->
-              <div style="flex: 1;">
-                <h4>Highlights</h4>
-                <ul style="padding-left: 20px;">
-                  <li>
-                    <p><b><span style="color: black">A high-resolution protein architecture of the budding yeast genome.</span></b><br />
-                    <span style="color:"><u>Rossi MJ,</u> <u>Kuntala PK,</u> <strong><u>Lai WKM,</u></strong> <u>Yamada N,</u> <u>Badjatia N,</u> <u>Mittal C,</u> <u>Kuzu G,</u> <u>Bocklund K,</u> <u>Farrell NP,</u> <u>Blanda TR,</u> <u>Mairose JD,</u> <u>Basting AV,</u> <u>Mistretta KS,</u> <u>Rocco DJ,</u> <u>Perkinson ES,</u> <u>Kellogg GD,</u> <u>Mahony S,</u> <u>Pugh BF.</u></span><br />
-                    <span style="color:black"><b>Nature</b></span> 2021, 592(7853):309-314. doi: 10.1038/s41586-021-03314-8. PMID: 33692541; PMCID: PMC8035251.</p>
-                  </li>
+  <div class="thrust-highlights">
+    <div class="section-header">
+      <h3>Selected Highlights</h3>
+      <a class="btn btn-outline btn-sm" href="{{ '/publications.html' | relative_url }}?thrust={{ thrust.id }}">
+        All Thrust {{ thrust.number }} publications ({{ thrust_count }}) &rarr;
+      </a>
+    </div>
 
-                  <li>
-                    <p><b><span style="color: black">A ChIP-exo screen of 887 Protein Capture Reagents Program transcription factor antibodies in human cells.</span></b><br />
-            				<span style="color:"><strong><u>Lai WKM,</u></strong> <u>Mariani L,</u> <u>Rothschild G,</u> <u>Smith ER,</u> <u>Venters BJ,</u> <u>Blanda TR,</u> <u>Kuntala PK,</u> <u>Bocklund K,</u> <u>Mairose J,</u> <u>Dweikat SN,</u> <u>Mistretta K,</u> <u>Rossi MJ,</u> <u>James D,</u> <u>Anderson JT,</u> <u>Phanor SK,</u> <u>Zhang W,</u> <u>Zhao Z,</u> <u>Shah AP,</u> <u>Novitzky K,</u> <u>McAnarney E,</u> <u>Keogh MC,</u> <u>Shilatifard A,</u> <u>Basu U,</u> <u>Bulyk ML,</u> <u>Pugh BF.</u></span><br />
-            				<span style="color:black"><b>Genome Research</b></span> 2021, 31(9):1663-1679. doi: 10.1101/gr.275472.121. PMID: 34426512; PMCID: PMC8415381.</p>
-                  </li>
-
-                  <li>
-                    <p><b><span style="color: black">Simplified ChIP-exo assays.</span></b><br />
-                    <span style="color:"><u>Rossi MJ,</u> <strong><u>Lai WKM,</u></strong> <u>Pugh BF.</u> </span><br />
-                    <span style="color:black"><b>Nature Communications</b></span> 2018, 20;9(1):2842. doi: 10.1038/s41467-018-05265-7. PMID: 30030442; PMCID: PMC6054642.</p>
-                  </li>
-
-                </ul>
-              </div>
-
-              <!-- Right: Two stacked images with captions -->
-              <div style="flex-shrink: 0; max-width: 400px; text-align: center;">
-                <div style="margin-bottom: 60px;">
-                  <img src="/assets/images/UMAP_YEP.jpg" alt="Caption 1" style="max-width: 100%; border-radius: 4px;" />
-                  <div style="font-size: 0.9em; color: #555;">UMAP dimensional projection of S. cerevisiae protein-protein interaction matrix. https://doi.org/10.1038/s41586-021-03314-8</div>
-                </div>
-              </div>
-            </div>
-
-            <p><a href="/publications" data-type="page" data-id="5">See all publications</a></p>
-            </div>
-          </div>
-</div>
+    <ol class="pub-list">
+      {% for pub_id in thrust.highlight_pub_ids %}
+        {% assign pub = site.data.publications | where: "id", pub_id | first %}
+        {% if pub %}
+          {% include publication-item.html pub=pub compact=true %}
+        {% endif %}
+      {% endfor %}
+    </ol>
+  </div>
+</section>
+{% endfor %}
