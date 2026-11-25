@@ -16,12 +16,6 @@ google_scholar: "C2H1VzEAAAAJ"
 github_org: "https://github.com/EpiGenomicsCode"
 github_cegr: "https://github.com/CEGRcode"
 
-defaults:
-  - scope:
-      path: ""
-    values:
-      layout: "default"
-
 include:
   - favicon.ico
 
